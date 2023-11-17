@@ -127,8 +127,6 @@ object frm_PCM_Main: Tfrm_PCM_Main
     PanelStyle.Active = True
     Style.BorderStyle = ebsNone
     TabOrder = 1
-    ExplicitWidth = 1072
-    ExplicitHeight = 798
     Height = 799
     Width = 1076
     object pcmain: TcxPageControl
@@ -164,7 +162,6 @@ object frm_PCM_Main: Tfrm_PCM_Main
   end
   object lafCtrl_Main: TcxLookAndFeelController
     Kind = lfFlat
-    NativeStyle = False
     ScrollbarMode = sbmClassic
     SkinName = 'DevExpressDarkStyle'
     RenderMode = rmGDIPlus

@@ -30,7 +30,7 @@ uses
   cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxGridCustomView,
   cxGrid, Vcl.StdCtrls, cxRadioGroup, cxCheckBox, cxTextEdit, cxLabel,
   cxButtons, dxGDIPlusClasses, cxImage, cxGroupBox, cxPC,inifiles, Vcl.Themes,system.UITypes,
-  dxSkinWXI;
+  dxSkinWXI, Vcl.VirtualImage, Vcl.BaseImageCollection, Vcl.ImageCollection;
 
 type
   Tfrm_Config = class(TForm)
@@ -39,7 +39,6 @@ type
     E_ts_Personal: TcxTabSheet;
     cxGroupBox2: TcxGroupBox;
     cxGroupBox3: TcxGroupBox;
-    cxImage1: TcxImage;
     des_Main: TcxGroupBox;
     des_ToolButton3: TcxButton;
     des_ToolButton2: TcxButton;
@@ -68,7 +67,8 @@ type
     dxBarManager1Bar1: TdxBar;
     cxButton1: TdxBarLargeButton;
     dxBarDockControl1: TdxBarDockControl;
-    cxImageList1: TcxImageList;
+    cxImage1: TVirtualImage;
+    ImageCollection1: TImageCollection;
     procedure cxButton1Click(Sender: TObject);
     procedure cbx_DesignPropertiesChange(Sender: TObject);
     procedure cbx_StylePropertiesChange(Sender: TObject);
@@ -91,7 +91,7 @@ uses PCM.Main, PCM.Data;
 procedure Tfrm_Config.cbx_StylePropertiesChange(Sender: TObject);
 begin
   if cbx_Style.ItemIndex > -1 then
-    cximagelist1.GetIcon(cbx_Style.itemindex, cxImage1.Picture.Icon);
+    cxImage1.ImageIndex:= cbx_Style.itemindex;
 end;
 procedure Tfrm_Config.cbx_DesignPropertiesChange(Sender: TObject);
 begin
