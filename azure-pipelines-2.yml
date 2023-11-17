@@ -49,7 +49,7 @@ steps:
 - task: BatchScript@1
   displayName: erzeugte Versionen ins Setupverzeichnis kopieren 
   inputs:
-     filename: PrepareCopy.cmd
+    filename: PrepareCopy.cmd
     modifyEnvironment: true
 
 - task: mspremier.PostBuildCleanup.PostBuildCleanup-task.PostBuildCleanup@3
