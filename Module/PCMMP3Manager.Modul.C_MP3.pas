@@ -63,7 +63,6 @@ type
     procedure btn_SaveClick(Sender: TObject);
     procedure btn_CancelClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
-    procedure FormPaint(Sender: TObject);
   private
     { Private-Deklarationen }
     Procedure OPendata;
@@ -244,13 +243,6 @@ begin
     ShowMessage('Es wurden ' + inttostr(iFileCount) + ' Dateien editiert');
   end;
 end;
-procedure Tfrm_MP3.FormPaint(Sender: TObject);
-begin
-  OPendata;
-  InitializeRights;
-  Setbuttons;
-end;
-
 procedure Tfrm_MP3.FormShow(Sender: TObject);
 begin
   OPendata;

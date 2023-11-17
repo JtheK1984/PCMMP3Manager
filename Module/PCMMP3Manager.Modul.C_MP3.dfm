@@ -11,7 +11,6 @@ object frm_MP3: Tfrm_MP3
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OnPaint = FormPaint
   OnShow = FormShow
   TextHeight = 13
   object pnl_right: TcxGroupBox
@@ -229,6 +228,7 @@ object frm_MP3: Tfrm_MP3
     ImageOptions.LargeImages = dm_PCM.imglst_32x32
     NotDocking = [dsNone, dsLeft, dsTop, dsRight, dsBottom]
     PopupMenuLinks = <>
+    Style = bmsUseLookAndFeel
     UseSystemFont = True
     Left = 632
     Top = 408

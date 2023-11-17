@@ -29,7 +29,8 @@ uses
   Vcl.ImgList, cxImageList, cxMaskEdit, cxDropDownEdit, cxGridLevel,
   cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxGridCustomView,
   cxGrid, Vcl.StdCtrls, cxRadioGroup, cxCheckBox, cxTextEdit, cxLabel,
-  cxButtons, dxGDIPlusClasses, cxImage, cxGroupBox, cxPC,inifiles, Vcl.Themes,system.UITypes;
+  cxButtons, dxGDIPlusClasses, cxImage, cxGroupBox, cxPC,inifiles, Vcl.Themes,system.UITypes,
+  dxSkinWXI;
 
 type
   Tfrm_Config = class(TForm)
@@ -136,7 +137,6 @@ end;
 
 procedure Tfrm_Config.FormShow(Sender: TObject);
 begin
-  dm_PCM.ReadServerAdress;
   cbx_Design.ItemIndex := cbx_Design.Properties.Items.IndexOf(dm_PCM.sDesign);
   cbx_Style.ItemIndex := cbx_Style.Properties.Items.IndexOf(dm_PCM.sStyle);
 end;
