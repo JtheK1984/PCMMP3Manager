@@ -23,10 +23,10 @@ object frm_MP3: Tfrm_MP3
     Height = 922
     Width = 1195
     object cxPageControl2: TcxPageControl
-      Left = 3
-      Top = 3
-      Width = 1189
-      Height = 916
+      Left = 2
+      Top = 2
+      Width = 1191
+      Height = 918
       Align = alClient
       TabOrder = 0
       Properties.ActivePage = cxTabSheet2
@@ -34,22 +34,21 @@ object frm_MP3: Tfrm_MP3
       Properties.Images = dm_PCM.imglst_16x16
       Properties.TabSlants.Kind = skCutCorner
       Properties.TabWidth = 150
-      ClientRectBottom = 910
-      ClientRectLeft = 2
-      ClientRectRight = 1183
-      ClientRectTop = 28
+      ClientRectBottom = 918
+      ClientRectRight = 1191
+      ClientRectTop = 25
       object cxTabSheet2: TcxTabSheet
         Caption = 'automatische MP3-Tags'
         ImageIndex = 86
         object cxGroupBox12: TcxGroupBox
           Left = 0
-          Top = 63
+          Top = 58
           Align = alTop
           Caption = 'Einstellungen'
           Style.BorderStyle = ebsFlat
           TabOrder = 0
           Height = 82
-          Width = 1181
+          Width = 1191
           object cbx_Album: TcxDBCheckBox
             Left = 615
             Top = 22
@@ -145,17 +144,17 @@ object frm_MP3: Tfrm_MP3
         end
         object cxGroupBox13: TcxGroupBox
           Left = 0
-          Top = 145
+          Top = 140
           Align = alClient
           Caption = 'Status'
           Style.BorderStyle = ebsFlat
           TabOrder = 1
-          Height = 737
-          Width = 1181
+          Height = 753
+          Width = 1191
           object Button1: TcxButton
-            Left = 3
-            Top = 15
-            Width = 1175
+            Left = 2
+            Top = 18
+            Width = 1187
             Height = 25
             Align = alTop
             Caption = 'MP3 Verzeichnis w'#228'hlen'
@@ -163,21 +162,21 @@ object frm_MP3: Tfrm_MP3
             OnClick = Button1Click
           end
           object Memomp3: TcxMemo
-            Left = 3
-            Top = 40
+            Left = 2
+            Top = 43
             Align = alClient
             Lines.Strings = (
               'Bitte Verzeichnis w'#228'hlen...')
             TabOrder = 1
-            Height = 688
-            Width = 1175
+            Height = 708
+            Width = 1187
           end
         end
         object dxBarDockControl1: TdxBarDockControl
           Left = 0
           Top = 0
-          Width = 1181
-          Height = 63
+          Width = 1191
+          Height = 58
           Align = dalTop
           BarManager = dxBarManager1
         end

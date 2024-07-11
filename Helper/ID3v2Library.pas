@@ -1990,7 +1990,6 @@ begin
     end;
     FPosition := Stream.Position - 10;
     if ExtendedHeader then begin
-        //Showmessage('Extended header found!');
         ReadExtendedHeader(Stream);
     end;
     repeat

@@ -1,4 +1,5 @@
 object dm_PCM: Tdm_PCM
+  OnCreate = DataModuleCreate
   Height = 480
   Width = 640
   object con_PCM: TFDConnection

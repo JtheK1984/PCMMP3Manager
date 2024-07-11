@@ -1,12 +1,13 @@
 program PCMMP3Manager;
 
 uses
+  inifiles,
+  NtTranslator,
+  System.SysUtils,
   Vcl.Forms,
-  PCM.Main in 'PCM.Main.pas' {frm_PCM_Main},
   Vcl.Themes,
   Vcl.Styles,
-  inifiles,
-  System.SysUtils,
+  PCM.Main in 'PCM.Main.pas' {frm_PCM_Main},
   PCM.Data in 'PCM.Data.pas' {dm_PCM: TDataModule},
   PCMMP3Manager.Modul.B_Optionen in 'Module\PCMMP3Manager.Modul.B_Optionen.pas' {frm_Config},
   PCMMP3Manager.Modul.C_MP3 in 'Module\PCMMP3Manager.Modul.C_MP3.pas' {frm_MP3},
@@ -25,25 +26,30 @@ uses
   ReadMemoryStream in 'Helper\ReadMemoryStream.pas';
 
 {$R *.res}
+
+{$SetPEOptFlags IMAGE_DLLCHARACTERISTICS_TERMINAL_SERVER_AWARE}
+{$SetPEFlags IMAGE_FILE_REMOVABLE_RUN_FROM_SWAP or IMAGE_FILE_NET_RUN_FROM_SWAP or IMAGE_FILE_LARGE_ADDRESS_AWARE}
+
 var
-  iniFile: TIniFile;
+  ifini: TIniFile;
   sStyle: String;
+  slocale: String;
+
 begin
-  iniFile:=TIniFile.create(GetEnvironmentVariable('LOCALAPPDATA') + '\PCM\PCM.ini');
-  sStyle:= iniFile.ReadString('PCMMP3Manager','Style','Windows');
-  iniFile.Free;
+  ifini:=TIniFile.create(GetEnvironmentVariable('LOCALAPPDATA') + '\PCM\PCM.ini');
+  sStyle:=ifini.ReadString('PCMMP3Manager','Style','Windows');
+  slocale:=ifini.ReadString('PCMBackup','Language','de');
+  ifini.Free;
   Application.Initialize;
   TStyleManager.TrySetStyle(sStyle);
   {$IFDEF WIN64}
-  Application.Title:= 'PCM - MP3 Manager 64-Bit';
+  Application.Title:= 'PCM - MP3Manager 64-Bit';
+  TNtTranslator.SetNew(slocale,[],'de');
   {$else}
-  Application.Title:= 'PCM - MP3 Manager 32-Bit';
+  Application.Title:= 'PCM - MP3Manager 32-Bit';
   {$ENDIF}
-  Application.MainFormOnTaskbar := true;
+  Application.MainFormOnTaskbar := True;
   Application.CreateForm(Tdm_PCM,dm_PCM);
-  Application.CreateForm(Tfrm_PCM_Main, frm_PCM_Main);
-//  Application.CreateForm(Tfrm_PCM_Functions, frm_PCM_Functions);
-//  Application.CreateForm(Tfrm_PCM_Lizenz, frm_PCM_Lizenz);
-
+  Application.CreateForm(Tfrm_PCM_Main,frm_PCM_Main);
   Application.Run;
 end.

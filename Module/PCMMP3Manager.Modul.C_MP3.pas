@@ -82,7 +82,8 @@ implementation
 
 uses  PCM.Main,
       PCM.Data,
-      PCM.Functions.Synch.Wait;
+      PCM.Functions.Synch.Wait,
+      PCM.Strings;
 
 Procedure Tfrm_MP3.OPendata;
 begin
@@ -173,7 +174,7 @@ var
   bFileTrue : Boolean;
   sFilename,sInterpret,sTitel: string;
 begin
-  if SelectDirectory('MP3 Verzeichnis auswählen', '' ,sPfadMP3) then
+  if SelectDirectory(rs_PCMMP3Manger_MP3Verzeichnis, '' ,sPfadMP3) then
   begin
     Memomp3.Clear;
     bFileTrue:=(FindFirst(sPfadMP3+'\' + lowercase('*.mp3'),faAnyFile,datei)=0);
@@ -186,7 +187,7 @@ begin
     end;
 
     Application.ProcessMessages;
-    ShowWaitForm(TForm(Self), PWideChar('Kontakte importieren'), iFileCount,ClientWidth, Height);
+    ShowWaitForm(TForm(Self), PWideChar(rs_PCMMP3Manger_MP3Tags), iFileCount,ClientWidth, Height);
     while bFileTrue do
     begin
       WaitFormStep;
@@ -200,9 +201,9 @@ begin
       try
         sTitel := StringReplace(sl.Strings[1],'..',' ',[rfReplaceAll,rfIgnoreCase]);
         sTitel := StringReplace(sTitel,'.mp3','',[rfReplaceAll,rfIgnoreCase]);
-        Memomp3.lines.Add('Hinweis:  Datei ' + datei.name + ' wird geändert');
+        Memomp3.lines.Add(rs_PCMMP3Manger_MP3DateiHinweis1 + datei.name + rs_PCMMP3Manger_MP3DateiHinweis2);
       except
-        Memomp3.lines.Add('Fehler:  Datei ' + datei.name + ' kann nicht geändert werden. Grund: Falsche Konvention');
+        Memomp3.lines.Add(rs_PCMMP3Manger_MP3DateiFehler1 + datei.name + rs_PCMMP3Manger_MP3DateiFehler2);
       end;
       sPFad:= sPfadMP3+'\'+datei.name;
 
@@ -230,7 +231,7 @@ begin
 
       Error := Tags.SaveToFile(sPFad);
       if Error <> TAGSLIBRARY_SUCCESS then begin
-        Memomp3.lines.Add('Fehler:  Datei ' + datei.name + ' kann nicht geändert werden. Grund: '+ TagsLibraryErrorCode2String(Error));
+        Memomp3.lines.Add(rs_PCMMP3Manger_MP3DateiFehler1 + datei.name + rs_PCMMP3Manger_MP3DateiFehler3 + TagsLibraryErrorCode2String(Error));
       end;
       sl.Clear;
       sl.Free;
@@ -240,7 +241,7 @@ begin
     end;
     CloseWaitForm;
     FindClose(datei);
-    ShowMessage('Es wurden ' + inttostr(iFileCount) + ' Dateien editiert');
+    MessageDlg(rs_PCMMP3Manger_MP3DateiEdit1 + inttostr(iFileCount) + rs_PCMMP3Manger_MP3DateiEdit2,mtInformation,[mbok],0);
   end;
 end;
 procedure Tfrm_MP3.FormShow(Sender: TObject);

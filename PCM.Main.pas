@@ -33,7 +33,36 @@ uses
   PCMMP3Manager.Modul.C_MP3, dxBarBuiltInMenu, Vcl.Menus, Vcl.ExtCtrls,FireDac.Stan.Param,
   System.UITypes, dxSkinWXI;
 
+type
+  TdxBarControlAccess = class(TdxBarControl);
+  TdxBarAccess = class(TdxBar);
+  TdxBarManagerAccess = class(TdxBarManager);
 
+type
+  TMethod = procedure of object;
+  TModuleType = (mtForm, mtEvent);
+  TModule = class(TCollectionItem)
+  protected
+    // Form-Klasse
+    FFormClass: TFormClass;
+    FInstance: Pointer;
+    // Zeiger auf Prozedur
+    FEvent: TMethod;
+    FType: TModuleType;
+    FRight: Integer;
+    FModuleName: String;
+
+    procedure SetFormClass(Value: TFormClass);
+    procedure SetEvent(Value: TMethod);
+  public
+    property FormClass: TFormClass read FFormClass write SetFormClass;
+    property Instance: Pointer read FInstance write FInstance;
+    property Event: TMethod read FEvent write SetEvent;
+    property Typ: TModuleType read FType;
+    property Right: Integer read FRight write FRight;
+    property ModuleName: String read FModuleName write FModuleName;
+
+  end;
 type
   Tfrm_PCM_Main = class(TForm)
     nb_main: TdxNavBar;

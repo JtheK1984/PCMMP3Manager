@@ -23,10 +23,10 @@ object frm_Config: Tfrm_Config
     Height = 922
     Width = 1195
     object AB_pc_Options: TcxPageControl
-      Left = 2
-      Top = 2
-      Width = 1191
-      Height = 918
+      Left = 3
+      Top = 3
+      Width = 1189
+      Height = 916
       Align = alClient
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
@@ -38,27 +38,25 @@ object frm_Config: Tfrm_Config
       Properties.ActivePage = E_ts_Personal
       Properties.CustomButtons.Buttons = <>
       Properties.Images = dm_PCM.imglst_16x16
-      ClientRectBottom = 918
-      ClientRectRight = 1191
-      ClientRectTop = 25
+      ClientRectBottom = 910
+      ClientRectLeft = 2
+      ClientRectRight = 1183
+      ClientRectTop = 28
       object E_ts_Personal: TcxTabSheet
         Caption = 'Personalisierung'
         ImageIndex = 2
         object cxGroupBox2: TcxGroupBox
           Left = 0
-          Top = 58
+          Top = 63
           Align = alClient
           Caption = 'Programmdesign'
           TabOrder = 0
-          ExplicitTop = 63
-          ExplicitWidth = 1183
-          ExplicitHeight = 821
-          Height = 835
-          Width = 1191
+          Height = 819
+          Width = 1181
           object cxGroupBox3: TcxGroupBox
             AlignWithMargins = True
-            Left = 2
-            Top = 80
+            Left = 3
+            Top = 77
             Margins.Left = 0
             Margins.Top = 0
             Margins.Right = 0
@@ -66,10 +64,8 @@ object frm_Config: Tfrm_Config
             Align = alClient
             Caption = 'Vorschau'
             TabOrder = 2
-            ExplicitWidth = 1179
-            ExplicitHeight = 739
-            Height = 753
-            Width = 1187
+            Height = 733
+            Width = 1175
             object cxImage1: TVirtualImage
               Left = 3
               Top = 20
@@ -232,18 +228,18 @@ object frm_Config: Tfrm_Config
             end
           end
           object cxGroupBox4: TcxGroupBox
-            Left = 2
-            Top = 49
+            Left = 3
+            Top = 46
             Align = alTop
             PanelStyle.Active = True
             Style.BorderStyle = ebsNone
             TabOrder = 1
             Height = 31
-            Width = 1187
+            Width = 1175
             object cbx_Style: TcxComboBox
               AlignWithMargins = True
-              Left = 126
-              Top = 4
+              Left = 127
+              Top = 5
               Margins.Left = 8
               Margins.Top = 2
               Margins.Right = 8
@@ -304,8 +300,8 @@ object frm_Config: Tfrm_Config
             end
             object cxLabel1: TcxLabel
               AlignWithMargins = True
-              Left = 9
-              Top = 6
+              Left = 10
+              Top = 7
               Margins.Left = 7
               Margins.Top = 4
               Margins.Right = 7
@@ -314,23 +310,23 @@ object frm_Config: Tfrm_Config
               AutoSize = False
               Caption = 'Style:'
               Transparent = True
-              Height = 19
+              Height = 17
               Width = 102
             end
           end
           object cxGroupBox5: TcxGroupBox
-            Left = 2
-            Top = 18
+            Left = 3
+            Top = 15
             Align = alTop
             PanelStyle.Active = True
             Style.BorderStyle = ebsNone
             TabOrder = 0
             Height = 31
-            Width = 1187
+            Width = 1175
             object cxLabel2: TcxLabel
               AlignWithMargins = True
-              Left = 9
-              Top = 6
+              Left = 10
+              Top = 7
               Margins.Left = 7
               Margins.Top = 4
               Margins.Right = 7
@@ -339,13 +335,13 @@ object frm_Config: Tfrm_Config
               AutoSize = False
               Caption = 'Design:'
               Transparent = True
-              Height = 19
+              Height = 17
               Width = 102
             end
             object cbx_Design: TcxComboBox
               AlignWithMargins = True
-              Left = 126
-              Top = 4
+              Left = 127
+              Top = 5
               Margins.Left = 8
               Margins.Top = 2
               Margins.Right = 8
@@ -419,8 +415,8 @@ object frm_Config: Tfrm_Config
         object dxBarDockControl1: TdxBarDockControl
           Left = 0
           Top = 0
-          Width = 1191
-          Height = 58
+          Width = 1181
+          Height = 63
           Align = dalTop
           BarManager = dxBarManager1
         end
