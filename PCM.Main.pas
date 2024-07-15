@@ -1,56 +1,61 @@
-unit PCM.Main;
+﻿unit PCM.Main;
 
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, cxPCdxBarPopupMenu, cxGraphics,
-  cxControls, cxLookAndFeels, cxLookAndFeelPainters, cxStyles, cxCustomData,
-  cxFilter, cxData, cxDataStorage, cxEdit, Data.DB, cxDBData, Vcl.ComCtrls,
-  Vcl.ToolWin, cxGridLevel, cxGridCustomTableView, cxGridTableView,
-  PCM.Functions, cxPC,
-  PCM.Functions.ChangePW,
-  PCM.Functions.Appinfo, dxSkinsCore, dxSkinBasic, dxSkinBlack, dxSkinBlue,
-  dxSkinBlueprint, dxSkinCaramel, dxSkinCoffee, dxSkinDarkroom, dxSkinDarkSide,
-  dxSkinDevExpressDarkStyle, dxSkinDevExpressStyle, dxSkinFoggy,
-  dxSkinGlassOceans, dxSkinHighContrast, dxSkiniMaginary, dxSkinLilian,
-  dxSkinLiquidSky, dxSkinLondonLiquidSky, dxSkinMcSkin, dxSkinMetropolis,
-  dxSkinMetropolisDark, dxSkinMoneyTwins, dxSkinOffice2007Black,
-  dxSkinOffice2007Blue, dxSkinOffice2007Green, dxSkinOffice2007Pink,
-  dxSkinOffice2007Silver, dxSkinOffice2010Black, dxSkinOffice2010Blue,
-  dxSkinOffice2010Silver, dxSkinOffice2013DarkGray, dxSkinOffice2013LightGray,
-  dxSkinOffice2013White, dxSkinOffice2016Colorful, dxSkinOffice2016Dark,
-  dxSkinOffice2019Black, dxSkinOffice2019Colorful, dxSkinOffice2019DarkGray,
-  dxSkinOffice2019White, dxSkinPumpkin, dxSkinSeven, dxSkinSevenClassic,
-  dxSkinSharp, dxSkinSharpPlus, dxSkinSilver, dxSkinSpringtime, dxSkinStardust,
-  dxSkinSummer2008, dxSkinTheAsphaltWorld, dxSkinTheBezier,
-  dxSkinsDefaultPainters, dxSkinValentine, dxSkinVisualStudio2013Blue,
-  dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light, dxSkinVS2010,
-  dxSkinWhiteprint, dxSkinXmas2008Blue, cxContainer, cxGroupBox, cxLocalization,
-  dxNavBarCollns, cxClasses, dxNavBarBase, dxNavBar,
-  PCMMP3Manager.Modul.B_Optionen,
-  PCM.Benutzerverwaltung,
-  PCMMP3Manager.Modul.C_MP3, dxBarBuiltInMenu, Vcl.Menus, Vcl.ExtCtrls,FireDac.Stan.Param,
-  System.UITypes, dxSkinWXI;
-
+  {$Region Uses}
+  SYSTEM.uitypes, Winapi.Windows, Winapi.Messages, System.SysUtils,
+  System.Variants, System.Classes, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
+  Vcl.ImgList, Vcl.Menus, NTTranslator, Strutils, DateUtils,shellapi, Vcl.Themes,
+  FireDAC.Phys.ADSDef, FireDAC.Phys.MSSQLDef, FireDAC.Stan.Param,
+  FireDAC.Phys.ODBCBase, FireDAC.Phys.MSSQL, FireDAC.Phys.ADS,
+  VclTee.TeeGDIPlus, VCLTee.TeEngine, VCLTee.Series, VCLTee.TeeProcs,
+  VCLTee.Chart, VCLTee.DBChart, cxGeometry, cxVariants, dxCustomData,
+  cxCustomCanvas, dxCoreGraphics, dxChartCore, dxChartData, dxChartLegend,
+  dxChartSimpleDiagram, dxChartXYDiagram, dxChartXYSeriesLineView,
+  dxChartXYSeriesAreaView, dxChartMarkers, dxChartXYSeriesBarView,
+  dxChartDBData, dxCoreClasses, dxChartControl, VCLTee.TeeDBCrossTab,
+  cxGridChartView, cxPivotGridChartConnection, cxCustomPivotGrid, cxDBPivotGrid,
+  dxSkinWXI, dxBarExtItems, cxBarEditItem,
+  cxSplitter, cxGraphics, cxControls, cxLookAndFeels, cxLookAndFeelPainters,
+  cxEdit, cxClasses, System.ImageList, cxContainer, dxBarBuiltInMenu,
+  Vcl.ExtCtrls, cxPC, dxNavBarCollns, dxNavBarBase, dxNavBar, dxSkinsCore,
+  dxSkinBasic, dxSkinBlack, dxSkinBlue, dxSkinBlueprint, dxSkinCaramel,
+  dxSkinCoffee, dxSkinDarkroom, dxSkinDarkSide, dxSkinDevExpressDarkStyle,
+  dxSkinDevExpressStyle, dxSkinFoggy, dxSkinGlassOceans, dxSkinHighContrast,
+  dxSkiniMaginary, dxSkinLilian, dxSkinLiquidSky, dxSkinLondonLiquidSky,
+  dxSkinMcSkin, dxSkinMetropolis, dxSkinMetropolisDark, dxSkinMoneyTwins,
+  dxSkinOffice2007Black, dxSkinOffice2007Blue, dxSkinOffice2007Green,
+  dxSkinOffice2007Pink, dxSkinOffice2007Silver, dxSkinOffice2010Black,
+  dxSkinOffice2010Blue, dxSkinOffice2010Silver, dxSkinOffice2013DarkGray,
+  dxSkinOffice2013LightGray, dxSkinOffice2013White, dxSkinOffice2016Colorful,
+  dxSkinOffice2016Dark, dxSkinOffice2019Black, dxSkinOffice2019Colorful,
+  dxSkinOffice2019DarkGray, dxSkinOffice2019White, dxSkinPumpkin, dxSkinSeven,
+  dxSkinSevenClassic, dxSkinSharp, dxSkinSharpPlus, dxSkinSilver,
+  dxSkinSpringtime, dxSkinStardust, dxSkinSummer2008, dxSkinTheAsphaltWorld,
+  dxSkinTheBezier, dxSkinsDefaultPainters, dxSkinValentine,
+  dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark,
+  dxSkinVisualStudio2013Light, dxSkinVS2010, dxSkinWhiteprint,
+  dxSkinXmas2008Blue, dxBar, cxLocalization, cxLabel, cxGroupBox, dxNavBarStyles,inifiles;
+  {$EndRegion Uses}
 type
+  {$Region Type}
   TdxBarControlAccess = class(TdxBarControl);
   TdxBarAccess = class(TdxBar);
   TdxBarManagerAccess = class(TdxBarManager);
 
-type
+
   TMethod = procedure of object;
   TModuleType = (mtForm, mtEvent);
   TModule = class(TCollectionItem)
   protected
-    // Form-Klasse
     FFormClass: TFormClass;
     FInstance: Pointer;
-    // Zeiger auf Prozedur
     FEvent: TMethod;
     FType: TModuleType;
     FRight: Integer;
     FModuleName: String;
+    FImageIndex: Integer;
 
     procedure SetFormClass(Value: TFormClass);
     procedure SetEvent(Value: TMethod);
@@ -61,392 +66,690 @@ type
     property Typ: TModuleType read FType;
     property Right: Integer read FRight write FRight;
     property ModuleName: String read FModuleName write FModuleName;
-
+    property ImageIndex: Integer read FImageIndex write FImageIndex;
   end;
-type
-  Tfrm_PCM_Main = class(TForm)
-    nb_main: TdxNavBar;
-    nb_Optionen: TdxNavBarGroup;
-    nb_Vokabeln: TdxNavBarGroup;
-    nb_Programm: TdxNavBarGroup;
-    nbi_User: TdxNavBarItem;
-    nbi_Vokabeldetail: TdxNavBarItem;
-    nbi_Systeminfo: TdxNavBarItem;
-    nb_Programminfo: TdxNavBarItem;
-    nbi_Beenden: TdxNavBarItem;
-    nb_mainGroup1: TdxNavBarGroup;
-    nb_Passwortchange: TdxNavBarItem;
-    nb_Abmelden: TdxNavBarItem;
-    loc_Lang: TcxLocalizer;
-    nb_mainItem1: TdxNavBarItem;
-    lafCtrl_Main: TcxLookAndFeelController;
-    pnl_Design: TcxGroupBox;
-    pcmain: TcxPageControl;
-    TrayIcon1: TTrayIcon;
-    PopupMenu1: TPopupMenu;
-    ppmbtn_Konfiguration: TMenuItem;
-    N1: TMenuItem;
-    ppmbtn_Contacts: TMenuItem;
-    N2: TMenuItem;
-    Systeminfo1: TMenuItem;
-    Programminfo1: TMenuItem;
-    N6: TMenuItem;
-    Abmelden1: TMenuItem;
-    Beenden1: TMenuItem;
-    Benutzerverwaltung1: TMenuItem;
-    procedure FormShow(Sender: TObject);
-    procedure nbi_BeendenClick(Sender: TObject);
-    procedure nb_ProgramminfoClick(Sender: TObject);
-    procedure nbi_SysteminfoClick(Sender: TObject);
 
+  Tfrm_PCM_Main = class(TForm)
+    brmgr_main: TdxBarManager;
+    brstc_OpenModule: TdxBarStatic;
+    brstc_User: TdxBarStatic;
+    btn_CloseModul: TdxBarLargeButton;
+    btn_Modulleiste: TdxBarLargeButton;
+    btn_RefreshRights: TdxBarLargeButton;
+    grpbx_Design: TcxGroupBox;
+    iAbmelden: TdxNavBarItem;
+    iAudioplayer: TdxNavBarItem;
+    iBeenden: TdxNavBarItem;
+    iBenutzerverwaltung: TdxNavBarItem;
+    iDesign: TdxNavBarItem;
+    iHandbuch: TdxNavBarItem;
+    iInfo: TdxNavBarItem;
+    img_Icons: TImageList;
+    iSprache: TdxNavBarItem;
+    iSysteminfo: TdxNavBarItem;
+    lafCtrl_Main: TcxLookAndFeelController;
+    loc_Lang: TcxLocalizer;
+    navbr_main: TdxNavBar;
+    navbrgrp_Info: TdxNavBarGroup;
+    navbrgrp_Optionen: TdxNavBarGroup;
+    navbrgrp_Programm: TdxNavBarGroup;
+    navbrit_ChangePW: TdxNavBarItem;
+    navbrStyleIt_main: TdxNavBarStyleItem;
+    nb_Medien: TdxNavBarGroup;
+    pc_main: TcxPageControl;
+    ppm_Main: TPopupMenu;
+    ppmbtn_Abmelden: TMenuItem;
+    ppmbtn_Beenden: TMenuItem;
+    ppmbtn_Benutzer: TMenuItem;
+    ppmbtn_Handbuch: TMenuItem;
+    ppmbtn_Info: TMenuItem;
+    ppmbtn_Konfiguration: TMenuItem;
+    ppmbtn_Music: TMenuItem;
+    ppmbtn_Sprache: TMenuItem;
+    ppmbtn_Systeminfo: TMenuItem;
+    ppmbtn_Trenn1: TMenuItem;
+    ppmbtn_Trenn2: TMenuItem;
+    ppmbtn_Trenn6: TMenuItem;
+    tb_Main: TdxBar;
+    trayic_Main: TTrayIcon;
+    ts_Dashboard: TcxTabSheet;
+    procedure btn_CloseModulClick(Sender: TObject);
+    procedure btn_ModulleisteClick(Sender: TObject);
+    procedure btn_RefreshRightsClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
-    procedure FormDeactivate(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure FormHide(Sender: TObject);
-    procedure Abmelden;
-    procedure nb_AbmeldenClick(Sender: TObject);
-    procedure nb_PasswortchangeClick(Sender: TObject);
-    procedure nb_mainItem1Click(Sender: TObject);
-    procedure nbi_VokabeldetailClick(Sender: TObject);
-    procedure ppmbtn_KonfigurationClick(Sender: TObject);
-    procedure ppmbtn_ContactsClick(Sender: TObject);
-    procedure Systeminfo1Click(Sender: TObject);
-    procedure Programminfo1Click(Sender: TObject);
-    procedure Abmelden1Click(Sender: TObject);
-    procedure Beenden1Click(Sender: TObject);
-    procedure nbi_UserClick(Sender: TObject);
-    procedure Benutzerverwaltung1Click(Sender: TObject);
-
+    procedure FormKeyPress(Sender: TObject; var Key: Char);
+    procedure FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormResize(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure iSpracheClick(Sender: TObject);
+    procedure NavBarClick(Sender: TObject);
+    procedure pc_mainPageChanging(Sender: TObject; NewPage: TcxTabSheet; var AllowChange: Boolean);
+    procedure ppmbtn_AbmeldenClick(Sender: TObject);
+    procedure ppmbtn_BeendenClick(Sender: TObject);
+    procedure ppmbtn_BenutzerClick(Sender: TObject);
+    procedure ppmbtn_HandbuchClick(Sender: TObject);
+    procedure ppmbtn_InfoClick(Sender: TObject);
+    procedure ppmbtn_MusicClick(Sender: TObject);
+    procedure ppmbtn_SpracheClick(Sender: TObject);
+    procedure ppmbtn_SysteminfoClick(Sender: TObject);
   private
     { Private-Deklarationen }
-    FfrmModulBenutzer: array of Tfrm_User;
-    FfrmModulConfig: array of Tfrm_config;
-    FfrmModulMP3: array of Tfrm_Mp3;
-    FfrmModulSysinfo: array of Tfrm_PCM_System;
-    FfrmModulAppinfo: array of Tfrm_PCM_InfoApp;
-//    FfrmModulChangePW: array of TfrM_PCM_ChangePW;
-    procedure InitializeRights;
-    procedure AddTabsheet(APageControl: TcxPAgeCOntrol; ACaption: string;ATag: Integer);
-    function CheckTabExist(sTabName: String) : integer;
+    Modules: TCollection;
+    function CurrentModule: TForm;
+    procedure Abmelden;
+    procedure CloseModules;
+    procedure LoadData;
   public
     { Public-Deklarationen }
+    bStyle: boolean;
+    bAbmelden: Boolean;
   end;
-
+  {$EndRegion Type}
 var
   frm_PCM_Main: Tfrm_PCM_Main;
-  bAbmelden: Boolean;
-
-
-
-
 
 implementation
 
 {$R *.dfm}
 
-uses  PCM.Data,
-      PCM.Functions.Login;
+uses  PCM.Benutzerverwaltung,
+      PCM.Data,
+      PCM.Design,
+      PCM.Functions,
+      PCM.Functions.Appinfo,
+      PCM.Functions.ChangePW,
+      PCM.Functions.Languages,
+      PCM.Functions.Lizenz,
+      PCM.Functions.Login,
+      PCM.Functions.Synch.Wait,
+      PCM.Handbuch,
+      PCM.Helper,
+      PCM.Modul.C_Mp3,
+      PCM.SQL,
+			PCM.Strings;
 
-
-
-function Tfrm_PCM_Main.CheckTabExist(sTabName: String) : integer;
-var
-  iCount: Integer;
+////////////////////////////////////////////////////////////////////////////////
+// Hilfsfunktionen                                                            //
+////////////////////////////////////////////////////////////////////////////////
+{$Region Helperfunctions}
+function Tfrm_PCM_Main.CurrentModule: TForm;
 begin
-  Result := -1;
-  for iCount := 0 to pcMain.PageCount -1 do
+  if pc_Main.ControlCount > 0 then
+    Result := TForm(pc_Main.ActivePage.Controls[0])
+  else
+    Result := nil;
+end;
+procedure TModule.SetEvent(Value: TMethod);
+begin
+  if @Value <> @FEvent then
   begin
-    if pcMain.Pages[iCount].Name = sTabName then
-    begin
-      Result := iCount;
-      Break;
-    end;
+    FEvent := Value;
+    FType := mtEvent;
   end;
 end;
-procedure Tfrm_PCM_Main.Abmelden1Click(Sender: TObject);
+procedure TModule.SetFormClass(Value: TFormClass);
 begin
-  Abmelden;
-end;
-procedure Tfrm_PCM_Main.AddTabsheet(APageControl: TcxPAgeControl; ACaption: string;ATag: Integer);
-var
-  ts_Create: TcxTabSheet;
-begin
-  ts_Create:= TcxTabSheet.Create(APageControl);
-  ts_Create.Caption:= ACaption;
-  ts_Create.Name:= 'tshModul_' + IntToStr(ATag);
-  ts_Create.Tag:= ATag;
-  ts_Create.PageIndex:= ATag;
-  ts_Create.PageControl:= APageControl;
-end;
-procedure Tfrm_PCM_Main.Beenden1Click(Sender: TObject);
-begin
-  dm_PCM.bclose:= true;
-  Application.Terminate;
-end;
-procedure Tfrm_PCM_Main.Benutzerverwaltung1Click(Sender: TObject);
-begin
-  nbi_UserClick(SELF);
-  WindowState:= TWindowState.wsMaximized;
-  SetForegroundWindow(frm_PCM_main.Handle);
-end;
-
-procedure Tfrm_PCM_Main.InitializeRights;
-begin
-  dm_PCM.InitializeRights;
-  if (dm_PCM.int_mp3Right = 0) then
+  if Value <> FFormClass then
   begin
-    nb_Vokabeln.Visible:= false;
-  end;
-  // Benutzervervaltung
-  if (dm_PCM.int_optionenRecht = 0) then
-  begin
-    nb_Optionen.Visible:= false;
+    FFormClass := Value;
+    FType := mtForm;
   end;
 end;
 procedure Tfrm_PCM_Main.Abmelden;
 begin
   bAbmelden := True;
+  dm_PCM.bLogin := false;
+  dm_PCM.bStyle:= false;
   Hide;
   Show;
-  InitializeRights;
 end;
+procedure Tfrm_PCM_Main.CloseModules;
+var
+  iPage: Integer;
+begin
+  for iPage := pc_Main.PageCount - 1 downto 1 do
+  begin
+    try
+      TForm(pc_Main.Pages[iPage].Controls[0]).Close;
+      TForm(pc_Main.Pages[iPage].Controls[0]).Free;
+    except
+    end;
+    pc_Main.Pages[iPage].Free;
+  end;
+end;
+procedure Tfrm_PCM_Main.LoadData;
+begin
+  dm_PCM.qry_Work.SQL.Text:= ASSQL_GetUsername[dm_PCM.iDBType];
+  dm_PCM.qry_Work.ParamByName('ID').AsInteger:= dm_PCM.iIDBenutzerPCM;
+  dm_PCM.qry_Work.Open;
+  brstc_User.Caption:= dm_PCM.qry_Work.FieldByName('Benutzer').AsString;
+  dm_PCM.qry_Work.Close;
+end;
+{$EndRegion Helperfunctions}
+////////////////////////////////////////////////////////////////////////////////
+// Toolbar                                                                    //
+////////////////////////////////////////////////////////////////////////////////
+{$Region Toolbar}
+procedure Tfrm_PCM_Main.btn_CloseModulClick(Sender: TObject);
+begin
+  if pc_Main.PageCount > 1 then
+  begin
+    if pc_Main.PageCount = 2 then
+      brstc_OpenModule.Caption := 'Dashboard';
+    if pc_Main.ActivePage <> ts_Dashboard  then
+    begin
+      TForm(pc_Main.ActivePage.Controls[0]).Close;
+      TForm(pc_Main.ActivePage.Controls[0]).Free;
+      pc_Main.ActivePage.Free;
+    end;
+  end;
+end;
+procedure Tfrm_PCM_Main.btn_ModulleisteClick(Sender: TObject);
+begin
+  navbr_main.Visible := not navbr_main.Visible;
+  if navbr_main.Visible then
+    btn_Modulleiste.Caption := rs_PCM_Modulliste_verstecken
+  else
+    btn_Modulleiste.Caption := rs_PCM_Modulliste_anzeigen;
+end;
+procedure Tfrm_PCM_Main.btn_RefreshRightsClick(Sender: TObject);
+var
+  Item: TdxNavBarItem;
+  Module: TModule;
+begin
+  btn_RefreshRights.Enabled := False;
+  try
+    if pc_Main.PageCount > 1 then
+    begin
+      Module := TModule(Modules.FindItemID(pc_Main.ActivePage.Tag));
+      if Module.Typ = mtForm then
+      begin
+        Item := navbr_main.Items.Items[navbr_main.Items.ItemByName(Module.ModuleName).index];
+        TForm(pc_Main.ActivePage.Controls[0]).Close;
+        TForm(pc_Main.ActivePage.Controls[0]).Free;
+        pc_Main.ActivePage.Free;
+        NavBarClick(Item);
+      end;
+    end;
+  finally
+    btn_RefreshRights.Enabled := True;
+  end;
+end;
+procedure Tfrm_PCM_Main.pc_mainPageChanging(Sender: TObject; NewPage: TcxTabSheet; var AllowChange: Boolean);
+begin
+  brstc_OpenModule.Caption := NewPage.Caption;
+end;
+{$EndRegion Toolbar}
+////////////////////////////////////////////////////////////////////////////////
+// Navbarfunktionen                                                           //
+////////////////////////////////////////////////////////////////////////////////
+{$Region Navbar}
+procedure Tfrm_PCM_Main.iSpracheClick(Sender: TObject);
+var
+  iniFile: TIniFile;
+begin
+  Application.CreateForm(Tfrm_Language,frm_Language);
+  frm_Language.Position:= poScreenCenter;
+  frm_Language.ClientHeight:= 214;
+  frm_Language.ShowModal;
+  TNtTranslator.SetNew(dm_PCM.slocale,[],'de');
+  TNtTranslator.TranslateForms;
+  iniFile := TIniFile.Create(GetEnvironmentVariable('LOCALAPPDATA') + '\PCM\PCM.ini');
+  try
+    iniFile.WriteString(PCM_Logname, 'Language', dm_PCm.sLocale);
+  finally
+    iniFile.Free;
+  end;
+  Caption:= PCM_Programmname;
+  trayic_Main.popupmenu:= ppm_Main;
+  LoadData;
+  btn_RefreshRightsClick(Self);
+end;
+procedure Tfrm_PCM_Main.NavBarClick(Sender: TObject);
+var
+  Module: TModule;
+  fTabForm: TForm;
+  iPageIndex: Integer;
+
+  function TabExist(sTabName: String): Integer;
+  var
+    iCount: Integer;
+  begin
+    Result := -1;
+    for iCount := 0 to pc_Main.PageCount -1 do
+    begin
+      if pc_Main.Pages[iCount].Name = sTabName then
+      begin
+        Result := iCount;
+        Break;
+      end;
+    end;
+  end;
+
+  function CreateNewTabSheet(sTabName: String): Integer;
+  var
+    tshNew: TcxTabSheet;
+  begin
+    tshNew := TcxTabSheet.Create(pc_Main);
+    tshNew.PageControl := pc_Main;
+    tshNew.Name := sTabName;
+    pc_Main.ActivePage := tshNew;
+    Result := pc_Main.ActivePageIndex;
+  end;
+var
+  sModul,sModulCaption: String;
+begin
+  if navbr_main.Enabled then
+  begin
+    navbr_main.Enabled := False;
+    TRY
+      Module := TModule(Modules.FindItemID((Sender AS TdxNavBarItem).Tag));
+      if Assigned(Module) then
+      begin
+        sModul:= Module.ModuleName;
+        sModulCaption:= Module.ModuleName;
+        case AnsiIndexStr(sModul, ['iBenutzerverwaltung','iKonfiguration','iAudioplayer','iWebradio','iVideoplayer','iFotos','iSysteminfo','iInfo','iHandbuch']) of
+
+        0:
+          begin
+            sModulCaption := 'i'  + rs_PCM_Benutzerverwaltung;
+            dm_PCM.iModulTab:= 1;
+          end;
+        1:
+          begin
+            sModulCaption := 'i'  + rs_PCM_Konfiguration ;
+            dm_PCM.iModulTab:= 1;
+          end;
+        2:
+          begin
+            sModul:= 'Mediacenter';
+            sModulCaption := 'i'  + rs_PCMMediacenter_Musikplayer;
+            dm_PCM.iModulTab:= 1;
+          end;
+
+        3:
+          begin
+            sModul:= 'Mediacenter';
+            sModulCaption := 'i'  + rs_PCMMediacenter_Webradio;
+            dm_PCM.iModulTab:= 2;
+          end;
+        4:
+          begin
+            sModul:= 'Mediacenter';
+            sModulCaption := 'i'  + rs_PCMMediacenter_Videoplayer;
+            dm_PCM.iModulTab:= 3;
+          end;
+        5:
+          begin
+            sModul:= 'Mediacenter';
+            sModulCaption := 'i'  + rs_PCMMediacenter_Fotos;
+            dm_PCM.iModulTab:= 4;
+          end;
+        6:
+          begin
+            sModulCaption := 'i'  + rs_PCM_Systeminformation;
+            dm_PCM.iModulTab:= 3;
+          end;
+        7:
+          begin
+            sModulCaption := 'i'  + rs_PCM_Programminfo;
+            dm_PCM.iModulTab:= 3;
+          end;
+				8:
+					begin
+            sModulCaption := 'i'  + rs_PCM_Handbuch;
+            dm_PCM.iModulTab:= 3;
+          end;
+        end;
+        iPageIndex := TabExist('tsh' + sModul);
+        if iPageIndex > -1 then
+        begin
+          pc_Main.ActivePageIndex := iPageIndex;
+          fTabForm := CurrentModule;
+          if fTabForm <> nil then
+            if not fTabForm.Focused then
+              if Assigned(fTabForm.OnActivate) then
+              begin
+                fTabForm.OnActivate(Sender);
+                brstc_OpenModule.Caption := Copy(sModulCaption, 2, Length(sModulCaption));
+              end;
+          Exit;
+        end;
+        if Module.Typ = mtForm then
+        begin
+          Screen.Cursor := crHourglass;
+          try
+            ShowWaitForm(TForm(Self), PWideChar('Formular wird geladen'), 1,ClientWidth, Height);
+            Application.ProcessMessages;
+            WaitFormStep;
+            TForm(Module.Instance^) := Module.FormClass.Create(Nil);
+          finally
+            Screen.Cursor := crDefault;
+          end;
+          fTabForm := TForm((Module.Instance)^);
+          iPageIndex := CreateNewTabSheet('tsh' + sModul);
+          fTabForm.Parent := pc_Main.Pages[iPageIndex];
+          pc_Main.Pages[iPageIndex].Caption := Copy(sModulCaption, 2, Length(sModulCaption));
+          pc_Main.Pages[iPageIndex].Tag := (Sender AS TdxNavBarItem).Tag;
+          pc_Main.Pages[iPageIndex].ImageIndex := Module.ImageIndex;
+          pc_Main.Pages[iPageIndex].InsertComponent(fTabForm);
+          fTabForm.BorderStyle := bsNone;
+          fTabForm.ALign:= AlClient;
+          fTabForm.Enabled := True;
+          fTabForm.Show;
+       		CloseWaitform;
+          brstc_OpenModule.Caption := Copy(sModulCaption, 2, Length(sModulCaption));
+        end
+        else
+          if Module.Typ = mtEvent then
+          begin
+            Module.Event;
+          end;
+      end
+    FINALLY
+      navbr_main.Enabled := True;
+      Application.ProcessMessages;
+    END;
+  end;
+end;
+{$EndRegion Navbar}
+////////////////////////////////////////////////////////////////////////////////
+// Formfunktionen                                                             //
+////////////////////////////////////////////////////////////////////////////////
+{$Region Formfunktionen}
 procedure Tfrm_PCM_Main.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
-  WriteLog(PCM_Logname,'Programm beendet',0);
-  dm_PCM.bclose:= true
+  CloseModules;
+  WriteLog(PCM_Logname,rs_PCM_Beenden,0);
 end;
-procedure Tfrm_PCM_Main.FormDeactivate(Sender: TObject);
+procedure Tfrm_PCM_Main.FormCreate(Sender: TObject);
 begin
-  dm_PCM.bclose:= true
+  Modules := TCollection.Create(TModule);
 end;
 procedure Tfrm_PCM_Main.FormDestroy(Sender: TObject);
 begin
-  dm_PCM.bclose:= true
+  Modules.Free;
 end;
 procedure Tfrm_PCM_Main.FormHide(Sender: TObject);
 begin
-  dm_PCM.bclose:= true
+  CloseModules;
+end;
+procedure Tfrm_PCM_Main.FormKeyPress(Sender: TObject; var Key: Char);
+var
+  m: TForm;
+begin
+  m := CurrentModule;
+  if m <> nil then
+    if not m.Focused then
+      if Assigned(m.OnKeyPress) then
+        m.OnKeyPress(Sender, Key);
+end;
+procedure Tfrm_PCM_Main.FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
+var
+  m: TForm;
+begin
+  m := CurrentModule;
+  if m <> nil then
+    if not m.Focused then
+      if Assigned(m.OnKeyUp) then
+        m.OnKeyUp(Sender, Key, Shift);
+end;
+procedure Tfrm_PCM_Main.FormResize(Sender: TObject);
+  procedure BarResize;
+  var
+    rRect: TRect;
+    iTemp, iUsedSpace: Integer;
+    BarControl: TdxBarControlAccess;
+  begin
+    if (brmgr_main.Bars[0] <> nil) and (brmgr_main.Bars[0].Control <> nil) then
+    begin
+      BarControl := TdxBarControlAccess(brmgr_main.Bars[0].Control);
+
+      iUsedSpace := 0;
+
+      brstc_OpenModule.Width := 0;
+
+      for iTemp := 0 to BarControl.Bar.ItemLinks.Count - 1 do
+      begin
+        if BarControl.Bar.ItemLinks.Items[iTemp].Item = btn_Modulleiste then
+        begin
+          Inc(iUsedSpace, 0);
+        end
+        else
+        begin
+          if BarControl.Bar.ItemLinks.Items[iTemp].Item <> brstc_OpenModule then
+          begin
+            Inc(iUsedSpace, BarControl.Bar.ItemLinks.Items[iTemp].ItemRect.Width);
+          end;
+        end;
+      end;
+
+      if BarControl.MarkExists then
+      begin
+        rRect := BarControl.MarkRect;
+        Inc(iUsedSpace, rRect.Right - rRect.Left);
+      end;
+       brmgr_main.BeginUpdate;
+      Try
+        brstc_OpenModule.Width := (brmgr_main.Bars[0].Control as TdxBarControl).Width -  iUsedSpace - btn_Modulleiste.Width  - 45;
+      Finally
+        brmgr_main.EndUpdate();
+      End;
+    end;
+  end;
+begin
+  BarResize;
 end;
 procedure Tfrm_PCM_Main.FormShow(Sender: TObject);
-var
-  iIndex: integer;
-begin
-  TrayIcon1.hint:= PCM_Programmname;
-  if not dm_PCM.ReadServerAdress then
+  procedure RegisterForm(SideBarItemName: string; FormClass: TFormClass; Instance: Pointer; Right: Integer);
+  var
+    NewModule: TModule;
+    Item: TdxNavBarItem;
   begin
-    Application.Terminate;
-  end
-  else begin
-      try
+    Item := navbr_main.Items.Items[navbr_main.Items.ItemByName(SideBarItemName).index];
+    if Assigned(Item) then
+    begin
+      NewModule := TModule(Modules.Add);
+      Item.Tag := NewModule.ID;
+      NewModule.FormClass := FormClass;
+      NewModule.Instance := Instance;
+      NewModule.Right := Right;
+      NewModule.ModuleName := SideBarItemName;
+      NewModule.ImageIndex := Item.SmallImageIndex;
+    end;
+  end;
+  procedure RegisterEvent(SideBarItemName: string; Event: TMethod);
+  var
+    NewModule: TModule;
+    Item: TdxNavBarItem;
+  begin
+    Item := navbr_main.Items.Items[navbr_main.Items.ItemByName(SideBarItemName).index];
+    if Assigned(Item) then
+    begin
+      NewModule := TModule(Modules.Add);
+      Item.Tag := NewModule.ID;
+      NewModule.Event := Event;
+      NewModule.ModuleName := SideBarItemName;
+    end
+  end;
+  procedure RegisterNavBarItems;
+  begin
+    Modules.Clear;
+    RegisterForm('iBenutzerverwaltung', Tfrm_User, @frm_User, 1);
+    RegisterForm('iDesign', Tfrm_Design, @frm_Design, 1);
+    RegisterForm('iAudioplayer', Tfrm_mp3, @frm_mp3,1);
+    RegisterForm('iSysteminfo',Tfrm_PCM_System, @frm_PCM_System, 1);
+    RegisterForm('iInfo',Tfrm_PCM_InfoApp, @frm_PCM_InfoApp, 1);
+    RegisterForm('iHandbuch',Tfrm_Handbuch,@frm_Handbuch, 1);
+    RegisterEvent('iAbmelden', Abmelden);
+    RegisterEvent('iBeenden', Close);
+  end;
+  procedure InitializeRights;
+  begin
+    dm_PCM.qry_Work.SQL.Text:= ASSQL_GetAllRights[dm_PCM.iDBType];
+    dm_PCM.qry_Work.ParamByName('ID').AsInteger := dm_PCM.iIDBenutzerPCM;
+    dm_PCM.qry_Work.Open;
+    dm_PCM.iBenutzer:= dm_PCM.qry_Work.FieldByName('Benutzer').asInteger;
+    dm_PCM.iDesign:= dm_PCM.qry_Work.FieldByName('Design').asInteger;
+    dm_PCM.imp3:= dm_PCM.qry_Work.FieldByName('MP3').asInteger;
+    dm_PCM.qry_Work.Close;
+
+    // Benutzerverwaltung / Kein Recht
+    if (dm_PCM.iBenutzer = 0)  and (dm_PCM.iDesign = 0) then
+    begin
+      navbrgrp_Optionen.Visible:= false;
+      iBenutzerverwaltung.Visible:= false;
+    end;
+
+    // Benutzerverwaltung / Lesen / Ändern / Vollzugriff
+    case dm_PCM.iBenutzer of
+    0: iBenutzerverwaltung.Visible:= false;
+    1,2,3:
+      begin
+        navbrgrp_Optionen.Visible:= true;
+        iBenutzerverwaltung.Visible:= true;
+      end;
+    end;
+
+    // Audioplayer / Lesen / Ändern / Vollzugriff
+    case dm_PCM.iMp3 of
+    0: nb_Medien.Visible:= false;
+    1,2,3:
+      begin
+        nb_Medien.Visible:= true;
+        iAudioplayer.Visible:= true;
+      end;
+    end;
+  end;
+  procedure LoadLanguageIni;
+  begin
+    try
       loc_lang.LoadFromFile(GetEnvironmentVariable('LOCALAPPDATA') + '\PCM\cxLocalLang.ini');
       loc_lang.LanguageIndex := 1;
     except
       on e:Exception do
       begin
-        MessageDlg('Sprachdatei kann nicht geladen werden.', mtWarning, [mbOk], 0);
+        MessageDlg(rs_PCM_Sprachdatei, mtWarning, [mbOk], 0);
       end
     end;
-
-
+  end;
+  procedure CheckClientLicence;
+  begin
+    dm_PCM.bNewLiceneCheck:= false;
+    CheckLizenzNew;
+    if dm_PCm.bNewLiceneCheck = false then
+    begin
+      CheckLizenzNew;
+      if dm_PCm.bNewLiceneCheck = false then
+        Application.Terminate;
+    end;
+  end;
+  procedure CheckLogin;
+  begin
+    if not bAbmelden then
+      dm_PCM.bLogin := Autologin
+    else
+      dm_PCM.bLogin := false;
+    if not dm_PCM.bLogin then
+    begin
+      Application.CreateForm(Tfrm_PCM_Login, frm_PCM_Login);
+      dm_PCM.bLogin := frm_pcm_login.Login_User;
+      frm_PCM_Login.Free;
+    end;
+    if not dm_PCM.bLogin then
+      Application.Terminate;
+    bAbmelden:= False;
+  end;
+  procedure SetTrayMenu;
+  begin
+    Caption:= PCM_Programmname;
+    trayIC_Main.PopupMenu:= ppm_main;
+    if dm_PCM.bDemo then
+      Caption:=PCM_Programmname + rs_PCM_Demolizenz + DateTostr(dm_PCM.dtGueltig);
+  end;
+begin
+  {$ifdef WIn32}
+  iSprache.Visible:= true;
+  ppmbtn_Sprache.Visible:= true;
+  {$endif}
+  lafCtrl_Main.NativeStyle:= false;
+  trayIC_Main.Hint:= PCM_Programmname;
+  dm_PCM.iDBType:= 0;
+  if not ReadServerAdress then
+  begin
+    Application.Terminate;
+  end
+  else begin
+  	lafCtrl_Main.SkinName:= dm_PCM.sDesign;
+    LoadLanguageIni;
     if dm_PCM.bStyle then
     begin
-      iIndex:= CheckTabExist('tshModul_2');
-      if iIndex <> -1 then
-      begin
-        pcMain.ActivePageIndex:= iIndex;
-        Screen.Cursor:= crDefault;
-      end
-      else begin
-        AddTabsheet(pcMain,'Konfiguration',2);
-        SetLength(FfrmModulConfig, Length(FfrmModulConfig) +1);
-        FfrmModulConfig[High(FfrmModulConfig)] := Tfrm_Config.Create(Self);
-        FfrmModulConfig[High(FfrmModulConfig)].BorderStyle := bsNone;
-        FfrmModulConfig[High(FfrmModulConfig)].ALign:= ALCLient;
-        FfrmModulConfig[High(FfrmModulConfig)].Parent :=  pcMain.Pages[pcMain.PageCount -1 ];
-        FfrmModulConfig[High(FfrmModulConfig)].Show;
-        pcMain.ActivePageIndex:= pcMain.PageCount -1;
-      end;
+      NavBarClick(iDesign);
     end
     else begin
-      dm_PCM.bNewLiceneCheck:= false;
-      dm_PCM.CheckLizenzNew;
-      if dm_PCM.bNewLiceneCheck = false then
-        Application.Terminate;
-      if not bAbmelden then
-        dm_PCM.bLogin := dm_pcm.Autologin
-      else
-        dm_PCM.bLogin := false;
-      if not dm_PCM.bLogin then
-      begin
-//        Application.CreateForm(Tfrm_PCM_Functions, frm_PCM_Functions);
-        Application.CreateForm(Tfrm_PCM_Login, frm_PCM_Login);
-        dm_PCM.bLogin := frm_pcm_login.Login_User;
-        frm_PCM_Login.Free;
-//        frm_PCM_Functions.Free;
-      end;
-      if not dm_PCM.bLogin then
-      begin
-        Application.Terminate;
-        exit;
-      end;
+      CheckClientLicence;
+      CheckLogin;
       InitializeRights;
-      bAbmelden:= False;
-      dm_PCM.bclose:= false;
-      WriteLog(PCM_Logname,'Programm gestartet',0);
-      Caption:= PCM_Programmname;
-      TrayIcon1.popupmenu:= PopupMenu1;
-      if dm_PCM.bDemo then
-        Caption:=PCM_Programmname + ' - Demolizenz g�ltig bis ' + DateTostr(dm_PCM.dtGueltig);
+      LoadData;
+      WriteLog(PCM_Logname,rs_PCM_Start,0);
+      SetTrayMenu;
+      RegisterNavBarItems;
     end;
   end;
 end;
-procedure Tfrm_PCM_Main.nbi_BeendenClick(Sender: TObject);
+{$EndRegion Formfunktionen}
+////////////////////////////////////////////////////////////////////////////////
+// Traymenü                                                                   //
+////////////////////////////////////////////////////////////////////////////////
+{$Region Traymenu}
+procedure Tfrm_PCM_Main.ppmbtn_BenutzerClick(Sender: TObject);
 begin
-  dm_PCM.bclose:= true;
-  Application.Terminate;
-end;
-procedure Tfrm_PCM_Main.nbi_SysteminfoClick(Sender: TObject);
-var
-  iIndex: integer;
-begin
-  iIndex:= CheckTabExist('tshModul_9');
-  if iIndex <> -1 then
-  begin
-    pcMain.ActivePageIndex:= iIndex;
-    Screen.Cursor:= crDefault;
-  end
-  else begin
-    AddTabsheet(pcMain,'Systeminformation',9);
-    SetLength(FfrmModulSysinfo, Length(FfrmModulSysinfo) +1);
-    FfrmModulSysinfo[High(FfrmModulSysinfo)] := Tfrm_PCM_System.Create(Self);
-    FfrmModulSysinfo[High(FfrmModulSysinfo)].BorderStyle := bsNone;
-    FfrmModulSysinfo[High(FfrmModulSysinfo)].ALign:= ALCLient;
-    FfrmModulSysinfo[High(FfrmModulSysinfo)].Parent :=  pcMain.Pages[pcMain.PageCount -1 ];
-    pcMain.ActivePageIndex:= pcMain.PageCount -1;
-    FfrmModulSysinfo[High(FfrmModulSysinfo)].Show;
-    pcMain.ActivePage.ImageIndex:= 21;
-  end;
-end;
-procedure Tfrm_PCM_Main.nbi_UserClick(Sender: TObject);
-var
-  iIndex: integer;
-begin
-  iIndex:= CheckTabExist('tshModul_1');
-  if iIndex <> -1 then
-  begin
-    pcMain.ActivePageIndex:= iIndex;
-    Screen.Cursor:= crDefault;
-  end
-  else begin
-    AddTabsheet(pcMain,'Benutzerverwaltung',1);
-    SetLength(FfrmModulBenutzer, Length(FfrmModulBenutzer) +1);
-    FfrmModulBenutzer[High(FfrmModulBenutzer)] := Tfrm_User.Create(Self);
-    FfrmModulBenutzer[High(FfrmModulBenutzer)].BorderStyle := bsNone;
-    FfrmModulBenutzer[High(FfrmModulBenutzer)].ALign:= ALCLient;
-    FfrmModulBenutzer[High(FfrmModulBenutzer)].Parent :=  pcMain.Pages[pcMain.PageCount -1 ];
-    FfrmModulBenutzer[High(FfrmModulBenutzer)].Show;
-    pcMain.ActivePageIndex:= pcMain.PageCount -1;
-    pcMain.ActivePage.ImageIndex:= 1;
-  end;
-end;
-
-procedure Tfrm_PCM_Main.nbi_VokabeldetailClick(Sender: TObject);
-var
-  iIndex: integer;
-begin
-  iIndex:= CheckTabExist('tshModul_3');
-  if iIndex <> -1 then
-  begin
-    pcMain.ActivePageIndex:= iIndex;
-    Screen.Cursor:= crDefault;
-  end
-  else begin
-    AddTabsheet(pcMain,'MP3-Tag Editor',3);
-    SetLength(FfrmModulMP3, Length(FfrmModulMP3) +1);
-    FfrmModulMP3[High(FfrmModulMP3)] := Tfrm_mp3.Create(Self);
-    FfrmModulMP3[High(FfrmModulMP3)].BorderStyle := bsNone;
-    FfrmModulMP3[High(FfrmModulMP3)].ALign:= ALCLient;
-    FfrmModulMP3[High(FfrmModulMP3)].Parent :=  pcMain.Pages[pcMain.PageCount -1 ];
-    FfrmModulMP3[High(FfrmModulMP3)].Show;
-    pcMain.ActivePageIndex:= pcMain.PageCount -1;
-    pcMain.ActivePage.ImageIndex:= 86;
-  end;
-end;
-procedure Tfrm_PCM_Main.nb_AbmeldenClick(Sender: TObject);
-begin
-  Abmelden;
-end;
-procedure Tfrm_PCM_Main.nb_mainItem1Click(Sender: TObject);
-var
-  iIndex: integer;
-begin
-  iIndex:= CheckTabExist('tshModul_2');
-  if iIndex <> -1 then
-  begin
-    pcMain.ActivePageIndex:= iIndex;
-    Screen.Cursor:= crDefault;
-  end
-  else begin
-    AddTabsheet(pcMain,'Konfiguration',2);
-    SetLength(FfrmModulConfig, Length(FfrmModulConfig) +1);
-    FfrmModulConfig[High(FfrmModulConfig)] := Tfrm_Config.Create(Self);
-    FfrmModulConfig[High(FfrmModulConfig)].BorderStyle := bsNone;
-    FfrmModulConfig[High(FfrmModulConfig)].ALign:= ALCLient;
-    FfrmModulConfig[High(FfrmModulConfig)].Parent :=  pcMain.Pages[pcMain.PageCount -1 ];
-    FfrmModulConfig[High(FfrmModulConfig)].Show;
-    pcMain.ActivePageIndex:= pcMain.PageCount -1;
-    pcMain.ActivePage.ImageIndex:= 2;
-  end;
-end;
-procedure Tfrm_PCM_Main.nb_PasswortchangeClick(Sender: TObject);
-begin
-  frM_PCM_ChangePW.ShowModal;
-end;
-procedure Tfrm_PCM_Main.nb_ProgramminfoClick(Sender: TObject);
-var
-  iIndex: integer;
-begin
-  iIndex:= CheckTabExist('tshModul_10');
-  if iIndex <> -1 then
-  begin
-    pcMain.ActivePageIndex:= iIndex;
-    Screen.Cursor:= crDefault;
-  end
-  else begin
-    AddTabsheet(pcMain,'Programminfo',10);
-    SetLength(FfrmModulAppinfo, Length(FfrmModulAppinfo) +1);
-    FfrmModulAppinfo[High(FfrmModulAppinfo)] := Tfrm_PCM_InfoApp.Create(Self);
-    FfrmModulAppinfo[High(FfrmModulAppinfo)].BorderStyle := bsNone;
-    FfrmModulAppinfo[High(FfrmModulAppinfo)].ALign:= ALCLient;
-    FfrmModulAppinfo[High(FfrmModulAppinfo)].Parent :=  pcMain.Pages[pcMain.PageCount -1 ];
-    pcMain.ActivePageIndex:= pcMain.PageCount -1;
-    FfrmModulAppinfo[High(FfrmModulAppinfo)].Show;
-    pcMain.ActivePage.ImageIndex:= 7;
-  end;
-end;
-procedure Tfrm_PCM_Main.ppmbtn_ContactsClick(Sender: TObject);
-begin
-  nbi_VokabeldetailClick(Self);
+  navbarclick(iBenutzerverwaltung);
   WindowState:= TWindowState.wsMaximized;
   SetForegroundWindow(frm_PCM_main.Handle);
 end;
-procedure Tfrm_PCM_Main.ppmbtn_KonfigurationClick(Sender: TObject);
+procedure Tfrm_PCM_Main.ppmbtn_MusicClick(Sender: TObject);
 begin
-  nb_mainItem1Click(SELF);
+  navbarclick(iAudioplayer);
   WindowState:= TWindowState.wsMaximized;
   SetForegroundWindow(frm_PCM_main.Handle);
 end;
-procedure Tfrm_PCM_Main.Programminfo1Click(Sender: TObject);
+procedure Tfrm_PCM_Main.ppmbtn_SysteminfoClick(Sender: TObject);
 begin
-  nb_ProgramminfoClick(SELF);
+  navbarclick(iSysteminfo);
   WindowState:= TWindowState.wsMaximized;
   SetForegroundWindow(frm_PCM_main.Handle);
 end;
-procedure Tfrm_PCM_Main.Systeminfo1Click(Sender: TObject);
+procedure Tfrm_PCM_Main.ppmbtn_InfoClick(Sender: TObject);
 begin
-  nbi_SysteminfoClick(SELF);
+  navbarclick(iInfo);
   WindowState:= TWindowState.wsMaximized;
   SetForegroundWindow(frm_PCM_main.Handle);
 end;
-
+procedure Tfrm_PCM_Main.ppmbtn_HandbuchClick(Sender: TObject);
+begin
+  navbarclick(iHandbuch);
+  WindowState:= TWindowState.wsMaximized;
+  SetForegroundWindow(frm_PCM_main.Handle);
+end;
+procedure Tfrm_PCM_Main.ppmbtn_SpracheClick(Sender: TObject);
+begin
+  navbarclick(iSprache);
+  WindowState:= TWindowState.wsMaximized;
+  SetForegroundWindow(frm_PCM_main.Handle);
+end;
+procedure Tfrm_PCM_Main.ppmbtn_AbmeldenClick(Sender: TObject);
+begin
+  Abmelden
+end;
+procedure Tfrm_PCM_Main.ppmbtn_BeendenClick(Sender: TObject);
+begin
+  Close;
+end;
+{$EndRegion Traymenu}
 end.
+
+

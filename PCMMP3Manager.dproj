@@ -142,20 +142,13 @@
         </DelphiCompile>
         <DCCReference Include="PCM.Main.pas">
             <Form>frm_PCM_Main</Form>
-            <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="PCM.Data.pas">
             <Form>dm_PCM</Form>
-            <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
-        <DCCReference Include="Module\PCMMP3Manager.Modul.B_Optionen.pas">
-            <Form>frm_Config</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="Module\PCMMP3Manager.Modul.C_MP3.pas">
+        <DCCReference Include="Module\PCM.Modul.C_MP3.pas">
             <Form>frm_MP3</Form>
-            <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Helper\TagsLibrary.pas"/>
         <DCCReference Include="Helper\Musepack.pas"/>
@@ -223,6 +216,12 @@
             </Delphi.Personality>
             <Deployment Version="4">
                 <DeployFile LocalName="E:\Inno\Setupfiles\Programme\PCMMP3Manager\PCMMP3Manager.exe" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile LocalName="E:\Inno\Setupfiles\Programme\PCMMP3Manager\PCMMP3Manager.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>PCMMP3Manager.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="Win32\Release\PCMMP3Manager.exe" Configuration="Release" Class="ProjectOutput"/>
                 <DeployFile LocalName="Win32\Release\PCMMP3Manager.exe" Configuration="Release" Class="ProjectOutput">
                     <Platform Name="Win32">
@@ -1201,7 +1200,7 @@
     <Target Name="CompressWin32">
         <Exec Command="$(Program_Compress) $(DCC_ExeOutput)\$(SanitizedProjectName).exe"/>
     </Target>
-		<Target Name="CompressWin64">
+    <Target Name="CompressWin64">
         <Exec Command="$(Program_Compress) $(DCC_ExeOutput)\$(SanitizedProjectName).exe"/>
     </Target>
     <Target Name="Localize">
