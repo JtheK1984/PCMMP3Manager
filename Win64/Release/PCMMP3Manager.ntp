@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="B5A84BDB-5FDF-4A70-A47D-87C8606E8A4C" created="20231123T144301Z" lastmodified="20240809T115006Z" version="1.0.1000" stringid="6318">
+<project id="B5A84BDB-5FDF-4A70-A47D-87C8606E8A4C" created="20231123T144301Z" lastmodified="20240809T120129Z" version="1.0.1000" stringid="6331">
   <lang id="de"/>
   <lang id="en"/>
-  <node class="TDelphiSource" name="PCMMP3Manager.exe" fullpath="E:\Projekte\Windows\PCMMP3Manager\Win64\Release\PCMMP3Manager.exe" original="de" lastmodified="20240809T115006Z" scansourcecode="0" platforms="[ptWin64]" hassignatureread="1" version="dvXE2">
+  <node class="TDelphiSource" name="PCMMP3Manager.exe" fullpath="E:\Projekte\Windows\PCMMP3Manager\Win64\Release\PCMMP3Manager.exe" original="de" lastmodified="20240809T120129Z" scansourcecode="0" platforms="[ptWin64]" hassignatureread="1" version="dvXE2">
     <node class="TWindowsBinaryFolder" name="&quot;DXCHART&quot;" resname="DXCHART" excluded="1"/>
     <node class="TWindowsBinaryFolder" name="&quot;DXNAVBARSKINS&quot;" resname="DXNAVBARSKINS" excluded="1"/>
     <node class="TWindowsBinaryFolder" name="&quot;DXSKINS&quot;" resname="DXSKINS" excluded="1"/>
@@ -14381,7 +14381,7 @@
           <item name="btn_Save" type="TdxBarLargeButton" st="4">
             <row id="Hint" si="5896" st="4">
               <value>Speichern</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Speichern</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Speichern</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Save</lang>
             </row>
           </item>
@@ -14391,7 +14391,7 @@
         <font id="Font" name="Segoe UI" size="9"/>
         <row id="Left" st="0">0</row>
         <row id="Top" st="0">0</row>
-        <row id="Caption" si="6273" st="0">frm_Browser_FullScreen</row>
+        <row id="Caption" si="6273" st="0" excluded="2">frm_Browser_FullScreen</row>
         <row id="ClientHeight" st="0">441</row>
         <row id="ClientWidth" st="0">624</row>
         <data>
@@ -14407,7 +14407,7 @@
           <item name="btn_OptionSaveUser" type="TdxBarLargeButton" st="4">
             <row id="Caption" si="4573" st="4">
               <value>Benutzer &amp;speichern</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212705Z" fuzzy="99">Benutzer &amp;speichern</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="99">Benutzer &amp;speichern</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">&amp;Save user</lang>
             </row>
           </item>
@@ -14415,12 +14415,12 @@
             <row id="Caption" changed="20240112T110420Z" si="4575" st="4">
               <value>Speichern</value>
               <prev>&amp;Speichern</prev>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Speichern</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Speichern</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Save</lang>
             </row>
             <row id="Hint" si="4576" st="4">
               <value>Speichern</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Speichern</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Speichern</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Save</lang>
             </row>
           </item>
@@ -14447,7 +14447,7 @@
             <item name="E_ts_Personal" type="TcxTabSheet" st="0">
               <row id="Caption" si="6002" st="0">
                 <value>Personalisierung</value>
-                <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Personalisierung</lang>
+                <lang id="de" rw="0" tm="1" fuzzy="100">Personalisierung</lang>
                 <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Personalization</lang>
               </row>
               <item name="cxGroupBox2" type="TcxGroupBox" st="0">
@@ -14455,7 +14455,7 @@
                 <row id="Top" st="0">63</row>
                 <row id="Caption" si="6003" st="0">
                   <value>Programmdesign</value>
-                  <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Programmdesign</lang>
+                  <lang id="de" rw="0" tm="1" fuzzy="100">Programmdesign</lang>
                   <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Program design</lang>
                 </row>
                 <row id="Height" st="0">819</row>
@@ -14650,7 +14650,7 @@
                     <row id="Top" st="0">7</row>
                     <row id="Caption" si="6080" st="0">
                       <value>Style:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212655Z" fuzzy="99">Style:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Style:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Style:</lang>
                     </row>
                     <row id="Height" st="0">17</row>
@@ -14667,7 +14667,7 @@
                     <row id="Top" st="0">7</row>
                     <row id="Caption" si="6081" st="0">
                       <value>Design:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212655Z" fuzzy="99">Design:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Design:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Design:</lang>
                     </row>
                     <row id="Height" st="0">17</row>
@@ -14757,12 +14757,12 @@
           <item name="btn_OptionSaveUser" type="TdxBarLargeButton" st="0">
             <row id="Caption" si="6141" st="0">
               <value>Benutzer speichern</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Benutzer speichern</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Benutzer speichern</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Save user</lang>
             </row>
             <row id="Hint" si="6142" st="0">
               <value>Benutzer speichern</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Benutzer speichern</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Benutzer speichern</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Save user</lang>
             </row>
             <row id="Width" st="0">125</row>
@@ -14770,12 +14770,12 @@
           <item name="cxButton1" type="TdxBarLargeButton" st="0">
             <row id="Caption" si="6143" st="0">
               <value>Speichern</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Speichern</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Speichern</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Save</lang>
             </row>
             <row id="Hint" si="6144" st="0">
               <value>Speichern</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Speichern</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Speichern</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Save</lang>
             </row>
             <row id="Width" st="0">125</row>
@@ -27773,7 +27773,7 @@
         <row id="Top" created="20231206T150104Z" st="0">0</row>
         <row id="Caption" si="4862">
           <value>Sprache wählen</value>
-          <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Sprache wählen</lang>
+          <lang id="de" rw="0" tm="1" fuzzy="100">Sprache wählen</lang>
           <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Select language</lang>
         </row>
         <row id="ClientHeight" created="20231206T150104Z" st="0">135</row>
@@ -27786,60 +27786,60 @@
           <item name="cxRadioGroup1" type="TcxRadioGroup">
             <row id="Properties.Items[2].Caption" si="4868" st="4">
               <value>Französisch</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Französisch</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Französisch</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">French</lang>
             </row>
             <row id="Properties.Items[2].Value" si="4869" st="4">
               <value>FR</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">FR</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">FR</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">FR</lang>
             </row>
             <row id="Properties.Items[3].Caption" si="4870" st="4">
               <value>Italienisch</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Italienisch</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Italienisch</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Italian</lang>
             </row>
             <row id="Properties.Items[3].Value" si="4871" st="4">
               <value>IT</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">IT</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">IT</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">IT</lang>
             </row>
             <row id="Properties.Items[4].Caption" si="4872" st="4">
               <value>Spanisch</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Spanisch</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Spanisch</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Spanish</lang>
             </row>
             <row id="Properties.Items[4].Value" changed="20231124T072600Z" si="4873" st="4">
               <value>ES</value>
               <prev>SP</prev>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">ES</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">ES</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">ES</lang>
             </row>
             <row id="Left" created="20231206T150104Z" st="0">8</row>
             <row id="Top" created="20231206T150104Z" st="0">8</row>
             <row id="Caption" si="4863">
               <value>Sprachen</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Sprachen</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Sprachen</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Languages</lang>
             </row>
             <row id="Properties.Items[0].Caption" si="4864">
               <value>Deutsch</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Deutsch</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Deutsch</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">German</lang>
             </row>
             <row id="Properties.Items[0].Value" si="4865">
               <value>DE</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">DE</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">DE</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">DE</lang>
             </row>
             <row id="Properties.Items[1].Caption" si="4866">
               <value>Englisch</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Englisch</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Englisch</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">English</lang>
             </row>
             <row id="Properties.Items[1].Value" si="4867">
               <value>EN</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">EN</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">EN</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">EN</lang>
             </row>
             <row id="Height" created="20231206T150104Z" st="0">89</row>
@@ -27852,7 +27852,7 @@
             <row id="Height" created="20231206T150104Z" st="0">25</row>
             <row id="Caption" si="4874">
               <value>Sprache wechseln</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Sprache wechseln</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Sprache wechseln</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Change language</lang>
             </row>
           </item>
@@ -27877,7 +27877,7 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left" created="20240809T114933Z" st="0">0</row>
         <row id="Top" created="20240809T114933Z" st="0">0</row>
-        <row id="Caption" si="6274" created="20240809T114933Z" st="0">frm_MP3</row>
+        <row id="Caption" si="6274" st="0" excluded="2">frm_MP3</row>
         <row id="ClientHeight" created="20240809T114933Z" st="0">922</row>
         <row id="ClientWidth" created="20240809T114933Z" st="0">1195</row>
         <item name="pnl_right" type="TcxGroupBox" st="4">
@@ -27887,7 +27887,7 @@
                 <item name="btn_Backup" type="TcxButton" st="4">
                   <row id="Hint" si="4644" st="4">
                     <value>Datenbankbackup erstellen</value>
-                    <lang id="de" rw="0" tm="1" time="20240117T213048Z" fuzzy="100">Datenbankbackup erstellen</lang>
+                    <lang id="de" rw="0" tm="1" fuzzy="100">Datenbankbackup erstellen</lang>
                     <lang id="en" rw="0" tm="1" time="20240117T213053Z" fuzzy="100">Create database backup</lang>
                   </row>
                 </item>
@@ -27899,7 +27899,7 @@
           <item name="btn_Cancel" type="TdxBarLargeButton" st="4">
             <row id="Hint" si="4652" st="4">
               <value>Abbrechen</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Abbrechen</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Abbrechen</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">cancel</lang>
             </row>
           </item>
@@ -27915,53 +27915,93 @@
             <row id="Width" st="0">1189</row>
             <row id="Height" st="0">916</row>
             <item name="ts_mp3" type="TcxTabSheet" st="0">
-              <row id="Caption" si="6275" st="0">automatische MP3-Tags</row>
+              <row id="Caption" si="6275" st="0">
+                <value>automatische MP3-Tags</value>
+                <lang id="de" rw="0" tm="1">automatische MP3-Tags</lang>
+                <lang id="en" rw="0" tm="1">automatische MP3-Tags</lang>
+              </row>
               <item name="grpbx_Mp3" type="TcxGroupBox" st="0">
                 <row id="Left" st="0">0</row>
                 <row id="Top" st="0">63</row>
-                <row id="Caption" si="6276" st="0">Einstellungen</row>
+                <row id="Caption" si="6276" st="0">
+                  <value>Einstellungen</value>
+                  <lang id="de" rw="0" tm="1">Einstellungen</lang>
+                  <lang id="en" rw="0" tm="1">Einstellungen</lang>
+                </row>
                 <row id="Height" st="0">82</row>
                 <row id="Width" st="0">1181</row>
                 <item name="chkbx_Album" type="TcxDBCheckBox" st="0">
                   <row id="Left" st="0">615</row>
                   <row id="Top" st="0">22</row>
-                  <row id="Caption" si="6277" st="0">Album nicht überschreiben</row>
+                  <row id="Caption" si="6277" st="0">
+                    <value>Album nicht überschreiben</value>
+                    <lang id="de" rw="0" tm="1">Album nicht überschreiben</lang>
+                    <lang id="en" rw="0" tm="1">Album nicht überschreiben</lang>
+                  </row>
                 </item>
                 <item name="chkbx_Albumartist" type="TcxDBCheckBox" st="0">
                   <row id="Left" st="0">215</row>
                   <row id="Top" st="0">22</row>
-                  <row id="Caption" si="6278" st="0">Albuminterpret nicht überschreiben</row>
+                  <row id="Caption" si="6278" st="0">
+                    <value>Albuminterpret nicht überschreiben</value>
+                    <lang id="de" rw="0" tm="1">Albuminterpret nicht überschreiben</lang>
+                    <lang id="en" rw="0" tm="1">Albuminterpret nicht überschreiben</lang>
+                  </row>
                 </item>
                 <item name="chkbx_Artist" type="TcxDBCheckBox" st="0">
                   <row id="Left" st="0">8</row>
                   <row id="Top" st="0">22</row>
-                  <row id="Caption" si="6279" st="0">Interpret nicht überschreiben</row>
+                  <row id="Caption" si="6279" st="0">
+                    <value>Interpret nicht überschreiben</value>
+                    <lang id="de" rw="0" tm="1">Interpret nicht überschreiben</lang>
+                    <lang id="en" rw="0" tm="1">Interpret nicht überschreiben</lang>
+                  </row>
                 </item>
                 <item name="chkbx_Composer" type="TcxDBCheckBox" st="0">
                   <row id="Left" st="0">215</row>
                   <row id="Top" st="0">47</row>
-                  <row id="Caption" si="6280" st="0">Komponist nicht überschreiben</row>
+                  <row id="Caption" si="6280" st="0">
+                    <value>Komponist nicht überschreiben</value>
+                    <lang id="de" rw="0" tm="1">Komponist nicht überschreiben</lang>
+                    <lang id="en" rw="0" tm="1">Komponist nicht überschreiben</lang>
+                  </row>
                 </item>
                 <item name="chkbx_Genre" type="TcxDBCheckBox" st="0">
                   <row id="Left" st="0">792</row>
                   <row id="Top" st="0">22</row>
-                  <row id="Caption" si="6281" st="0">Genre nicht überschreiben</row>
+                  <row id="Caption" si="6281" st="0">
+                    <value>Genre nicht überschreiben</value>
+                    <lang id="de" rw="0" tm="1">Genre nicht überschreiben</lang>
+                    <lang id="en" rw="0" tm="1">Genre nicht überschreiben</lang>
+                  </row>
                 </item>
                 <item name="chkbx_Title" type="TcxDBCheckBox" st="0">
                   <row id="Left" st="0">8</row>
                   <row id="Top" st="0">47</row>
-                  <row id="Caption" si="6282" st="0">Titel nicht überschreiben</row>
+                  <row id="Caption" si="6282" st="0">
+                    <value>Titel nicht überschreiben</value>
+                    <lang id="de" rw="0" tm="1">Titel nicht überschreiben</lang>
+                    <lang id="en" rw="0" tm="1">Titel nicht überschreiben</lang>
+                  </row>
                 </item>
                 <item name="chkbx_Year" type="TcxDBCheckBox" st="0">
                   <row id="Left" st="0">448</row>
                   <row id="Top" st="0">22</row>
-                  <row id="Caption" si="6283" st="0">Jahr nicht überschreiben</row>
+                  <row id="Caption" si="6283" st="0">
+                    <value>Jahr nicht überschreiben</value>
+                    <lang id="de" rw="0" tm="1">Jahr nicht überschreiben</lang>
+                    <lang id="en" rw="0" tm="1">Jahr nicht überschreiben</lang>
+                  </row>
                 </item>
               </item>
               <item name="grpbx_Mp3Status" type="TcxGroupBox" st="0">
                 <row id="Left" st="0">0</row>
                 <row id="Top" st="0">145</row>
-                <row id="Caption" si="6284" st="0">Status</row>
+                <row id="Caption" si="6284" st="0">
+                  <value>Status</value>
+                  <lang id="de" rw="0" tm="1">Status</lang>
+                  <lang id="en" rw="0" tm="1" time="20240809T115433Z" fuzzy="100">Status</lang>
+                </row>
                 <row id="Height" st="0">737</row>
                 <row id="Width" st="0">1181</row>
                 <item name="btn_Convert" type="TcxButton" st="0">
@@ -27969,12 +28009,20 @@
                   <row id="Top" st="0">15</row>
                   <row id="Width" st="0">1175</row>
                   <row id="Height" st="0">25</row>
-                  <row id="Caption" si="6285" st="0">MP3 Verzeichnis wählen</row>
+                  <row id="Caption" si="6285" st="0">
+                    <value>MP3 Verzeichnis wählen</value>
+                    <lang id="de" rw="0" tm="1">MP3 Verzeichnis wählen</lang>
+                    <lang id="en" rw="0" tm="1">MP3 Verzeichnis wählen</lang>
+                  </row>
                 </item>
                 <item name="mem_mp3" type="TcxMemo" st="0">
                   <row id="Left" st="0">3</row>
                   <row id="Top" st="0">40</row>
-                  <row id="Lines.Strings" si="6286" st="0">Bitte Verzeichnis wählen...</row>
+                  <row id="Lines.Strings" si="6286" st="0">
+                    <value>Bitte Verzeichnis wählen...</value>
+                    <lang id="de" rw="0" tm="1">Bitte Verzeichnis wählen...</lang>
+                    <lang id="en" rw="0" tm="1">Bitte Verzeichnis wählen...</lang>
+                  </row>
                   <row id="Height" st="0">688</row>
                   <row id="Width" st="0">1175</row>
                 </item>
@@ -27989,15 +28037,23 @@
           </item>
         </item>
         <item name="qry_mp3" type="TFDQuery" created="20240809T114933Z" st="0">
-          <row id="SQL.Strings[0]" si="6287" st="0">SELECT </row>
-          <row id="SQL.Strings[1]" si="6288" st="0">Interpret,</row>
-          <row id="SQL.Strings[2]" si="6289" st="0">Albuminterpret,</row>
-          <row id="SQL.Strings[3]" si="6290" st="0">Jahr,</row>
-          <row id="SQL.Strings[4]" si="6291" st="0">Album,</row>
-          <row id="SQL.Strings[5]" si="6292" st="0">Genre,</row>
-          <row id="SQL.Strings[6]" si="6293" st="0">Titel,</row>
-          <row id="SQL.Strings[7]" si="6294" st="0">Komponist,</row>
-          <row id="SQL.Strings[8]" si="6295" st="0">Pfad FROM mp3_konfiguration</row>
+          <row id="SQL.Strings[0]" si="6287" st="0" excluded="2">SELECT </row>
+          <row id="SQL.Strings[1]" si="6288" st="0" excluded="1">Interpret,</row>
+          <row id="SQL.Strings[2]" si="6289" st="0" excluded="1">Albuminterpret,</row>
+          <row id="SQL.Strings[3]" si="6290" st="0" excluded="1">Jahr,</row>
+          <row id="SQL.Strings[4]" si="6291" st="0" excluded="1">Album,</row>
+          <row id="SQL.Strings[5]" si="6292" st="0" excluded="1">Genre,</row>
+          <row id="SQL.Strings[6]" si="6293" st="0" excluded="1">Titel,</row>
+          <row id="SQL.Strings[7]" si="6294" st="0">
+            <value>Komponist,</value>
+            <lang id="de" rw="0" tm="1">Komponist,</lang>
+            <lang id="en" rw="0" tm="1">Komponist,</lang>
+          </row>
+          <row id="SQL.Strings[8]" si="6295" st="0">
+            <value>Pfad FROM mp3_konfiguration</value>
+            <lang id="de" rw="0" tm="1">Pfad FROM mp3_konfiguration</lang>
+            <lang id="en" rw="0" tm="1">Pfad FROM mp3_konfiguration</lang>
+          </row>
           <row id="SQL.Strings[9]" si="6296" st="0" excluded="3"></row>
           <row id="SQL.Strings[10]" si="6297" st="0" excluded="3"></row>
           <row id="Left" st="0">776</row>
@@ -28018,26 +28074,26 @@
           <item name="btn_Save" type="TdxBarLargeButton" st="0">
             <row id="Caption" si="6300" st="0">
               <value>&amp;Speichern</value>
-              <lang id="de" st="2" or="3" rw="0" tm="1" time="20240117T212705Z" fuzzy="99">&amp;Speichern</lang>
-              <lang id="en" st="2" or="3" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">&amp;Save</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="99">&amp;Speichern</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">&amp;Save</lang>
             </row>
             <row id="Hint" si="6301" st="0">
               <value>Speichern</value>
-              <lang id="de" st="2" or="3" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Speichern</lang>
-              <lang id="en" st="2" or="3" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Save</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Speichern</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Save</lang>
             </row>
             <row id="Width" st="0">125</row>
           </item>
           <item name="btn_Cancel" type="TdxBarLargeButton" st="0">
             <row id="Caption" si="6302" st="0">
               <value>&amp;Abbrechen</value>
-              <lang id="de" st="2" or="3" rw="0" time="20240111T120836Z">Abbrechen</lang>
-              <lang id="en" st="2" or="3" rw="0" ex="1" time="20231123T144714Z" fuzzy="100">C&amp;ancel</lang>
+              <lang id="de" rw="0" tm="1">&amp;Abbrechen</lang>
+              <lang id="en" rw="0" tm="1" ex="1" time="20231123T144714Z" fuzzy="100">C&amp;ancel</lang>
             </row>
             <row id="Hint" si="6303" st="0">
               <value>Abbrechen</value>
-              <lang id="de" st="2" or="3" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Abbrechen</lang>
-              <lang id="en" st="2" or="3" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">cancel</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Abbrechen</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">cancel</lang>
             </row>
             <row id="Width" st="0">125</row>
           </item>
@@ -28115,7 +28171,7 @@
         <row id="Top" created="20231206T150104Z" st="0">108</row>
         <row id="Caption" si="4653">
           <value>Passwort ändern</value>
-          <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Passwort ändern</lang>
+          <lang id="de" rw="0" tm="1" fuzzy="100">Passwort ändern</lang>
           <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Change password</lang>
         </row>
         <row id="ClientHeight" created="20231206T150104Z" st="0">136</row>
@@ -28159,7 +28215,7 @@
               <row id="Top" created="20231206T150104Z" st="0">8</row>
               <row id="Caption" si="4656">
                 <value>Neues Passwort:</value>
-                <lang id="de" rw="0" tm="1" time="20240117T212705Z" fuzzy="99">Neues Passwort:</lang>
+                <lang id="de" rw="0" tm="1" fuzzy="99">Neues Passwort:</lang>
                 <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">New Password:</lang>
               </row>
             </item>
@@ -28168,7 +28224,7 @@
               <row id="Top" created="20231206T150104Z" st="0">54</row>
               <row id="Caption" si="4657">
                 <value>Passwort wiederholen:</value>
-                <lang id="de" rw="0" tm="1" time="20240117T212820Z" fuzzy="95.2380981445313">Passwort wiederholen:</lang>
+                <lang id="de" rw="0" tm="1" fuzzy="95.2380981445313">Passwort wiederholen:</lang>
                 <lang id="en" rw="0" tm="1" time="20240117T212920Z" fuzzy="95.2380981445313">Repeat password:</lang>
               </row>
             </item>
@@ -28180,7 +28236,7 @@
               <row id="Caption" changed="20240111T120650Z" si="4658">
                 <value>Abbrechen</value>
                 <prev>&amp;Abbrechen</prev>
-                <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Abbrechen</lang>
+                <lang id="de" rw="0" tm="1" fuzzy="100">Abbrechen</lang>
                 <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">cancel</lang>
               </row>
             </item>
@@ -28192,7 +28248,7 @@
               <row id="Caption" changed="20240111T120650Z" si="4659">
                 <value>Ok</value>
                 <prev>&amp;Ok</prev>
-                <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Ok</lang>
+                <lang id="de" rw="0" tm="1" fuzzy="100">Ok</lang>
                 <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Ok</lang>
               </row>
             </item>
@@ -28402,7 +28458,7 @@
         <row id="Top" created="20231206T150104Z" st="0">108</row>
         <row id="Caption" si="4660">
           <value>Programminfo</value>
-          <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Programminfo</lang>
+          <lang id="de" rw="0" tm="1" fuzzy="100">Programminfo</lang>
           <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Program info</lang>
         </row>
         <row id="ClientHeight" created="20231206T150104Z" st="0">334</row>
@@ -28416,21 +28472,21 @@
             <item name="cxLabel3" type="TcxLabel" st="4" autosize="0">
               <row id="Caption" si="4675" st="4">
                 <value>Datenbank:</value>
-                <lang id="de" rw="0" tm="1" time="20240117T212705Z" fuzzy="99">Datenbank:</lang>
+                <lang id="de" rw="0" tm="1" fuzzy="99">Datenbank:</lang>
                 <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Database:</lang>
               </row>
             </item>
             <item name="cxLabel9" type="TcxLabel" st="4">
               <row id="Caption" si="4676" st="4">
                 <value>Datenbank:</value>
-                <lang id="de" rw="0" tm="1" time="20240117T212705Z" fuzzy="99">Datenbank:</lang>
+                <lang id="de" rw="0" tm="1" fuzzy="99">Datenbank:</lang>
                 <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Database:</lang>
               </row>
             </item>
             <item name="lblDataVersion" type="TcxLabel" st="4">
               <row id="Caption" si="4679" st="4">
                 <value>Datenversion:</value>
-                <lang id="de" rw="0" tm="1" time="20240117T212705Z" fuzzy="99">Datenversion:</lang>
+                <lang id="de" rw="0" tm="1" fuzzy="99">Datenversion:</lang>
                 <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Data version:</lang>
               </row>
             </item>
@@ -28443,7 +28499,7 @@
             <item name="cxTabSheet1" type="TcxTabSheet" st="0">
               <row id="Caption" si="6216" st="0">
                 <value>Info</value>
-                <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Info</lang>
+                <lang id="de" rw="0" tm="1" fuzzy="100">Info</lang>
                 <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Info</lang>
               </row>
               <item name="cxGroupBox1" type="TcxGroupBox" st="0">
@@ -28472,7 +28528,7 @@
                     <row id="Top" st="0">67</row>
                     <row id="Caption" si="6218" st="0">
                       <value>Copyright:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212705Z" fuzzy="99">Copyright:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Copyright:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Copyright:</lang>
                     </row>
                   </item>
@@ -28495,7 +28551,7 @@
                     <row id="Top" st="0">48</row>
                     <row id="Caption" si="6221" st="0">
                       <value>Revision:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212705Z" fuzzy="99">Revision:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Revision:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Revision:</lang>
                     </row>
                   </item>
@@ -28509,7 +28565,7 @@
                     <row id="Top" st="0">29</row>
                     <row id="Caption" si="6223" st="0">
                       <value>Version:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212705Z" fuzzy="99">Version:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Version:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Version:</lang>
                     </row>
                   </item>
@@ -28518,7 +28574,7 @@
                     <row id="Top" st="0">111</row>
                     <row id="Caption" si="6224" st="0">
                       <value>Lizenziert für:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Lizenziert für:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Lizenziert für:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Licensed for:</lang>
                     </row>
                   </item>
@@ -28532,7 +28588,7 @@
                     <row id="Top" st="0">130</row>
                     <row id="Caption" si="6226" st="0">
                       <value>Demo:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Demo:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Demo:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Demo:</lang>
                     </row>
                   </item>
@@ -28551,7 +28607,7 @@
                     <row id="Top" st="0">149</row>
                     <row id="Caption" si="6229" st="0">
                       <value>Gültig bis:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Gültig bis:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Gültig bis:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Valid until:</lang>
                     </row>
                   </item>
@@ -28560,7 +28616,7 @@
                     <row id="Top" st="0">90</row>
                     <row id="Caption" si="6230" st="0">
                       <value>Lizenz:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Lizenz:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Lizenz:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">License:</lang>
                     </row>
                     <row id="Height" st="0">17</row>
@@ -28571,7 +28627,7 @@
                     <row id="Top" st="0">172</row>
                     <row id="Caption" si="6231" st="0">
                       <value>Datenbank:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Datenbank:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Datenbank:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Database:</lang>
                     </row>
                     <row id="Height" st="0">17</row>
@@ -28582,7 +28638,7 @@
                     <row id="Top" st="0">193</row>
                     <row id="Caption" si="6232" st="0">
                       <value>Datenbank:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Datenbank:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Datenbank:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Database:</lang>
                     </row>
                   </item>
@@ -28591,7 +28647,7 @@
                     <row id="Top" st="0">212</row>
                     <row id="Caption" si="6233" st="0">
                       <value>Datenversion:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Datenversion:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Datenversion:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Data version:</lang>
                     </row>
                   </item>
@@ -28600,7 +28656,7 @@
                     <row id="Top" st="0">193</row>
                     <row id="Caption" si="6234" st="0">
                       <value>Datenbank:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Datenbank:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Datenbank:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Database:</lang>
                     </row>
                   </item>
@@ -28609,7 +28665,7 @@
                     <row id="Top" st="0">212</row>
                     <row id="Caption" si="6235" st="0">
                       <value>Datenversion:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Datenversion:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Datenversion:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Data version:</lang>
                     </row>
                   </item>
@@ -28618,7 +28674,7 @@
                     <row id="Top" st="0">231</row>
                     <row id="Caption" si="6236" st="0">
                       <value>Server:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Server:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Server:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Server:</lang>
                     </row>
                   </item>
@@ -28627,7 +28683,7 @@
                     <row id="Top" st="0">231</row>
                     <row id="Caption" si="6237" st="0">
                       <value>Server</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Server</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="100">Server</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Server</lang>
                     </row>
                   </item>
@@ -28639,7 +28695,7 @@
                   <row id="Height" st="0">25</row>
                   <row id="Caption" si="6238" st="0">
                     <value>Neue Lizenz eintragen</value>
-                    <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Neue Lizenz eintragen</lang>
+                    <lang id="de" rw="0" tm="1" fuzzy="100">Neue Lizenz eintragen</lang>
                     <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Enter new license</lang>
                   </row>
                 </item>
@@ -29131,7 +29187,7 @@
         <row id="Top" created="20231206T150104Z" st="0">0</row>
         <row id="Caption" si="4681">
           <value>Lizenz eintragen</value>
-          <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Lizenz eintragen</lang>
+          <lang id="de" rw="0" tm="1" fuzzy="100">Lizenz eintragen</lang>
           <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Enter license</lang>
         </row>
         <row id="ClientHeight" created="20231206T150104Z" st="0">458</row>
@@ -29148,7 +29204,7 @@
             <row id="Height" created="20231206T150104Z" st="0">25</row>
             <row id="Caption" si="4682">
               <value>Ok</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Ok</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Ok</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Ok</lang>
             </row>
           </item>
@@ -29159,7 +29215,7 @@
             <row id="Height" created="20231206T150104Z" st="0">25</row>
             <row id="Caption" si="4683">
               <value>Abbrechen</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Abbrechen</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Abbrechen</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">cancel</lang>
             </row>
           </item>
@@ -29179,7 +29235,7 @@
               <row id="Top" created="20231206T150104Z" st="0">27</row>
               <row id="TextHint" si="4684">
                 <value>Name eingeben</value>
-                <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Name eingeben</lang>
+                <lang id="de" rw="0" tm="1" fuzzy="100">Name eingeben</lang>
                 <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Enter name</lang>
               </row>
               <row id="Width" created="20231206T150104Z" st="0">284</row>
@@ -29189,7 +29245,7 @@
               <row id="Top" created="20231206T150104Z" st="0">73</row>
               <row id="TextHint" si="4685">
                 <value>Lizenz eingeben</value>
-                <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Lizenz eingeben</lang>
+                <lang id="de" rw="0" tm="1" fuzzy="100">Lizenz eingeben</lang>
                 <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Enter license</lang>
               </row>
               <row id="Width" created="20231206T150104Z" st="0">284</row>
@@ -29199,7 +29255,7 @@
               <row id="Top" created="20231206T150104Z" st="0">8</row>
               <row id="Caption" si="4686">
                 <value>Name:</value>
-                <lang id="de" rw="0" tm="1" time="20240117T212622Z" fuzzy="99">Name:</lang>
+                <lang id="de" rw="0" tm="1" fuzzy="99">Name:</lang>
                 <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Name:</lang>
               </row>
             </item>
@@ -29208,7 +29264,7 @@
               <row id="Top" created="20231206T150104Z" st="0">54</row>
               <row id="Caption" si="4687">
                 <value>Lizenz:</value>
-                <lang id="de" rw="0" tm="1" time="20240117T212622Z" fuzzy="99">Lizenz:</lang>
+                <lang id="de" rw="0" tm="1" fuzzy="99">Lizenz:</lang>
                 <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">License:</lang>
               </row>
             </item>
@@ -29781,7 +29837,7 @@
             <row id="Caption" changed="20240111T120650Z" si="4689">
               <value>Abbrechen</value>
               <prev>Abbre&amp;chen</prev>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Abbrechen</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Abbrechen</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">cancel</lang>
             </row>
           </item>
@@ -29793,7 +29849,7 @@
             <row id="Caption" changed="20240111T120650Z" si="4690">
               <value>Anmelden</value>
               <prev>Anme&amp;lden</prev>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Anmelden</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Anmelden</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Log in</lang>
             </row>
           </item>
@@ -29823,7 +29879,7 @@
             <row id="Top" created="20231206T150104Z" st="0">317</row>
             <row id="Caption" si="4693">
               <value>Bitte melden Sie sich an:</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212746Z">Bitte melden Sie sich an:</lang>
+              <lang id="de" rw="0" tm="1">Bitte melden Sie sich an:</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212920Z" fuzzy="96">Please log in:</lang>
             </row>
           </item>
@@ -29832,7 +29888,7 @@
             <row id="Top" created="20231206T150104Z" st="0">367</row>
             <row id="Caption" si="4694">
               <value>Passwort:</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Passwort:</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="99">Passwort:</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Password:</lang>
             </row>
           </item>
@@ -29841,7 +29897,7 @@
             <row id="Top" created="20231206T150104Z" st="0">340</row>
             <row id="Caption" si="4695">
               <value>Benutzername:</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Benutzername:</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="99">Benutzername:</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">User name:</lang>
             </row>
           </item>
@@ -31982,70 +32038,86 @@
         <row id="Caption" changed="20240111T120650Z" si="4696">
           <value>PCM - Manager</value>
           <prev>PCM - Backup</prev>
-          <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">PCM - Manager</lang>
+          <lang id="de" rw="0" tm="1" fuzzy="100">PCM - Manager</lang>
           <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">PCM - Manager</lang>
         </row>
         <row id="ClientHeight" created="20231206T150104Z" st="0">761</row>
         <row id="ClientWidth" created="20231206T150104Z" st="0">1264</row>
-        <item name="dxBarManager1" type="TdxBarManager" created="20240111T120650Z" st="4">
-          <item name="barOpenModule" type="TdxBarStatic" st="4">
-            <row id="Hint" si="5928" st="4">
-              <value>Bitte Modul wählen</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Bitte Modul wählen</lang>
-              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Please select module</lang>
-            </row>
-          </item>
-          <item name="btnModulleiste" type="TdxBarLargeButton" st="4">
-            <row id="Caption" si="5929" st="4">
-              <value>Modulliste verstecken</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Modulliste verstecken</lang>
-              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Hide module list</lang>
-            </row>
-          </item>
-          <item name="barUser" type="TdxBarStatic" st="4">
-            <row id="Hint" si="5934" st="4">
-              <value>User</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">User</lang>
-              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">user</lang>
-            </row>
-          </item>
-          <item name="dxBarButton1" type="TdxBarButton" st="4">
-            <row id="Caption" si="5935" st="4">
-              <value>Modulleiste ein-/ausblenden</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Modulleiste ein-/ausblenden</lang>
-              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Show/hide module bar</lang>
-            </row>
-            <row id="Hint" si="5936" st="4">
-              <value>Modulleiste ein-/ausblenden</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Modulleiste ein-/ausblenden</lang>
-              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Show/hide module bar</lang>
-            </row>
-          </item>
-          <item name="Menuezurueck" type="TdxBarButton" st="4">
-            <row id="Caption" si="5937" st="4">
-              <value>Menü zurücksetzen</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Menü zurücksetzen</lang>
-              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Reset menu</lang>
-            </row>
-            <row id="Hint" si="5938" st="4">
-              <value>Menü zurücksetzen</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Menü zurücksetzen</lang>
-              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Reset menu</lang>
-            </row>
-          </item>
-        </item>
         <item name="nb_main" type="TdxNavBar" st="4">
           <item name="nb_Programminfo" type="TdxNavBarItem" st="4">
             <row id="Caption" si="4703" st="4">
               <value>Lizenz-Programminfo</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Lizenz-Programminfo</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Lizenz-Programminfo</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">License Program Info</lang>
             </row>
           </item>
           <item name="nb_mainItem2" type="TdxNavBarItem" st="4">
             <row id="Caption" si="4709" st="4">
               <value>Sprache wechseln</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Sprache wechseln</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Sprache wechseln</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Change language</lang>
+            </row>
+          </item>
+        </item>
+        <item name="dxBarManager1" type="TdxBarManager" created="20240111T120650Z" st="4">
+          <item name="barOpenModule" type="TdxBarStatic" st="4">
+            <row id="Hint" si="5928" st="4">
+              <value>Bitte Modul wählen</value>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Bitte Modul wählen</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Please select module</lang>
+            </row>
+          </item>
+          <item name="btnModulleiste" type="TdxBarLargeButton" st="4">
+            <row id="Caption" si="5929" st="4">
+              <value>Modulliste verstecken</value>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Modulliste verstecken</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Hide module list</lang>
+            </row>
+          </item>
+          <item name="barUser" type="TdxBarStatic" st="4">
+            <row id="Hint" si="5934" st="4">
+              <value>User</value>
+              <lang id="de" rw="0" tm="1" fuzzy="100">User</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">user</lang>
+            </row>
+          </item>
+          <item name="dxBarButton1" type="TdxBarButton" st="4">
+            <row id="Caption" si="5935" st="4">
+              <value>Modulleiste ein-/ausblenden</value>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Modulleiste ein-/ausblenden</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Show/hide module bar</lang>
+            </row>
+            <row id="Hint" si="5936" st="4">
+              <value>Modulleiste ein-/ausblenden</value>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Modulleiste ein-/ausblenden</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Show/hide module bar</lang>
+            </row>
+          </item>
+          <item name="Menuezurueck" type="TdxBarButton" st="4">
+            <row id="Caption" si="5937" st="4">
+              <value>Menü zurücksetzen</value>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Menü zurücksetzen</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Reset menu</lang>
+            </row>
+            <row id="Hint" si="5938" st="4">
+              <value>Menü zurücksetzen</value>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Menü zurücksetzen</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Reset menu</lang>
+            </row>
+          </item>
+        </item>
+        <item name="PopupMenu1" type="TPopupMenu" st="4">
+          <item name="Programminfo1" type="TMenuItem" st="4">
+            <row id="Caption" si="4716" st="4">
+              <value>Programminfo</value>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Programminfo</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Program info</lang>
+            </row>
+          </item>
+          <item name="Sprachewechseln1" type="TMenuItem" created="20231124T103646Z" st="4">
+            <row id="Caption" si="4892" st="4">
+              <value>Sprache wechseln</value>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Sprache wechseln</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Change language</lang>
             </row>
           </item>
@@ -32058,22 +32130,6 @@
             <lang id="en" rw="0" tm="1">PCM - Backup</lang>
           </row>
         </item>
-        <item name="PopupMenu1" type="TPopupMenu" st="4">
-          <item name="Programminfo1" type="TMenuItem" st="4">
-            <row id="Caption" si="4716" st="4">
-              <value>Programminfo</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Programminfo</lang>
-              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Program info</lang>
-            </row>
-          </item>
-          <item name="Sprachewechseln1" type="TMenuItem" created="20231124T103646Z" st="4">
-            <row id="Caption" si="4892" st="4">
-              <value>Sprache wechseln</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Sprache wechseln</lang>
-              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Change language</lang>
-            </row>
-          </item>
-        </item>
         <item name="navbr_main" type="TdxNavBar" created="20240111T120650Z" st="0">
           <row id="Left" st="0">0</row>
           <row id="Top" st="0">35</row>
@@ -32082,111 +32138,119 @@
           <item name="iDatensicherung" type="TdxNavBarItem" st="4">
             <row id="Caption" si="5905" st="4">
               <value>Datensicherung</value>
-              <lang id="de" rw="0" tm="1" time="20240117T213119Z">Datensicherung</lang>
+              <lang id="de" rw="0" tm="1">Datensicherung</lang>
               <lang id="en" rw="0" tm="1" time="20240117T213123Z">Data backup</lang>
             </row>
           </item>
           <item name="navbrgrp_Kontake" type="TdxNavBarGroup" st="4">
             <row id="Caption" si="5902" st="4">
               <value>Datenbank</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Datenbank</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Datenbank</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Database</lang>
             </row>
           </item>
           <item name="iKonfiguration" type="TdxNavBarItem" st="4">
             <row id="Caption" si="5909" st="4">
               <value>Konfiguration</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Konfiguration</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Konfiguration</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Configuration</lang>
             </row>
           </item>
           <item name="navbrgrp_Optionen" type="TdxNavBarGroup" st="0">
             <row id="Caption" si="5901" st="0">
               <value>Optionen</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Optionen</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Optionen</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Options</lang>
             </row>
           </item>
           <item name="nb_Medien" type="TdxNavBarGroup" created="20240809T114933Z" st="0">
-            <row id="Caption" si="6304" st="0">MP3 Tags</row>
+            <row id="Caption" si="6304" st="0">
+              <value>MP3 Tags</value>
+              <lang id="de" rw="0" tm="1">MP3 Tags</lang>
+              <lang id="en" rw="0" tm="1">MP3 Tags</lang>
+            </row>
           </item>
           <item name="navbrgrp_Info" type="TdxNavBarGroup" st="0">
             <row id="Caption" si="5903" st="0">
               <value>Info</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Info</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Info</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Info</lang>
             </row>
           </item>
           <item name="navbrgrp_Programm" type="TdxNavBarGroup" st="0">
             <row id="Caption" si="5904" st="0">
               <value>Programm</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Programm</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Programm</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Program</lang>
             </row>
           </item>
           <item name="iSysteminfo" type="TdxNavBarItem" st="0">
             <row id="Caption" si="5906" st="0">
               <value>Systeminfo</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Systeminfo</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Systeminfo</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">System info</lang>
             </row>
           </item>
           <item name="iBeenden" type="TdxNavBarItem" st="0">
             <row id="Caption" si="5907" st="0">
               <value>Beenden</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Beenden</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Beenden</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Close</lang>
             </row>
           </item>
           <item name="iBenutzerverwaltung" type="TdxNavBarItem" st="0">
             <row id="Caption" si="5908" st="0">
               <value>Benutzerverwaltung</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Benutzerverwaltung</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Benutzerverwaltung</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">User administration</lang>
             </row>
           </item>
           <item name="iInfo" type="TdxNavBarItem" st="0">
             <row id="Caption" si="5910" st="0">
               <value>Info</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Info</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Info</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Info</lang>
             </row>
           </item>
           <item name="iAbmelden" type="TdxNavBarItem" st="0">
             <row id="Caption" si="5911" st="0">
               <value>Abmelden</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Abmelden</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Abmelden</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Log out</lang>
             </row>
           </item>
           <item name="navbrit_ChangePW" type="TdxNavBarItem" st="0">
             <row id="Caption" si="5912" st="0">
               <value>Passwort ändern</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Passwort ändern</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Passwort ändern</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Change password</lang>
             </row>
           </item>
           <item name="iHandbuch" type="TdxNavBarItem" st="0">
             <row id="Caption" si="5913" st="0">
               <value>Handbuch</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Handbuch</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Handbuch</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Manual</lang>
             </row>
           </item>
           <item name="iSprache" type="TdxNavBarItem" st="0">
             <row id="Caption" si="5914" st="0">
               <value>Sprache</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Sprache</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Sprache</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Language</lang>
             </row>
           </item>
           <item name="iAudioplayer" type="TdxNavBarItem" created="20240809T114933Z" st="0">
-            <row id="Caption" si="6305" st="0">MP3 Tags aktualisieren</row>
+            <row id="Caption" si="6305" st="0">
+              <value>MP3 Tags aktualisieren</value>
+              <lang id="de" rw="0" tm="1">MP3 Tags aktualisieren</lang>
+              <lang id="en" rw="0" tm="1">MP3 Tags aktualisieren</lang>
+            </row>
           </item>
           <item name="iDesign" type="TdxNavBarItem" created="20240117T095826Z" st="0">
             <row id="Caption" si="6240" st="0">
               <value>Design</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Design</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Design</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Design</lang>
             </row>
           </item>
@@ -32203,7 +32267,11 @@
             <row id="Width" st="0">1058</row>
             <row id="Height" st="0">720</row>
             <item name="ts_Dashboard" type="TcxTabSheet" st="0">
-              <row id="Caption" si="6306" st="0">Dashboard</row>
+              <row id="Caption" si="6306" st="0">
+                <value>Dashboard</value>
+                <lang id="de" rw="0" tm="1">Dashboard</lang>
+                <lang id="en" rw="0" tm="1" time="20240809T115433Z" fuzzy="100">Dashboard</lang>
+              </row>
             </item>
           </item>
         </item>
@@ -32230,54 +32298,58 @@
           <item name="ppmbtn_Backup" type="TMenuItem" created="20240117T095826Z" st="4">
             <row id="Caption" si="6242" st="4">
               <value>Datensicherung</value>
-              <lang id="de" rw="0" tm="1" time="20240117T213119Z">Datensicherung</lang>
+              <lang id="de" rw="0" tm="1">Datensicherung</lang>
               <lang id="en" rw="0" tm="1" time="20240117T213123Z">Data backup</lang>
             </row>
           </item>
           <item name="ppmbtn_Design" type="TMenuItem" created="20240117T095826Z" st="4">
             <row id="Caption" si="6241" st="4">
               <value>Design</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Design</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Design</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Design</lang>
             </row>
           </item>
           <item name="ppmbtn_Benutzer" type="TMenuItem" st="0">
             <row id="Caption" si="5915" st="0">
               <value>Benutzerverwaltung</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Benutzerverwaltung</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Benutzerverwaltung</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">User administration</lang>
             </row>
           </item>
           <item name="ppmbtn_Konfiguration" type="TMenuItem">
             <row id="Caption" si="5916">
               <value>Konfiguration</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Konfiguration</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Konfiguration</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Configuration</lang>
             </row>
           </item>
           <item name="ppmbtn_Trenn1" type="TMenuItem" st="0"/>
           <item name="ppmbtn_Music" type="TMenuItem" created="20240809T114933Z" st="0">
-            <row id="Caption" si="6307" st="0">MP3 Tags aktualisieren</row>
+            <row id="Caption" si="6307" st="0">
+              <value>MP3 Tags aktualisieren</value>
+              <lang id="de" rw="0" tm="1">MP3 Tags aktualisieren</lang>
+              <lang id="en" rw="0" tm="1">MP3 Tags aktualisieren</lang>
+            </row>
           </item>
           <item name="ppmbtn_Trenn2" type="TMenuItem" st="0"/>
           <item name="ppmbtn_Systeminfo" type="TMenuItem" st="0">
             <row id="Caption" si="5918" st="0">
               <value>Systeminfo</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Systeminfo</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Systeminfo</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">System info</lang>
             </row>
           </item>
           <item name="ppmbtn_Info" type="TMenuItem" st="0">
             <row id="Caption" si="5919" st="0">
               <value>Info</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Info</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Info</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Info</lang>
             </row>
           </item>
           <item name="ppmbtn_Handbuch" type="TMenuItem" st="0">
             <row id="Caption" si="5920" st="0">
               <value>Handbuch</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Handbuch</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Handbuch</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Manual</lang>
             </row>
           </item>
@@ -32285,21 +32357,21 @@
           <item name="ppmbtn_Sprache" type="TMenuItem" st="0">
             <row id="Caption" si="5921" st="0">
               <value>Sprache</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Sprache</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Sprache</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Language</lang>
             </row>
           </item>
           <item name="ppmbtn_Abmelden" type="TMenuItem" st="0">
             <row id="Caption" si="5922" st="0">
               <value>Abmelden</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Abmelden</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Abmelden</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Log out</lang>
             </row>
           </item>
           <item name="ppmbtn_Beenden" type="TMenuItem" st="0">
             <row id="Caption" si="5923" st="0">
               <value>Beenden</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Beenden</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Beenden</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Close</lang>
             </row>
           </item>
@@ -32316,55 +32388,55 @@
           <item name="brstc_OpenModule" type="TdxBarStatic" st="0">
             <row id="Caption" si="6311" st="0">
               <value>Bitte Modul wählen</value>
-              <lang id="de" st="2" or="3" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Bitte Modul wählen</lang>
-              <lang id="en" st="2" or="3" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Please select module</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Bitte Modul wählen</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Please select module</lang>
             </row>
             <row id="Hint" si="6312" st="0">
               <value>Bitte Modul wählen</value>
-              <lang id="de" st="2" or="3" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Bitte Modul wählen</lang>
-              <lang id="en" st="2" or="3" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Please select module</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Bitte Modul wählen</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Please select module</lang>
             </row>
             <row id="Width" st="0">573</row>
           </item>
           <item name="btn_Modulleiste" type="TdxBarLargeButton" st="0">
             <row id="Caption" si="6313" st="0">
               <value>Modulliste verstecken</value>
-              <lang id="de" st="2" or="3" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Modulliste verstecken</lang>
-              <lang id="en" st="2" or="3" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Hide module list</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Modulliste verstecken</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Hide module list</lang>
             </row>
             <row id="Hint" si="6314" st="0">
               <value>Modulliste verstecken</value>
-              <lang id="de" st="2" or="3" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Modulliste verstecken</lang>
-              <lang id="en" st="2" or="3" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Hide module list</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Modulliste verstecken</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Hide module list</lang>
             </row>
             <row id="Width" st="0">185</row>
           </item>
           <item name="btn_RefreshRights" type="TdxBarLargeButton" st="0">
             <row id="Hint" si="6315" st="0">
               <value>Rechte und Modul neu laden</value>
-              <lang id="de" st="2" or="3" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Rechte und Modul neu laden</lang>
-              <lang id="en" st="2" or="3" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Rights and reload module</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Rechte und Modul neu laden</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Rights and reload module</lang>
             </row>
             <row id="Width" st="0">25</row>
           </item>
           <item name="btn_CloseModul" type="TdxBarLargeButton" st="0">
             <row id="Hint" si="6316" st="0">
               <value>Modul schließen</value>
-              <lang id="de" st="2" or="3" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Modul schließen</lang>
-              <lang id="en" st="2" or="3" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Close module</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Modul schließen</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Close module</lang>
             </row>
             <row id="Width" st="0">25</row>
           </item>
           <item name="brstc_User" type="TdxBarStatic" st="0">
             <row id="Caption" si="6317" st="0">
               <value>User</value>
-              <lang id="de" st="2" or="3" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">User</lang>
-              <lang id="en" st="2" or="3" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">user</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">User</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">user</lang>
             </row>
             <row id="Hint" si="6318" st="0">
               <value>User</value>
-              <lang id="de" st="2" or="3" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">User</lang>
-              <lang id="en" st="2" or="3" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">user</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">User</lang>
+              <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">user</lang>
             </row>
             <row id="Width" st="0">150</row>
           </item>
@@ -34166,7 +34238,7 @@
             <item name="cxTabSheet1" type="TcxTabSheet" st="0">
               <row id="Caption" si="6243" st="0">
                 <value>Systeminfo</value>
-                <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Systeminfo</lang>
+                <lang id="de" rw="0" tm="1" fuzzy="100">Systeminfo</lang>
                 <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">System info</lang>
               </row>
               <item name="cxGroupBox1" type="TcxGroupBox" st="0">
@@ -34179,7 +34251,7 @@
                   <row id="Top" st="0">120</row>
                   <row id="Caption" si="6244" st="0">
                     <value>Prozessor</value>
-                    <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Prozessor</lang>
+                    <lang id="de" rw="0" tm="1" fuzzy="100">Prozessor</lang>
                     <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Processor</lang>
                   </row>
                   <row id="Height" st="0">87</row>
@@ -34189,7 +34261,7 @@
                     <row id="Top" st="0">35</row>
                     <row id="Caption" si="6245" st="0">
                       <value>Prozessoranzahl:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Prozessoranzahl:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Prozessoranzahl:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Number of processors:</lang>
                     </row>
                   </item>
@@ -34203,7 +34275,7 @@
                     <row id="Top" st="0">55</row>
                     <row id="Caption" si="6247" st="0">
                       <value>Prozessorgeschwindigkeit:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212820Z" fuzzy="96">Prozessorgeschwindigkeit:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="96">Prozessorgeschwindigkeit:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212920Z" fuzzy="96">Processor speed:</lang>
                     </row>
                   </item>
@@ -34217,7 +34289,7 @@
                     <row id="Top" st="0">16</row>
                     <row id="Caption" si="6249" st="0">
                       <value>Prozessortyp:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Prozessortyp:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Prozessortyp:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Processor type:</lang>
                     </row>
                   </item>
@@ -34232,7 +34304,7 @@
                   <row id="Top" st="0">213</row>
                   <row id="Caption" si="6251" st="0">
                     <value>Arbeitsspeicher</value>
-                    <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Arbeitsspeicher</lang>
+                    <lang id="de" rw="0" tm="1" fuzzy="100">Arbeitsspeicher</lang>
                     <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">RAM</lang>
                   </row>
                   <row id="Height" st="0">66</row>
@@ -34242,7 +34314,7 @@
                     <row id="Top" st="0">35</row>
                     <row id="Caption" si="6252" st="0">
                       <value>freier Arbeitsspeicher:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212756Z">freier Arbeitsspeicher:</lang>
+                      <lang id="de" rw="0" tm="1">freier Arbeitsspeicher:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212920Z" fuzzy="95.6521759033203">free working memory:</lang>
                     </row>
                   </item>
@@ -34256,7 +34328,7 @@
                     <row id="Top" st="0">16</row>
                     <row id="Caption" si="6254" st="0">
                       <value>Gesamter Arbeitsspeicher:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212757Z">Gesamter Arbeitsspeicher:</lang>
+                      <lang id="de" rw="0" tm="1">Gesamter Arbeitsspeicher:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212920Z" fuzzy="96">Total working memory:</lang>
                     </row>
                   </item>
@@ -34271,7 +34343,7 @@
                   <row id="Top" st="0">285</row>
                   <row id="Caption" si="6256" st="0">
                     <value>Auslastung</value>
-                    <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Auslastung</lang>
+                    <lang id="de" rw="0" tm="1" fuzzy="100">Auslastung</lang>
                     <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Usage</lang>
                   </row>
                   <row id="Height" st="0">138</row>
@@ -34293,7 +34365,7 @@
                     <row id="Top" st="0">77</row>
                     <row id="Caption" si="6257" st="0">
                       <value>Prozessor:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Prozessor:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Prozessor:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Processor:</lang>
                     </row>
                   </item>
@@ -34302,7 +34374,7 @@
                     <row id="Top" st="0">27</row>
                     <row id="Caption" si="6258" st="0">
                       <value>Arbeitsspeicher:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212640Z" fuzzy="99">Arbeitsspeicher:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Arbeitsspeicher:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">RAM:</lang>
                     </row>
                   </item>
@@ -34322,7 +34394,7 @@
                     <row id="Top" st="0">56</row>
                     <row id="Caption" si="6260" st="0">
                       <value>Grafikauflösung:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212640Z" fuzzy="99">Grafikauflösung:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Grafikauflösung:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Graphic resolution:</lang>
                     </row>
                   </item>
@@ -34336,7 +34408,7 @@
                     <row id="Top" st="0">16</row>
                     <row id="Caption" si="6262" st="0">
                       <value>Betriebssystem:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212640Z" fuzzy="99">Betriebssystem:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Betriebssystem:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Operating system:</lang>
                     </row>
                   </item>
@@ -34350,7 +34422,7 @@
                     <row id="Top" st="0">36</row>
                     <row id="Caption" si="6264" st="0">
                       <value>Computername:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Computername:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Computername:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Computer name:</lang>
                     </row>
                   </item>
@@ -34364,7 +34436,7 @@
                     <row id="Top" st="0">75</row>
                     <row id="Caption" si="6266" st="0">
                       <value>Systemlaufwerk:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Systemlaufwerk:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Systemlaufwerk:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">System drive:</lang>
                     </row>
                   </item>
@@ -34530,7 +34602,7 @@
             <item name="ts_User" type="TcxTabSheet">
               <row id="Caption" si="4746">
                 <value>Benutzer</value>
-                <lang id="de" rw="0" tm="1" time="20240117T212510Z" fuzzy="100">Benutzer</lang>
+                <lang id="de" rw="0" tm="1" fuzzy="100">Benutzer</lang>
                 <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">User</lang>
               </row>
               <item name="cxGroupBox9" type="TcxGroupBox" st="4">
@@ -34543,7 +34615,7 @@
                     </row>
                     <row id="OptionsView.NoDataToDisplayInfoText" si="4750" st="4">
                       <value>&lt;Keine Daten Vorhanden></value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212537Z">&lt;Keine Daten Vorhanden></lang>
+                      <lang id="de" rw="0" tm="1">&lt;Keine Daten Vorhanden></lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212540Z">&lt;No data available></lang>
                     </row>
                   </item>
@@ -34552,7 +34624,7 @@
                   <item name="Label15" type="TcxLabel" st="4">
                     <row id="Caption" si="4759" st="4">
                       <value>Passwort:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Passwort:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Passwort:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Password:</lang>
                     </row>
                   </item>
@@ -34563,7 +34635,7 @@
                 <row id="Top" st="0">63</row>
                 <row id="Caption" si="5940" st="0">
                   <value>Benutzerdetails</value>
-                  <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Benutzerdetails</lang>
+                  <lang id="de" rw="0" tm="1" fuzzy="100">Benutzerdetails</lang>
                   <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">User details</lang>
                 </row>
                 <row id="Height" st="0">819</row>
@@ -34587,7 +34659,7 @@
                     </row>
                     <row id="OptionsView.NoDataToDisplayInfoText" si="5943" st="0">
                       <value>&lt;Keine Daten Vorhanden></value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212537Z">&lt;Keine Daten Vorhanden></lang>
+                      <lang id="de" rw="0" tm="1">&lt;Keine Daten Vorhanden></lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212540Z">&lt;No data available></lang>
                     </row>
                     <item name="cxGridDBColumn2" type="TcxGridDBColumn" st="0">
@@ -34622,7 +34694,7 @@
                       </row>
                       <row id="Caption" si="5945" st="0">
                         <value>Rest-API</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Rest-API</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="100">Rest-API</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Rest API</lang>
                       </row>
                       <row id="Height" st="0">19</row>
@@ -34643,7 +34715,7 @@
                       <row id="Top" st="0">0</row>
                       <row id="Hint" si="5947" st="0">
                         <value>Benutzername des Benutzers</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Benutzername des Benutzers</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="100">Benutzername des Benutzers</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">User name of the user</lang>
                       </row>
                       <row id="Width" st="0">400</row>
@@ -34653,7 +34725,7 @@
                       <row id="Top" st="0">51</row>
                       <row id="Caption" si="5948" st="0">
                         <value>Nachname:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Nachname:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Nachname:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Last name:</lang>
                       </row>
                       <row id="Height" st="0">17</row>
@@ -34664,7 +34736,7 @@
                       <row id="Top" st="0">1</row>
                       <row id="Caption" si="5949" st="0">
                         <value>Benutzer:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Benutzer:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Benutzer:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">User:</lang>
                       </row>
                       <row id="Height" st="0">17</row>
@@ -34686,7 +34758,7 @@
                       <row id="Top" st="0">50</row>
                       <row id="Hint" si="5951" st="0">
                         <value>Nachname des Benutzers</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Nachname des Benutzers</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="100">Nachname des Benutzers</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Last name of the user</lang>
                       </row>
                       <row id="Width" st="0">400</row>
@@ -34706,7 +34778,7 @@
                       <row id="Caption" changed="20240111T122002Z" si="5952">
                         <value>Passwort ändern</value>
                         <prev>&amp;Passwort ändern</prev>
-                        <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Passwort ändern</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="100">Passwort ändern</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Change password</lang>
                       </row>
                     </item>
@@ -34715,12 +34787,12 @@
                       <row id="Top" st="0">50</row>
                       <row id="Hint" si="5953" st="0">
                         <value>automatisches Login des Benutzers </value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">automatisches Login des Benutzers </lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="100">automatisches Login des Benutzers </lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Automatic login of the user </lang>
                       </row>
                       <row id="Caption" si="5954" st="0">
                         <value>automatisches Login (Windows-Benutzer)</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">automatisches Login (Windows-Benutzer)</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="100">automatisches Login (Windows-Benutzer)</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Automatic login (Windows user)</lang>
                       </row>
                     </item>
@@ -34729,7 +34801,7 @@
                       <row id="Top" st="0">0</row>
                       <row id="Hint" si="5955" st="0">
                         <value>Passwort des Benutzers</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Passwort des Benutzers</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="100">Passwort des Benutzers</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Password of the user</lang>
                       </row>
                       <row id="Properties.PasswordChar" si="5956" st="0" excluded="1">
@@ -34744,7 +34816,7 @@
                       <row id="Top" st="0">1</row>
                       <row id="Caption" si="5957" st="0">
                         <value>Passwort:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212640Z" fuzzy="99">Passwort:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Passwort:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Password:</lang>
                       </row>
                     </item>
@@ -34753,7 +34825,7 @@
                       <row id="Top" st="0">26</row>
                       <row id="Caption" si="5958" st="0">
                         <value>Recht:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212640Z" fuzzy="99">Recht:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Recht:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Right:</lang>
                       </row>
                     </item>
@@ -34762,7 +34834,7 @@
                       <row id="Top" st="0">25</row>
                       <row id="Hint" si="5959" st="0">
                         <value>Recht des Benutzers</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Recht des Benutzers</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="100">Recht des Benutzers</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Right of the user</lang>
                       </row>
                       <row id="Width" st="0">414</row>
@@ -34780,7 +34852,7 @@
             <item name="ts_rights" type="TcxTabSheet">
               <row id="Caption" si="4767">
                 <value>Rechte</value>
-                <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Rechte</lang>
+                <lang id="de" rw="0" tm="1" fuzzy="100">Rechte</lang>
                 <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Rights</lang>
               </row>
               <item name="cxGrid1" type="TcxGrid" st="4">
@@ -34796,7 +34868,7 @@
                 <item name="cxLabel21" type="TcxLabel" st="4">
                   <row id="Caption" si="4802" st="4">
                     <value>Statistik:</value>
-                    <lang id="de" rw="0" tm="1" time="20240117T212543Z">Statistik:</lang>
+                    <lang id="de" rw="0" tm="1">Statistik:</lang>
                     <lang id="en" rw="0" tm="1" time="20240117T212548Z">Statistics:</lang>
                   </row>
                 </item>
@@ -34817,7 +34889,7 @@
                   <row id="Top" st="0">0</row>
                   <row id="Caption" si="5960" st="0">
                     <value>Rechte Allgemein:</value>
-                    <lang id="de" rw="0" tm="1" time="20240117T212655Z" fuzzy="99">Rechte Allgemein:</lang>
+                    <lang id="de" rw="0" tm="1" fuzzy="99">Rechte Allgemein:</lang>
                     <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">General rights:</lang>
                   </row>
                   <row id="Height" st="0">95</row>
@@ -34839,7 +34911,7 @@
                       <row id="Top" st="0">26</row>
                       <row id="Caption" si="5962" st="0">
                         <value>Alle Benutzer</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Alle Benutzer</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="100">Alle Benutzer</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">All users</lang>
                       </row>
                       <row id="Height" st="0">19</row>
@@ -34850,7 +34922,7 @@
                       <row id="Top" st="0">1</row>
                       <row id="Caption" si="5963" st="0">
                         <value>Benutzerverwaltung:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212640Z" fuzzy="99">Benutzerverwaltung:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Benutzerverwaltung:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">User administration:</lang>
                       </row>
                       <row id="Height" st="0">17</row>
@@ -34872,7 +34944,7 @@
                       <row id="Top" st="0">0</row>
                       <row id="Caption" si="5964" st="0">
                         <value>Optionen:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212640Z" fuzzy="99">Optionen:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Optionen:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Options:</lang>
                       </row>
                       <row id="Height" st="0">17</row>
@@ -34894,7 +34966,7 @@
                       <row id="Top" st="0">1</row>
                       <row id="Caption" si="5965" st="0">
                         <value>Bezeichnung:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212640Z" fuzzy="99">Bezeichnung:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Bezeichnung:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Designation:</lang>
                       </row>
                       <row id="Height" st="0">17</row>
@@ -34912,7 +34984,7 @@
                   <row id="Top" st="0">189</row>
                   <row id="Caption" si="5966" st="0">
                     <value>Rechte PCM - Manager:</value>
-                    <lang id="de" rw="0" tm="1" time="20240117T212820Z" fuzzy="95.2380981445313">Rechte PCM - Manager:</lang>
+                    <lang id="de" rw="0" tm="1" fuzzy="95.2380981445313">Rechte PCM - Manager:</lang>
                     <lang id="en" rw="0" tm="1" time="20240117T212920Z" fuzzy="95.2380981445313">Rights PCM - Manager:</lang>
                   </row>
                   <row id="Height" st="0">147</row>
@@ -34927,7 +34999,7 @@
                       <row id="Top" st="0">2</row>
                       <row id="Caption" si="5967" st="0">
                         <value>Kontakte:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212640Z" fuzzy="99">Kontakte:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Kontakte:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Contacts:</lang>
                       </row>
                     </item>
@@ -34956,7 +35028,7 @@
                       <row id="Top" st="0">27</row>
                       <row id="Caption" si="5968" st="0">
                         <value>Kalender:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212640Z" fuzzy="99">Kalender:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Kalender:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Calendar:</lang>
                       </row>
                     </item>
@@ -34965,7 +35037,7 @@
                       <row id="Top" st="0">52</row>
                       <row id="Caption" si="5969" st="0">
                         <value>Stundenplan:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212640Z" fuzzy="99">Stundenplan:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Stundenplan:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Timetable:</lang>
                       </row>
                     </item>
@@ -34974,7 +35046,7 @@
                       <row id="Top" st="0">77</row>
                       <row id="Caption" si="5970" st="0">
                         <value>E-Mail:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212640Z" fuzzy="99">E-Mail:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">E-Mail:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">E-mail:</lang>
                       </row>
                     </item>
@@ -34983,7 +35055,7 @@
                       <row id="Top" st="0">102</row>
                       <row id="Caption" si="5971" st="0">
                         <value>Passwörter:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212622Z" fuzzy="99">Passwörter:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Passwörter:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Passwords:</lang>
                       </row>
                     </item>
@@ -35003,7 +35075,7 @@
                       <row id="Top" st="0">102</row>
                       <row id="Caption" si="5972" st="0">
                         <value>Ausgaben:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212622Z" fuzzy="99">Ausgaben:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Ausgaben:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Expenditure:</lang>
                       </row>
                     </item>
@@ -35012,7 +35084,7 @@
                       <row id="Top" st="0">2</row>
                       <row id="Caption" si="5973" st="0">
                         <value>Serials:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212622Z" fuzzy="99">Serials:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Serials:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Serials:</lang>
                       </row>
                     </item>
@@ -35021,7 +35093,7 @@
                       <row id="Top" st="0">27</row>
                       <row id="Caption" si="5974" st="0">
                         <value>Monatsübersicht:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Monatsübersicht:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Monatsübersicht:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Monthly overview:</lang>
                       </row>
                     </item>
@@ -35030,7 +35102,7 @@
                       <row id="Top" st="0">52</row>
                       <row id="Caption" si="5975" st="0">
                         <value>Verfügung:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212622Z" fuzzy="99">Verfügung:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Verfügung:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Disposition:</lang>
                       </row>
                     </item>
@@ -35039,7 +35111,7 @@
                       <row id="Top" st="0">77</row>
                       <row id="Caption" si="5976" st="0">
                         <value>Einnahmen:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212622Z" fuzzy="99">Einnahmen:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Einnahmen:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Revenue:</lang>
                       </row>
                     </item>
@@ -35075,7 +35147,7 @@
                   <row id="Top" st="0">336</row>
                   <row id="Caption" si="5977" st="0">
                     <value>Rechte PCM - Mediacenter:</value>
-                    <lang id="de" rw="0" tm="1" time="20240117T212820Z" fuzzy="96">Rechte PCM - Mediacenter:</lang>
+                    <lang id="de" rw="0" tm="1" fuzzy="96">Rechte PCM - Mediacenter:</lang>
                     <lang id="en" rw="0" tm="1" time="20240117T212920Z" fuzzy="96">Rights PCM - Mediacenter:</lang>
                   </row>
                   <row id="Height" st="0">72</row>
@@ -35099,7 +35171,7 @@
                       <row id="Top" st="0">2</row>
                       <row id="Caption" si="5979" st="0">
                         <value>MP3 - Player:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212622Z" fuzzy="99">MP3 - Player:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">MP3 - Player:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">MP3 - Player:</lang>
                       </row>
                     </item>
@@ -35134,7 +35206,7 @@
                       <row id="Top" st="0">2</row>
                       <row id="Caption" si="5980" st="0">
                         <value>Videoplayer:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Videoplayer:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Videoplayer:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Video player:</lang>
                       </row>
                     </item>
@@ -35143,7 +35215,7 @@
                       <row id="Top" st="0">27</row>
                       <row id="Caption" si="5981" st="0">
                         <value>Fotos:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212630Z" fuzzy="99">Fotos:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Fotos:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Photos:</lang>
                       </row>
                     </item>
@@ -35154,7 +35226,7 @@
                   <row id="Top" st="0">408</row>
                   <row id="Caption" si="5982" st="0">
                     <value>Rechte PCM - MP3Manager:</value>
-                    <lang id="de" rw="0" tm="1" time="20240117T212820Z" fuzzy="95.8333358764648">Rechte PCM - MP3Manager:</lang>
+                    <lang id="de" rw="0" tm="1" fuzzy="95.8333358764648">Rechte PCM - MP3Manager:</lang>
                     <lang id="en" rw="0" tm="1" time="20240117T212920Z" fuzzy="95.8333358764648">Rights PCM - MP3Manager:</lang>
                   </row>
                   <row id="Height" st="0">47</row>
@@ -35164,7 +35236,7 @@
                     <row id="Top" st="0">17</row>
                     <row id="Caption" si="5983" st="0">
                       <value>MP3 - Tags:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212705Z" fuzzy="99">MP3 - Tags:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">MP3 - Tags:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">MP3 - Tags:</lang>
                     </row>
                   </item>
@@ -35179,7 +35251,7 @@
                   <row id="Top" st="0">455</row>
                   <row id="Caption" si="5984" st="0">
                     <value>Rechte PCM - Notenrechner:</value>
-                    <lang id="de" rw="0" tm="1" time="20240117T212820Z" fuzzy="96.1538467407227">Rechte PCM - Notenrechner:</lang>
+                    <lang id="de" rw="0" tm="1" fuzzy="96.1538467407227">Rechte PCM - Notenrechner:</lang>
                     <lang id="en" rw="0" tm="1" time="20240117T212920Z" fuzzy="96.1538467407227">Right PCM - Score Calculator:</lang>
                   </row>
                   <row id="Height" st="0">47</row>
@@ -35189,7 +35261,7 @@
                     <row id="Top" st="0">17</row>
                     <row id="Caption" si="5985" st="0">
                       <value>Noten:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212705Z" fuzzy="99">Noten:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Noten:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Notes:</lang>
                     </row>
                   </item>
@@ -35204,7 +35276,7 @@
                   <row id="Top" st="0">502</row>
                   <row id="Caption" si="5986" st="0">
                     <value>Rechte PCM - Servicemanager:</value>
-                    <lang id="de" rw="0" tm="1" time="20240117T212820Z" fuzzy="96.4285736083984">Rechte PCM - Servicemanager:</lang>
+                    <lang id="de" rw="0" tm="1" fuzzy="96.4285736083984">Rechte PCM - Servicemanager:</lang>
                     <lang id="en" rw="0" tm="1" time="20240117T212920Z" fuzzy="96.4285736083984">Right PCM - Service Manager:</lang>
                   </row>
                   <row id="Height" st="0">47</row>
@@ -35224,7 +35296,7 @@
                       <row id="Top" st="0">2</row>
                       <row id="Caption" si="5987" st="0">
                         <value>Shutdown:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212705Z" fuzzy="99">Shutdown:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Shutdown:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Shutdown:</lang>
                       </row>
                     </item>
@@ -35239,7 +35311,7 @@
                       <row id="Top" st="0">2</row>
                       <row id="Caption" si="5988" st="0">
                         <value>Backup:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212524Z">Backup:</lang>
+                        <lang id="de" rw="0" tm="1">Backup:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Backup:</lang>
                       </row>
                     </item>
@@ -35255,7 +35327,7 @@
                   <row id="Top" st="0">549</row>
                   <row id="Caption" si="5989" st="0">
                     <value>Rechte PCM - Vokabeltrainer:</value>
-                    <lang id="de" rw="0" tm="1" time="20240117T212820Z" fuzzy="96.4285736083984">Rechte PCM - Vokabeltrainer:</lang>
+                    <lang id="de" rw="0" tm="1" fuzzy="96.4285736083984">Rechte PCM - Vokabeltrainer:</lang>
                     <lang id="en" rw="0" tm="1" time="20240117T212920Z" fuzzy="96.4285736083984">Rights PCM - Vocabulary trainer:</lang>
                   </row>
                   <row id="Height" st="0">74</row>
@@ -35270,7 +35342,7 @@
                       <row id="Top" st="0">26</row>
                       <row id="Caption" si="5990" st="0">
                         <value>Test:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212705Z" fuzzy="99">Test:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Test:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Test:</lang>
                       </row>
                     </item>
@@ -35279,7 +35351,7 @@
                       <row id="Top" st="0">2</row>
                       <row id="Caption" si="5991" st="0">
                         <value>Vokabeln:</value>
-                        <lang id="de" rw="0" tm="1" time="20240117T212552Z" fuzzy="99">Vokabeln:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Vokabeln:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212555Z" fuzzy="99">Vocabulary:</lang>
                       </row>
                     </item>
@@ -35310,7 +35382,7 @@
                       <row id="Caption" changed="20240112T110420Z" si="5992">
                         <value>Statistik:</value>
                         <prev>Statisitik:</prev>
-                        <lang id="de" rw="0" tm="1" time="20240117T212543Z" fuzzy="99">Statistik:</lang>
+                        <lang id="de" rw="0" tm="1" fuzzy="99">Statistik:</lang>
                         <lang id="en" rw="0" tm="1" time="20240117T212548Z" fuzzy="99">Statistics:</lang>
                       </row>
                     </item>
@@ -35335,7 +35407,7 @@
                     </row>
                     <row id="OptionsView.NoDataToDisplayInfoText" si="5995" st="0">
                       <value>&lt;Keine Daten Vorhanden></value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212537Z" fuzzy="99">&lt;Keine Daten Vorhanden></lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">&lt;Keine Daten Vorhanden></lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212540Z" fuzzy="99">&lt;No data available></lang>
                     </row>
                     <item name="cxGridDBTableView1ID" type="TcxGridDBColumn" st="0"/>
@@ -35350,7 +35422,7 @@
                   <row id="Top" st="0">95</row>
                   <row id="Caption" si="5996" st="0">
                     <value>Rechte PCM - Archiv</value>
-                    <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Rechte PCM - Archiv</lang>
+                    <lang id="de" rw="0" tm="1" fuzzy="100">Rechte PCM - Archiv</lang>
                     <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Rights PCM - Archive</lang>
                   </row>
                   <row id="Height" st="0">47</row>
@@ -35360,7 +35432,7 @@
                     <row id="Top" st="0">17</row>
                     <row id="Caption" si="5997" st="0">
                       <value>Archiv:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212533Z" fuzzy="99">Archiv:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Archiv:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212557Z" fuzzy="99">Archive:</lang>
                     </row>
                   </item>
@@ -35375,7 +35447,7 @@
                   <row id="Top" st="0">142</row>
                   <row id="Caption" si="5998" st="0">
                     <value>Rechte PCM - Backup</value>
-                    <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Rechte PCM - Backup</lang>
+                    <lang id="de" rw="0" tm="1" fuzzy="100">Rechte PCM - Backup</lang>
                     <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Rights PCM - Backup</lang>
                   </row>
                   <row id="Height" st="0">47</row>
@@ -35385,7 +35457,7 @@
                     <row id="Top" st="0">17</row>
                     <row id="Caption" si="5999" st="0">
                       <value>Backup:</value>
-                      <lang id="de" rw="0" tm="1" time="20240117T212524Z" fuzzy="99">Backup:</lang>
+                      <lang id="de" rw="0" tm="1" fuzzy="99">Backup:</lang>
                       <lang id="en" rw="0" tm="1" time="20240117T212524Z">Backup:</lang>
                     </row>
                   </item>
@@ -35447,7 +35519,7 @@
             </row>
             <row id="Hint" si="4825" st="4">
               <value>Schließen</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Schließen</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Schließen</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Close</lang>
             </row>
           </item>
@@ -35459,7 +35531,7 @@
             </row>
             <row id="Hint" si="4821" st="4">
               <value>Schließen</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Schließen</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Schließen</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Close</lang>
             </row>
           </item>
@@ -35473,12 +35545,12 @@
             <row id="Caption" changed="20240111T120650Z" si="4812">
               <value>Benutzer anlegen</value>
               <prev>Benutzer a&amp;nlegen</prev>
-              <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Benutzer anlegen</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Benutzer anlegen</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Create user</lang>
             </row>
             <row id="Hint" si="4813">
               <value>Benutzer anlegen</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Benutzer anlegen</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Benutzer anlegen</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Create user</lang>
             </row>
             <row id="Width" created="20231206T150104Z" st="0">125</row>
@@ -35487,12 +35559,12 @@
             <row id="Caption" changed="20240111T120650Z" si="4814">
               <value>Benutzer speichern</value>
               <prev>Benutzer &amp;speichern</prev>
-              <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Benutzer speichern</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Benutzer speichern</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Save user</lang>
             </row>
             <row id="Hint" si="4815">
               <value>Benutzer speichern</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Benutzer speichern</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Benutzer speichern</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Save user</lang>
             </row>
             <row id="Width" created="20231206T150104Z" st="0">125</row>
@@ -35501,12 +35573,12 @@
             <row id="Caption" changed="20240111T120650Z" si="4816">
               <value>Abbrechen</value>
               <prev>&amp;Abbrechen</prev>
-              <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Abbrechen</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Abbrechen</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">cancel</lang>
             </row>
             <row id="Hint" si="4817">
               <value>Abbrechen</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Abbrechen</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Abbrechen</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">cancel</lang>
             </row>
             <row id="Width" created="20231206T150104Z" st="0">125</row>
@@ -35515,12 +35587,12 @@
             <row id="Caption" changed="20240111T120650Z" si="4818">
               <value>Benutzer löschen</value>
               <prev>Benutzer &amp;löschen</prev>
-              <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Benutzer löschen</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Benutzer löschen</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Delete user</lang>
             </row>
             <row id="Hint" si="4819">
               <value>Benutzer löschen</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Benutzer löschen</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Benutzer löschen</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Delete user</lang>
             </row>
             <row id="Width" created="20231206T150104Z" st="0">125</row>
@@ -35529,12 +35601,12 @@
             <row id="Caption" changed="20240111T120650Z" si="4822">
               <value>Recht anlegen</value>
               <prev>Recht &amp;anlegen</prev>
-              <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Recht anlegen</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Recht anlegen</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Create right</lang>
             </row>
             <row id="Hint" si="4823">
               <value>Recht anlegen</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Recht anlegen</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Recht anlegen</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Create right</lang>
             </row>
             <row id="Width" created="20231206T150104Z" st="0">125</row>
@@ -35543,12 +35615,12 @@
             <row id="Caption" changed="20240111T120650Z" si="4826">
               <value>Recht löschen</value>
               <prev>Recht &amp;löschen</prev>
-              <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Recht löschen</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Recht löschen</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Delete right</lang>
             </row>
             <row id="Hint" si="4827">
               <value>Recht löschen</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Recht löschen</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Recht löschen</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Delete right</lang>
             </row>
             <row id="Width" created="20231206T150104Z" st="0">125</row>
@@ -35557,12 +35629,12 @@
             <row id="Caption" changed="20240111T120650Z" si="4828">
               <value>Abbrechen</value>
               <prev>&amp;Abbrechen</prev>
-              <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Abbrechen</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Abbrechen</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">cancel</lang>
             </row>
             <row id="Hint" si="4829">
               <value>Abbrechen</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Abbrechen</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Abbrechen</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">cancel</lang>
             </row>
             <row id="Width" created="20231206T150104Z" st="0">125</row>
@@ -35571,12 +35643,12 @@
             <row id="Caption" changed="20240111T120650Z" si="4830">
               <value>Recht speichern</value>
               <prev>Recht &amp;speichern</prev>
-              <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Recht speichern</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Recht speichern</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Save right</lang>
             </row>
             <row id="Hint" si="4831">
               <value>Recht speichern</value>
-              <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Recht speichern</lang>
+              <lang id="de" rw="0" tm="1" fuzzy="100">Recht speichern</lang>
               <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Save right</lang>
             </row>
             <row id="Width" created="20231206T150104Z" st="0">125</row>
@@ -36137,7 +36209,7 @@
         <row id="Top" created="20231206T150104Z" st="0">428</row>
         <row id="Caption" si="4426">
           <value>Bitte warten...</value>
-          <lang id="de" rw="0" tm="1" time="20240117T212655Z" fuzzy="99">Bitte warten...</lang>
+          <lang id="de" rw="0" tm="1" fuzzy="99">Bitte warten...</lang>
           <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Please wait...</lang>
         </row>
         <row id="ClientHeight" created="20231206T150104Z" st="0">77</row>
@@ -36367,7 +36439,6 @@
       </node>
     </node>
     <node class="TWindowsStringFolder" name="String">
-      <node class="TWindowsStringNode" name="AbResString" excluded="1"/>
       <node class="TWindowsStringNode" name="cxDataConsts" excluded="1"/>
       <node class="TWindowsStringNode" name="cxEditConsts" excluded="1">
         <row id="sdxTokenEditMoreTokensCaption" si="2812" st="4" excluded="2">
@@ -36407,344 +36478,407 @@
       <node class="TWindowsStringNode" name="FireDAC" excluded="1"/>
       <node class="TWindowsStringNode" name="IdResourceStrings" excluded="1"/>
       <node class="TWindowsStringNode" name="IdResourceStringsProtocols" created="20240809T114933Z" st="0">
-        <row id="RSURINoProto" si="6270" st="0">Protokollfeld ist leer</row>
-        <row id="RSURINoHost" si="6271" st="0">Host-Feld ist leer</row>
+        <row id="RSURINoProto" si="6270" st="0">
+          <value>Protokollfeld ist leer</value>
+          <lang id="de" rw="0" tm="1">Protokollfeld ist leer</lang>
+          <lang id="en" rw="0" tm="1">Protokollfeld ist leer</lang>
+        </row>
+        <row id="RSURINoHost" si="6271" st="0" excluded="2">Host-Feld ist leer</row>
       </node>
       <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
       <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="PCM">
-        <row id="Strings_rs_PCM_Konfiguration" si="5741" created="20231208T093302Z" st="4">
-          <value>Konfiguration</value>
-          <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Konfiguration</lang>
-          <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Configuration</lang>
-        </row>
         <row id="Strings_rs_PCM_ChooseModul" si="5776" created="20240111T120650Z" st="4">
           <value>Bitte Modul wählen</value>
-          <lang id="de" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Bitte Modul wählen</lang>
+          <lang id="de" rw="0" tm="1" fuzzy="100">Bitte Modul wählen</lang>
           <lang id="en" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Please select module</lang>
         </row>
-        <row id="Strings_rs_PCMBackup_BackupMod" changed="20240809T114933Z" si="5777" created="20240111T120650Z" st="2">
+        <row id="Strings_rs_PCMBackup_BackupMod" si="5777" st="4" excluded="1">
           <value>Vorname</value>
           <prev>Datensicherung</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T213119Z" fuzzy="100">Datensicherung</lang>
+          <lang id="de" rw="0" fuzzy="100">Vorname</lang>
           <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T213123Z" fuzzy="100">Data backup</lang>
         </row>
-        <row id="Strings_rs_PCMBackup_Backupgesichert" changed="20240809T114933Z" si="5760" created="20231208T200908Z" st="2">
+        <row id="Strings_rs_PCMBackup_Backupgesichert" changed="20240809T114933Z" si="5760" created="20231208T200908Z" st="4">
           <value>Nachname</value>
           <prev> gesichert</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1"> gesichert</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T213134Z"> backed up</lang>
+          <lang id="de" rw="0" tm="1">Nachname</lang>
+          <lang id="en" rw="0" tm="1" time="20240809T115322Z" fuzzy="100">Last name</lang>
         </row>
-        <row id="Strings_rs_PCMBackup_Backup" changed="20240809T114933Z" si="5761" created="20231208T200908Z" st="2">
+        <row id="Strings_rs_PCMBackup_Backup" si="5761" st="4" excluded="1">
           <value>Bezeichnung</value>
           <prev>Sicherung: Datenbank PCM wird gesichert</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1">Sicherung: Datenbank PCM wird gesichert</lang>
+          <lang id="de" rw="0">Bezeichnung</lang>
           <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T213134Z">Backup: PCM database is backed up</lang>
         </row>
-        <row id="Strings_rs_PCMBackup_BackupLoeschen" changed="20240809T114933Z" si="5762" created="20231208T200908Z" st="2">
+        <row id="Strings_rs_PCMBackup_BackupLoeschen" si="5762" st="4" excluded="1">
           <value>Die vordefinierten Rechte können nicht bearbeitet werden!</value>
           <prev>Temporäre Dateien löschen: PCM wird gelöscht</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1">Temporäre Dateien löschen: PCM wird gelöscht</lang>
+          <lang id="de" rw="0">Die vordefinierten Rechte können nicht bearbeitet werden!</lang>
           <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T213134Z">Delete temporary files: PCM is deleted</lang>
         </row>
-        <row id="Strings_rs_PCMBackup_BackupErfolgreich" changed="20240809T114933Z" si="5743" created="20231208T200908Z" st="2">
+        <row id="Strings_rs_PCMBackup_BackupErfolgreich" si="5743" st="4" excluded="1">
           <value>Die vordefinierten Rechte können nicht gelöscht werden!</value>
           <prev>Sicherung: Datenbanken wurden erfolgreich gesichert</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1">Sicherung: Datenbanken wurden erfolgreich gesichert</lang>
+          <lang id="de" rw="0">Die vordefinierten Rechte können nicht gelöscht werden!</lang>
           <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T213134Z">Backup: Databases have been backed up successfully</lang>
         </row>
-        <row id="Strings_rs_PCMBackup_Ordnerwaehlen" changed="20240809T114933Z" si="5744" created="20231208T200908Z" st="2">
+        <row id="Strings_rs_PCMBackup_Ordnerwaehlen" si="5744" st="4" excluded="1">
           <value>Der Hauptbenutzer kann nicht gelöscht werden!</value>
           <prev>Zielverzeichnis für Backup auswählen</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1">Zielverzeichnis für Backup auswählen</lang>
+          <lang id="de" rw="0">Der Hauptbenutzer kann nicht gelöscht werden!</lang>
           <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T213134Z">Select target directory for backup</lang>
         </row>
-        <row id="Strings_rs_PCMBenutzerverwaltung_Benutzer" changed="20240809T114933Z" si="5736" created="20231208T093302Z" st="2">
-          <value>Bitte Kundennamen eingeben!</value>
-          <prev>Benutzer</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Benutzer</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">User</lang>
-        </row>
-        <row id="Strings_rs_PCMBenutzerverwaltung_Vorname" changed="20240809T114933Z" si="5737" created="20231208T093302Z" st="2">
-          <value>Musikplayer</value>
-          <prev>Vorname</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Vorname</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">First name</lang>
-        </row>
-        <row id="Strings_rs_PCMBenutzerverwaltung_Nachname" changed="20240809T114933Z" si="5738" created="20231208T093302Z" st="2">
-          <value>Webradio</value>
-          <prev>Nachname</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Nachname</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Last name</lang>
-        </row>
-        <row id="Strings_rs_PCMBenutzerverwaltung_Bezeichnung" changed="20240809T114933Z" si="5722" created="20231208T093302Z" st="2">
-          <value>Videoplayer</value>
-          <prev>Bezeichnung</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Bezeichnung</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Designation</lang>
-        </row>
-        <row id="Strings_rs_PCMBenutzerverwaltung_RechteBearbeiten" changed="20240809T114933Z" si="5745" created="20231208T200908Z" st="2">
-          <value>Fotos</value>
-          <prev>Die vordefinierten Rechte können nicht bearbeitet werden!</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212753Z">Die vordefinierten Rechte können nicht bearbeitet werden!</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="98.2456130981445">The predefined rights cannot be edited!</lang>
-        </row>
-        <row id="Strings_rs_PCMBenutzerverwaltung_RechteLoeschen" changed="20240809T114933Z" si="5746" created="20231208T200908Z" st="2">
-          <value>MP3-Verzeichnis auswählen</value>
-          <prev>Die vordefinierten Rechte können nicht gelöscht werden!</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212753Z">Die vordefinierten Rechte können nicht gelöscht werden!</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="98.1818161010742">The predefined rights cannot be deleted!</lang>
-        </row>
-        <row id="Strings_rs_PCMBenutzerverwaltung_BenutzerLoeschen" changed="20240809T114933Z" si="5747" created="20231208T200908Z" st="2">
-          <value>MP3-Tags bearbeiten</value>
-          <prev>Der Hauptbenutzer kann nicht gelöscht werden!</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212751Z">Der Hauptbenutzer kann nicht gelöscht werden!</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="97.7777786254883">The main user cannot be deleted!</lang>
-        </row>
-        <row id="Strings_rs_PCMLizenzgenerator_MessageKundenname" changed="20240809T114933Z" si="5769" created="20231208T205915Z" st="2">
-          <value>Hinweis:  Datei </value>
-          <prev>Bitte Kundennamen eingeben!</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212744Z">Bitte Kundennamen eingeben!</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="96.2962951660156">Please enter customer name!</lang>
-        </row>
-        <row id="Strings_rs_PCM_Lizenz" changed="20240809T114933Z" si="5753" created="20231208T200908Z" st="2">
-          <value>Es ist eine 30-tägige Testlizenz vorhanden.  Möchten Sie die Testlizenz übernehmen?</value>
-          <prev>: Lizenz</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">: Lizenz</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">License</lang>
-        </row>
-        <row id="Strings_rs_PCM_TestLizenz" changed="20240809T114933Z" si="5754" created="20231208T200908Z" st="2">
-          <value>: Lizenz gültig bis </value>
-          <prev>Es ist eine 30-tägige Testlizenz vorhanden.  Möchten Sie die Testlizenz übernehmen?</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212756Z">Es ist eine 30-tägige Testlizenz vorhanden  Möchten Sie die Testlizenz übernehmen?</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="97.5214233398438">A 30-day test license is available  Would you like to take over the test license?</lang>
-        </row>
-        <row id="Strings_rs_PCM_LizenzGueltig" changed="20240809T114933Z" si="5755" created="20231208T200908Z" st="2">
-          <value>Bitte Lizenz eingeben!</value>
-          <prev>: Lizenz gültig bis </prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">: Lizenz gültig bis </lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">License valid until </lang>
-        </row>
-        <row id="Strings_rs_PCM_LizenzEintragen" changed="20240809T114933Z" si="5756" created="20231208T200908Z" st="2">
-          <value>: Passwort ändern</value>
-          <prev>Bitte Lizenz eingeben!</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212744Z">Bitte Lizenz eingeben!</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="95.4545440673828">Please enter your license!</lang>
-        </row>
-        <row id="Strings_rs_PCM_PasswortAendern" changed="20240809T114933Z" si="5757" created="20231208T200908Z" st="2">
-          <value>Die Passwörter stimmen nicht überein.</value>
-          <prev>: Passwort ändern</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">: Passwort ändern</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Change password</lang>
-        </row>
-        <row id="Strings_rs_PCM_PasswortStimmtNicht" changed="20240809T114933Z" si="5770" created="20231208T205915Z" st="2">
-          <value>Bitte überprüfen Sie ihre Eingabe.</value>
-          <prev>Die Passwörter stimmen nicht überein.</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212754Z">Die Passwörter stimmen nicht überein.</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="97.2972946166992">The passwords do not match.</lang>
-        </row>
-        <row id="Strings_rs_PCM_EingabePruefen" changed="20240809T114933Z" si="5758" created="20231208T200908Z" st="2">
-          <value>Kein Passwort eingegeben.</value>
-          <prev>Bitte überprüfen Sie ihre Eingabe.</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212748Z">Bitte überprüfen Sie ihre Eingabe.</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="97.0588226318359">Please check your input.</lang>
-        </row>
-        <row id="Strings_rs_PCM_KeinPasswort" changed="20240809T114933Z" si="5759" created="20231208T200908Z" st="2">
-          <value>Fehler beim Speichern des Layouts: </value>
-          <prev>Kein Passwort eingegeben.</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212759Z">Kein Passwort eingegeben.</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="96">No password entered.</lang>
-        </row>
-        <row id="Strings_rs_PCM_GridSpeichernFehler" changed="20240809T114933Z" si="5771" created="20231208T205915Z" st="2">
-          <value>Fehler beim Laden des Layouts: </value>
-          <prev>Fehler beim Speichern des Layouts: </prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="97.0588226318359">Fehler beim Speichern des Layouts </lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="97.0588226318359">Error saving the layout </lang>
-        </row>
-        <row id="Strings_rs_PCM_GridLadenFehler" changed="20240809T114933Z" si="5772" created="20231208T205915Z" st="2">
-          <value>Version: </value>
-          <prev>Fehler beim Laden des Layouts: </prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="96.6666641235352">Fehler beim Laden des Layouts </lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="96.6666641235352">Error loading the layout </lang>
-        </row>
-        <row id="Strings_rs_PCM_Version" changed="20240809T114933Z" si="5773" created="20231208T205915Z" st="2">
-          <value>Modulliste verstecken</value>
-          <prev>Version: </prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212705Z" fuzzy="99">Version: </lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Version: </lang>
-        </row>
-        <row id="Strings_rs_PCM_Modulliste_verstecken" changed="20240809T114933Z" si="5774" created="20240111T120650Z" st="2">
-          <value>Modulliste anzeigen</value>
-          <prev>Modulliste verstecken</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Modulliste verstecken</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Hide module list</lang>
-        </row>
-        <row id="Strings_rs_PCM_Modulliste_anzeigen" changed="20240809T114933Z" si="5775" created="20240111T120650Z" st="2">
-          <value>Es konnte keine Verbindung zur Datenbank auf dem Server </value>
-          <prev>Modulliste anzeigen</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Modulliste anzeigen</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Show module list</lang>
-        </row>
-        <row id="Strings_rs_PCMLog_KeineVerbindung1" changed="20240809T114933Z" si="5733" created="20231208T093302Z" st="2">
-          <value> hergestellt werden:</value>
-          <prev>Es konnte keine Verbindung zur Datenbank auf dem Server </prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Es konnte keine Verbindung zur Datenbank auf dem Server </lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Could not connect to the database on the server </lang>
-        </row>
-        <row id="Strings_rs_PCMLog_KeineVerbindung2" changed="20240809T114933Z" si="5734" created="20231208T093302Z" st="2">
-          <value>Bitte überprüfen Sie die Serveradresse in der Konfigurationsdatei:</value>
-          <prev> hergestellt werden:</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212655Z" fuzzy="99"> hergestellt werden:</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212721Z" fuzzy="99"> be produced:</lang>
-        </row>
-        <row id="Strings_rs_PCMLog_PCMINIPruefen" changed="20240809T114933Z" si="5735" created="20231208T093302Z" st="2">
-          <value>Benutzer</value>
-          <prev>Bitte überprüfen Sie die Serveradresse in der Konfigurationsdatei:</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212608Z">Bitte überprüfen Sie die Serveradresse in der Konfigurationsdatei:</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212600Z">Please check the server address in the configuration file:</lang>
-        </row>
-        <row id="Strings_rs_PCM_Nein" changed="20240809T114933Z" si="5726" created="20231208T093302Z" st="2">
-          <value>Ja</value>
-          <prev>Nein</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Nein</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">No</lang>
-        </row>
-        <row id="Strings_rs_PCM_Ja" changed="20240809T114933Z" si="5727" created="20231208T093302Z" st="2">
-          <value>unbegrenzt</value>
-          <prev>Ja</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Ja</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Yes</lang>
-        </row>
-        <row id="Strings_rs_PCM_unbegrenzt" changed="20240809T114933Z" si="5728" created="20231208T093302Z" st="2">
-          <value>Programm gestartet</value>
-          <prev>unbegrenzt</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">unbegrenzt</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">unlimited</lang>
-        </row>
-        <row id="Strings_rs_PCM_Start" changed="20240809T114933Z" si="5763" created="20231208T200908Z" st="2">
-          <value>Programm beendet</value>
-          <prev>Programm gestartet</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Programm gestartet</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Program started</lang>
-        </row>
-        <row id="Strings_rs_PCM_Beenden" changed="20240809T114933Z" si="5729" created="20231208T093302Z" st="2">
-          <value>Verbindungsversuch</value>
-          <prev>Programm beendet</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Programm beendet</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Program ended</lang>
-        </row>
-        <row id="Strings_rs_PCM_Verbindungsversuch1" changed="20240809T114933Z" si="5730" created="20231208T093302Z" st="2">
-          <value>erfolgreich</value>
-          <prev>Verbindungsversuch</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Verbindungsversuch</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Connection attempt</lang>
-        </row>
-        <row id="Strings_rs_PCM_Verbindungsversuch2" changed="20240809T114933Z" si="5731" created="20231208T093302Z" st="2">
-          <value>Das Programm wird beendet.</value>
-          <prev>erfolgreich</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">erfolgreich</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Successful</lang>
-        </row>
-        <row id="Strings_rs_PCM_Ende" changed="20240809T114933Z" si="5732" created="20231208T093302Z" st="2">
-          <value>Soll der gewählte Style sofort übernommen werden? </value>
-          <prev>Das Programm wird beendet.</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212749Z">Das Programm wird beendet.</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="96.1538467407227">The program is terminated.</lang>
-        </row>
-        <row id="Strings_rs_PCM_Style1" changed="20240809T114933Z" si="5764" created="20231208T200908Z" st="2">
-          <value>Bei Ja wird das Programm neu gestartet.</value>
-          <prev>Soll der gewählte Style sofort übernommen werden? </prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="97.9591827392578">Soll der gewählte Style sofort übernommen werden </lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="97.9591827392578">Should the selected style be applied immediately </lang>
-        </row>
-        <row id="Strings_rs_PCM_Style2" changed="20240809T114933Z" si="5765" created="20231208T200908Z" st="2">
-          <value>Bitte Benutzer eingeben.</value>
-          <prev>Bei Ja wird das Programm neu gestartet.</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212741Z">Bei Ja wird das Programm neu gestartet.</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212735Z">If Yes, the program is restarted.</lang>
-        </row>
-        <row id="Strings_rs_PCM_Benutzereingeben" changed="20240809T114933Z" si="5766" created="20231208T200908Z" st="2">
-          <value>Benutzerdaten sind nicht korrekt.</value>
-          <prev>Bitte Benutzer eingeben.</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212743Z">Bitte Benutzer eingeben.</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="95.8333358764648">Please enter user.</lang>
-        </row>
-        <row id="Strings_rs_PCM_Benutzerfalsch" changed="20240809T114933Z" si="5767" created="20231208T200908Z" st="2">
-          <value>Bitte Passwort eingeben.</value>
-          <prev>Benutzerdaten sind nicht korrekt.</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212740Z">Benutzerdaten sind nicht korrekt.</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212738Z">User data is not correct.</lang>
-        </row>
-        <row id="Strings_rs_PCM_Passworteingeben" changed="20240809T114933Z" si="5768" created="20231208T200908Z" st="2">
-          <value>: Anmeldung</value>
-          <prev>Bitte Passwort eingeben.</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212746Z">Bitte Passwort eingeben.</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="95.8333358764648">Please enter your password.</lang>
-        </row>
-        <row id="Strings_rs_PCM_Anmeldung" changed="20240809T114933Z" si="5750" created="20231208T200908Z" st="2">
-          <value>Lizenz nicht gültig!</value>
-          <prev>: Anmeldung</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">: Anmeldung</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Login</lang>
-        </row>
-        <row id="Strings_rs_PCM_LizenzFalsch" changed="20240809T114933Z" si="5751" created="20231208T200908Z" st="2">
-          <value>Lizenz ist abgelaufen!</value>
-          <prev>Lizenz nicht gültig!</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212758Z">Lizenz nicht gültig!</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="95">License not valid!</lang>
-        </row>
-        <row id="Strings_rs_PCM_LizenzAbgelaufen" changed="20240809T114933Z" si="5752" created="20231208T200908Z" st="2">
-          <value>: Lizenz</value>
-          <prev>Lizenz ist abgelaufen!</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212758Z">Lizenz ist abgelaufen!</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="95.4545440673828">License has expired!</lang>
-        </row>
-        <row id="Data_PCM_Programmname" changed="20240809T114933Z" si="582" st="2">
-          <value>Benutzerverwaltung</value>
-          <prev>PCM - Backup 64-Bit</prev>
-        </row>
-        <row id="Strings_rs_PCM_Benutzerverwaltung" changed="20240809T114933Z" si="5739" created="20231208T093302Z" st="2">
-          <value>Systeminformation</value>
-          <prev>Benutzerverwaltung</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Benutzerverwaltung</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">User administration</lang>
-        </row>
-        <row id="Strings_rs_PCM_Systeminformation" changed="20240809T114933Z" si="5740" created="20231208T093302Z" st="2">
-          <value>Konfiguration</value>
-          <prev>Systeminformation</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Systeminformation</lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">System information</lang>
-        </row>
-        <row id="Strings_rs_PCM_Design" changed="20240809T114933Z" si="6000" created="20240117T095826Z" st="2">
+        <row id="Strings_rs_PCM_Design" si="6000" st="4" excluded="1">
           <value>Sprachdatei kann nicht geladen werden</value>
           <prev>Design / Style</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Design / Style</lang>
+          <lang id="de" rw="0" fuzzy="100">Sprachdatei kann nicht geladen werden</lang>
           <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Design / Style</lang>
         </row>
-        <row id="Strings_rs_PCM_Sprachdatei" changed="20240809T114933Z" si="5742" created="20231208T093302Z" st="2">
-          <value> - Demolizenz gültig bis </value>
-          <prev>Sprachdatei kann nicht geladen werden</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Sprachdatei kann nicht geladen werden</lang>
+        <row id="Strings_rs_PCMMP3Manger_MP3DateiFehler2" si="6319" created="20240809T115658Z" st="0">
+          <value> kann nicht geändert werden. Grund: Falsche Konvention</value>
+          <lang id="en" rw="0" tm="1"> kann nicht geändert werden. Grund: Falsche Konvention</lang>
+        </row>
+        <row id="Strings_rs_PCMMP3Manger_MP3DateiFehler3" si="6320" created="20240809T115658Z" st="0">
+          <value> kann nicht geändert werden. Grund: </value>
+          <lang id="en" rw="0" tm="1" time="20240809T115946Z"> cannot be changed. Reason: </lang>
+        </row>
+        <row id="Strings_rs_PCMMP3Manger_MP3DateiEdit1" si="6321" created="20240809T115658Z" st="0">
+          <value>Es wurden </value>
+          <lang id="en" rw="0" tm="1" time="20240809T115946Z">They have been </lang>
+        </row>
+        <row id="Strings_rs_PCMMP3Manger_MP3DateiEdit2" si="6322" created="20240809T115658Z" st="0">
+          <value> Dateien editiert</value>
+          <lang id="en" rw="0" tm="1" time="20240809T115946Z"> Files edited</lang>
+        </row>
+        <row id="Data_PCM_Programmname" si="582" st="2" excluded="1">
+          <value>PCM - MP3 Manager 64-Bit</value>
+          <prev>Benutzerverwaltung</prev>
+          <lang id="de" st="3" invalidated="1" rw="0">Benutzerverwaltung</lang>
+          <lang id="en" rw="0" time="20240809T115434Z" fuzzy="100">User administration</lang>
+        </row>
+        <row id="Strings_rs_PCMBenutzerverwaltung_Vorname" si="5737" st="2" excluded="1">
+          <value>Vorname</value>
+          <prev>Musikplayer</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Musikplayer</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">First name</lang>
+        </row>
+        <row id="Strings_rs_PCMBenutzerverwaltung_Nachname" si="5738" st="2" excluded="1">
+          <value>Nachname</value>
+          <prev>Webradio</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Webradio</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Last name</lang>
+        </row>
+        <row id="Strings_rs_PCMBenutzerverwaltung_Bezeichnung" si="5722" st="2" excluded="1">
+          <value>Bezeichnung</value>
+          <prev>Videoplayer</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Videoplayer</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Designation</lang>
+        </row>
+        <row id="Strings_rs_PCMBenutzerverwaltung_RechteBearbeiten" si="5745" st="2" excluded="1">
+          <value>Die vordefinierten Rechte können nicht bearbeitet werden!</value>
+          <prev>Fotos</prev>
+          <lang id="de" st="3" invalidated="1" rw="0">Fotos</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="98.2456130981445">The predefined rights cannot be edited!</lang>
+        </row>
+        <row id="Strings_rs_PCMBenutzerverwaltung_RechteLoeschen" si="5746" st="2" excluded="1">
+          <value>Die vordefinierten Rechte können nicht gelöscht werden!</value>
+          <prev>MP3-Verzeichnis auswählen</prev>
+          <lang id="de" st="3" invalidated="1" rw="0">MP3-Verzeichnis auswählen</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="98.1818161010742">The predefined rights cannot be deleted!</lang>
+        </row>
+        <row id="Strings_rs_PCMBenutzerverwaltung_BenutzerLoeschen" si="5747" st="2" excluded="1">
+          <value>Der Hauptbenutzer kann nicht gelöscht werden!</value>
+          <prev>MP3-Tags bearbeiten</prev>
+          <lang id="de" st="3" invalidated="1" rw="0">MP3-Tags bearbeiten</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="97.7777786254883">The main user cannot be deleted!</lang>
+        </row>
+        <row id="Strings_rs_PCMLizenzgenerator_MessageKundenname" si="5769" st="2" excluded="1">
+          <value>Bitte Kundennamen eingeben!</value>
+          <prev>Hinweis:  Datei </prev>
+          <lang id="de" st="3" invalidated="1" rw="0">Hinweis:  Datei </lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="96.2962951660156">Please enter customer name!</lang>
+        </row>
+        <row id="Strings_rs_PCMMediacenter_Musikplayer" si="6323" created="20240809T115658Z" st="0">
+          <value>Musikplayer</value>
+          <lang id="en" rw="0" tm="1" time="20240809T115946Z">Music player</lang>
+        </row>
+        <row id="Strings_rs_PCMMediacenter_Webradio" si="6324" created="20240809T115658Z" st="0">
+          <value>Webradio</value>
+          <lang id="en" rw="0" tm="1" time="20240809T115741Z" fuzzy="100">Webradio</lang>
+        </row>
+        <row id="Strings_rs_PCMMediacenter_Videoplayer" si="6325" created="20240809T115658Z" st="0">
+          <value>Videoplayer</value>
+          <lang id="en" rw="0" tm="1" time="20240809T115741Z" fuzzy="100">Video player</lang>
+        </row>
+        <row id="Strings_rs_PCMMediacenter_Fotos" si="6326" created="20240809T115658Z" st="0">
+          <value>Fotos</value>
+          <lang id="en" rw="0" tm="1" time="20240809T115740Z" fuzzy="100">Photos</lang>
+        </row>
+        <row id="Strings_rs_PCMMP3Manger_MP3Verzeichnis" si="6327" created="20240809T115658Z" st="0">
+          <value>MP3-Verzeichnis auswählen</value>
+          <lang id="en" rw="0" tm="1" time="20240809T115946Z">Select MP3 directory</lang>
+        </row>
+        <row id="Strings_rs_PCMMP3Manger_MP3Tags" si="6328" created="20240809T115658Z" st="0">
+          <value>MP3-Tags bearbeiten</value>
+          <lang id="en" rw="0" tm="1" time="20240809T115946Z">Edit MP3 tags</lang>
+        </row>
+        <row id="Strings_rs_PCMMP3Manger_MP3DateiHinweis1" si="6329" created="20240809T115658Z" st="0">
+          <value>Hinweis:  Datei </value>
+          <lang id="en" rw="0" tm="1" time="20240809T115946Z">Note: File </lang>
+        </row>
+        <row id="Strings_rs_PCMMP3Manger_MP3DateiHinweis2" si="6330" created="20240809T115658Z" st="0">
+          <value> wird geändert</value>
+          <lang id="en" rw="0" tm="1" time="20240809T115946Z"> is being changed</lang>
+        </row>
+        <row id="Strings_rs_PCMMP3Manger_MP3DateiFehler1" si="6331" created="20240809T115658Z" st="0">
+          <value>Fehler:  Datei </value>
+          <lang id="en" rw="0" tm="1" time="20240809T120003Z">Error: File </lang>
+        </row>
+        <row id="Strings_rs_PCM_TestLizenz" si="5754" st="2" excluded="1">
+          <value>Es ist eine 30-tägige Testlizenz vorhanden.  Möchten Sie die Testlizenz übernehmen?</value>
+          <prev>: Lizenz gültig bis </prev>
+          <lang id="de" st="3" invalidated="1" rw="0">: Lizenz gültig bis </lang>
+          <lang id="en" st="3" invalidated="1" rw="0" time="20240809T115407Z" fuzzy="99">: License valid until </lang>
+        </row>
+        <row id="Strings_rs_PCM_LizenzGueltig" si="5755" st="2" excluded="1">
+          <value>: Lizenz gültig bis </value>
+          <prev>Bitte Lizenz eingeben!</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Bitte Lizenz eingeben!</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">License valid until </lang>
+        </row>
+        <row id="Strings_rs_PCM_LizenzEintragen" si="5756" st="2" excluded="1">
+          <value>Bitte Lizenz eingeben!</value>
+          <prev>: Passwort ändern</prev>
+          <lang id="de" st="3" invalidated="1" rw="0">: Passwort ändern</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="95.4545440673828">Please enter your license!</lang>
+        </row>
+        <row id="Strings_rs_PCM_PasswortAendern" si="5757" st="2" excluded="1">
+          <value>: Passwort ändern</value>
+          <prev>Die Passwörter stimmen nicht überein.</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Die Passwörter stimmen nicht überein.</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Change password</lang>
+        </row>
+        <row id="Strings_rs_PCM_PasswortStimmtNicht" si="5770" st="2" excluded="1">
+          <value>Die Passwörter stimmen nicht überein.</value>
+          <prev>Bitte überprüfen Sie ihre Eingabe.</prev>
+          <lang id="de" st="3" invalidated="1" rw="0">Bitte überprüfen Sie ihre Eingabe.</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="97.2972946166992">The passwords do not match.</lang>
+        </row>
+        <row id="Strings_rs_PCM_EingabePruefen" si="5758" st="2" excluded="1">
+          <value>Bitte überprüfen Sie ihre Eingabe.</value>
+          <prev>Kein Passwort eingegeben.</prev>
+          <lang id="de" st="3" invalidated="1" rw="0">Kein Passwort eingegeben.</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="97.0588226318359">Please check your input.</lang>
+        </row>
+        <row id="Strings_rs_PCM_KeinPasswort" si="5759" st="2" excluded="1">
+          <value>Kein Passwort eingegeben.</value>
+          <prev>Fehler beim Speichern des Layouts: </prev>
+          <lang id="de" st="3" invalidated="1" rw="0">Fehler beim Speichern des Layouts: </lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="96">No password entered.</lang>
+        </row>
+        <row id="Strings_rs_PCM_GridSpeichernFehler" si="5771" st="2" excluded="1">
+          <value>Fehler beim Speichern des Layouts: </value>
+          <prev>Fehler beim Laden des Layouts: </prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="97.0588226318359">Fehler beim Laden des Layouts: </lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="97.0588226318359">Error saving the layout </lang>
+        </row>
+        <row id="Strings_rs_PCM_GridLadenFehler" si="5772" st="2" excluded="1">
+          <value>Fehler beim Laden des Layouts: </value>
+          <prev>Version: </prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="96.6666641235352">Version: </lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="96.6666641235352">Error loading the layout </lang>
+        </row>
+        <row id="Strings_rs_PCM_Version" si="5773" st="2" excluded="1">
+          <value>Version: </value>
+          <prev>Modulliste verstecken</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="99">Modulliste verstecken</lang>
+          <lang id="en" rw="0" tm="1" time="20240117T212721Z" fuzzy="99">Version: </lang>
+        </row>
+        <row id="Strings_rs_PCM_Modulliste_verstecken" si="5774" st="2" excluded="1">
+          <value>Modulliste verstecken</value>
+          <prev>Modulliste anzeigen</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Modulliste anzeigen</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Hide module list</lang>
+        </row>
+        <row id="Strings_rs_PCM_Modulliste_anzeigen" si="5775" st="2" excluded="1">
+          <value>Modulliste anzeigen</value>
+          <prev>Es konnte keine Verbindung zur Datenbank auf dem Server </prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Es konnte keine Verbindung zur Datenbank auf dem Server </lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Show module list</lang>
+        </row>
+        <row id="Strings_rs_PCMLog_KeineVerbindung1" si="5733" st="2" excluded="1">
+          <value>Es konnte keine Verbindung zur Datenbank auf dem Server </value>
+          <prev> hergestellt werden:</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100"> hergestellt werden:</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Could not connect to the database on the server </lang>
+        </row>
+        <row id="Strings_rs_PCMLog_KeineVerbindung2" si="5734" st="2" excluded="1">
+          <value> hergestellt werden:</value>
+          <prev>Bitte überprüfen Sie die Serveradresse in der Konfigurationsdatei:</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="99">Bitte überprüfen Sie die Serveradresse in der Konfigurationsdatei:</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" time="20240809T115343Z" fuzzy="99">Please check the server address in the configuration file:</lang>
+        </row>
+        <row id="Strings_rs_PCMLog_PCMINIPruefen" si="5735" st="2" excluded="1">
+          <value>Bitte überprüfen Sie die Serveradresse in der Konfigurationsdatei:</value>
+          <prev>Benutzer</prev>
+          <lang id="de" st="3" invalidated="1" rw="0">Benutzer</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212600Z">Please check the server address in the configuration file:</lang>
+        </row>
+        <row id="Strings_rs_PCMBenutzerverwaltung_Benutzer" si="5736" st="2" excluded="1">
+          <value>Benutzer</value>
+          <prev>Bitte Kundennamen eingeben!</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Bitte Kundennamen eingeben!</lang>
+          <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">User</lang>
+        </row>
+        <row id="Strings_rs_PCM_Ja" si="5727" st="2" excluded="1">
+          <value>Ja</value>
+          <prev>unbegrenzt</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">unbegrenzt</lang>
+          <lang id="en" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Yes</lang>
+        </row>
+        <row id="Strings_rs_PCM_unbegrenzt" si="5728" st="2" excluded="1">
+          <value>unbegrenzt</value>
+          <prev>Programm gestartet</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Programm gestartet</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">unlimited</lang>
+        </row>
+        <row id="Strings_rs_PCM_Start" si="5763" st="2" excluded="1">
+          <value>Programm gestartet</value>
+          <prev>Programm beendet</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Programm beendet</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Program started</lang>
+        </row>
+        <row id="Strings_rs_PCM_Beenden" si="5729" st="2" excluded="1">
+          <value>Programm beendet</value>
+          <prev>Verbindungsversuch</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Verbindungsversuch</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Program ended</lang>
+        </row>
+        <row id="Strings_rs_PCM_Verbindungsversuch1" si="5730" st="2" excluded="1">
+          <value>Verbindungsversuch</value>
+          <prev>erfolgreich</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">erfolgreich</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Connection attempt</lang>
+        </row>
+        <row id="Strings_rs_PCM_Verbindungsversuch2" si="5731" st="2" excluded="1">
+          <value>erfolgreich</value>
+          <prev>Das Programm wird beendet.</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Das Programm wird beendet.</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Successful</lang>
+        </row>
+        <row id="Strings_rs_PCM_Ende" si="5732" st="2" excluded="1">
+          <value>Das Programm wird beendet.</value>
+          <prev>Soll der gewählte Style sofort übernommen werden? </prev>
+          <lang id="de" st="3" invalidated="1" rw="0">Soll der gewählte Style sofort übernommen werden? </lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="96.1538467407227">The program is terminated.</lang>
+        </row>
+        <row id="Strings_rs_PCM_Style1" si="5764" st="2" excluded="1">
+          <value>Soll der gewählte Style sofort übernommen werden? </value>
+          <prev>Bei Ja wird das Programm neu gestartet.</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="97.9591827392578">Bei Ja wird das Programm neu gestartet.</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="97.9591827392578">Should the selected style be applied immediately </lang>
+        </row>
+        <row id="Strings_rs_PCM_Style2" si="5765" st="2" excluded="1">
+          <value>Bei Ja wird das Programm neu gestartet.</value>
+          <prev>Bitte Benutzer eingeben.</prev>
+          <lang id="de" st="3" invalidated="1" rw="0">Bitte Benutzer eingeben.</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212735Z">If Yes, the program is restarted.</lang>
+        </row>
+        <row id="Strings_rs_PCM_Benutzereingeben" si="5766" st="2" excluded="1">
+          <value>Bitte Benutzer eingeben.</value>
+          <prev>Benutzerdaten sind nicht korrekt.</prev>
+          <lang id="de" st="3" invalidated="1" rw="0">Benutzerdaten sind nicht korrekt.</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="95.8333358764648">Please enter user.</lang>
+        </row>
+        <row id="Strings_rs_PCM_Benutzerfalsch" si="5767" st="2" excluded="1">
+          <value>Benutzerdaten sind nicht korrekt.</value>
+          <prev>Bitte Passwort eingeben.</prev>
+          <lang id="de" st="3" invalidated="1" rw="0">Bitte Passwort eingeben.</lang>
+          <lang id="en" rw="0" tm="1" time="20240117T212738Z">User data is not correct.</lang>
+        </row>
+        <row id="Strings_rs_PCM_Passworteingeben" si="5768" st="2" excluded="1">
+          <value>Bitte Passwort eingeben.</value>
+          <prev>: Anmeldung</prev>
+          <lang id="de" st="3" invalidated="1" rw="0">: Anmeldung</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="95.8333358764648">Please enter your password.</lang>
+        </row>
+        <row id="Strings_rs_PCM_Anmeldung" si="5750" st="2" excluded="1">
+          <value>: Anmeldung</value>
+          <prev>Lizenz nicht gültig!</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Lizenz nicht gültig!</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Login</lang>
+        </row>
+        <row id="Strings_rs_PCM_LizenzFalsch" si="5751" st="2" excluded="1">
+          <value>Lizenz nicht gültig!</value>
+          <prev>Lizenz ist abgelaufen!</prev>
+          <lang id="de" st="3" invalidated="1" rw="0">Lizenz ist abgelaufen!</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="95">License not valid!</lang>
+        </row>
+        <row id="Strings_rs_PCM_LizenzAbgelaufen" si="5752" st="2" excluded="1">
+          <value>Lizenz ist abgelaufen!</value>
+          <prev>: Lizenz</prev>
+          <lang id="de" st="3" invalidated="1" rw="0">: Lizenz</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212920Z" fuzzy="95.4545440673828">License has expired!</lang>
+        </row>
+        <row id="Strings_rs_PCM_Lizenz" si="5753" st="2" excluded="1">
+          <value>: Lizenz</value>
+          <prev>Es ist eine 30-tägige Testlizenz vorhanden.  Möchten Sie die Testlizenz übernehmen?</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Es ist eine 30-tägige Testlizenz vorhanden.  Möchten Sie die Testlizenz übernehmen?</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">License</lang>
+        </row>
+        <row id="Strings_rs_PCM_Benutzerverwaltung" si="5739" st="2" excluded="1">
+          <value>Benutzerverwaltung</value>
+          <prev>Systeminformation</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Systeminformation</lang>
+          <lang id="en" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">User administration</lang>
+        </row>
+        <row id="Strings_rs_PCM_Systeminformation" si="5740" st="2" excluded="1">
+          <value>Systeminformation</value>
+          <prev>Konfiguration</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Konfiguration</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">System information</lang>
+        </row>
+        <row id="Strings_rs_PCM_Konfiguration" si="5741" created="20231208T093302Z">
+          <value>Konfiguration</value>
+          <lang id="de" rw="0" tm="1" fuzzy="100">Konfiguration</lang>
+          <lang id="en" rw="0" tm="1" time="20240117T212520Z" fuzzy="100">Configuration</lang>
+        </row>
+        <row id="Strings_rs_PCM_Sprachdatei" si="5742" st="2" excluded="1">
+          <value>Sprachdatei kann nicht geladen werden</value>
+          <prev> - Demolizenz gültig bis </prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100"> - Demolizenz gültig bis </lang>
           <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Language file cannot be loaded</lang>
         </row>
-        <row id="Strings_rs_PCM_Demolizenz" changed="20240809T114933Z" si="5723" created="20231208T093302Z" st="2">
-          <value>Demolizenz gültig bis </value>
-          <prev> - Demolizenz gültig bis </prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100"> - Demolizenz gültig bis </lang>
-          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100"> - Demo license valid until </lang>
+        <row id="Strings_rs_PCM_Demolizenz" si="5723" st="2" excluded="1">
+          <value> - Demolizenz gültig bis </value>
+          <prev>Demolizenz gültig bis </prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Demolizenz gültig bis </lang>
+          <lang id="en" st="3" invalidated="1" rw="0" time="20240809T115331Z" fuzzy="99">Demo license valid until </lang>
         </row>
-        <row id="Strings_rs_PCM_Demolizenz1" si="6272" created="20240809T114933Z" st="0">Programminfo</row>
-        <row id="Strings_rs_PCM_Programminfo" changed="20240809T114933Z" si="5725" created="20231208T093302Z" st="2">
-          <value>Handbuch</value>
+        <row id="Strings_rs_PCM_Demolizenz1" si="6272" st="2" excluded="1">
+          <value>Demolizenz gültig bis </value>
           <prev>Programminfo</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240117T212511Z" fuzzy="100">Programminfo</lang>
+          <lang id="de" st="3" invalidated="1" rw="0">Programminfo</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" time="20240809T115434Z" fuzzy="100">Program info</lang>
+        </row>
+        <row id="Strings_rs_PCM_Programminfo" si="5725" st="2" excluded="1">
+          <value>Programminfo</value>
+          <prev>Handbuch</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Handbuch</lang>
           <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">Program info</lang>
         </row>
-        <row id="Strings_rs_PCM_Handbuch" changed="20240809T114933Z" si="6269" created="20240118T122206Z" st="2">
-          <value>Nein</value>
-          <prev>Handbuch</prev>
-          <lang id="de" st="3" invalidated="1" rw="0" tm="1" time="20240118T122314Z" fuzzy="100">Handbuch</lang>
+        <row id="Strings_rs_PCM_Handbuch" si="6269" st="2" excluded="1">
+          <value>Handbuch</value>
+          <prev>Nein</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Nein</lang>
           <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240118T122221Z" fuzzy="100">Manual</lang>
+        </row>
+        <row id="Strings_rs_PCM_Nein" si="5726" st="2" excluded="1">
+          <value>Nein</value>
+          <prev>Ja</prev>
+          <lang id="de" st="3" invalidated="1" rw="0" fuzzy="100">Ja</lang>
+          <lang id="en" st="3" invalidated="1" rw="0" tm="1" time="20240117T212521Z" fuzzy="100">No</lang>
         </row>
       </node>
       <node class="TWindowsStringNode" name="System" excluded="1"/>
@@ -36764,9 +36898,13 @@
     </configurations>
   </node>
   <excludedoriginals>
+    <item>Host-Feld ist leer</item>
     <item>PCM - Backup 64-Bit</item>
+    <item>SELECT </item>
     <item>TdxPNGImage</item>
+    <item>frm_Browser_FullScreen</item>
     <item>frm_Design</item>
+    <item>frm_MP3</item>
   </excludedoriginals>
   <terminology>
     <shared>
