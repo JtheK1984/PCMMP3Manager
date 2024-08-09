@@ -43,7 +43,7 @@ begin
   ifini.Free;
   GlobalWebView2Loader                := TWVLoader.Create(nil);
   GlobalWebView2Loader.UserDataFolder := GetEnvironmentVariable('LOCALAPPDATA') + '\PCM\CustomCache';
-  GlobalWebView2Loader.StartWebView2
+  GlobalWebView2Loader.StartWebView2;
   Application.Initialize;
   TStyleManager.TrySetStyle(sStyle);
   {$IFDEF WIN64}
