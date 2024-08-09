@@ -7,6 +7,7 @@ uses
   Vcl.Forms,
   Vcl.Themes,
   Vcl.Styles,
+  uwvLoader,
   Windows,
   PCM.Main in 'PCM.Main.pas' {frm_PCM_Main},
   PCM.Data in 'PCM.Data.pas' {dm_PCM: TDataModule},
@@ -40,6 +41,9 @@ begin
   sStyle:=ifini.ReadString('PCMMP3Manager','Style','Windows');
   slocale:=ifini.ReadString('PCMBackup','Language','de');
   ifini.Free;
+  GlobalWebView2Loader                := TWVLoader.Create(nil);
+  GlobalWebView2Loader.UserDataFolder := GetEnvironmentVariable('LOCALAPPDATA') + '\PCM\CustomCache';
+  GlobalWebView2Loader.StartWebView2
   Application.Initialize;
   TStyleManager.TrySetStyle(sStyle);
   {$IFDEF WIN64}
