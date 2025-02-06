@@ -153,7 +153,7 @@ begin
     end;
 
     Application.ProcessMessages;
-    ShowWaitForm(TForm(Self), PWideChar(rs_PCMMP3Manger_MP3Tags), iFileCount,ClientWidth, Height);
+    ShowWaitForm(TForm(Self), PWideChar(rs_PCMMP3Manger_MP3Tags), iFileCount,417, 65);
     while bFileTrue do
     begin
       WaitFormStep;

@@ -458,7 +458,7 @@ begin
         begin
           Screen.Cursor := crHourglass;
           try
-            ShowWaitForm(TForm(Self), PWideChar('Formular wird geladen'), 1,ClientWidth, Height);
+            ShowWaitForm(TForm(Self), PWideChar('Formular wird geladen'), 1,417, 65);
             Application.ProcessMessages;
             WaitFormStep;
             TForm(Module.Instance^) := Module.FormClass.Create(Nil);

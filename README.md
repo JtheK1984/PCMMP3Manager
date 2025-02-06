@@ -5,23 +5,28 @@
   Applikation zum automatischen Zuweisen von Mp3-Tags
 
 # Entwicklungsumgebung:
-  DELPHI 11.3 Alexandria
+  DELPHI 12 Athens
 
 # Entwickler:
   Jens Henske
 	
-# Abhängigkeiten zu folgenden Units und Formularen:
-  - PCM.Functions.pas
-
+# Abhängigkeiten zu folgenden Sub-Modulen:
+  - PCM-Functions
   (Dokumentation:
-  [Azure DevOps](https://3e0h2cz1k1ji0ttu.myfritz.net:4443/PCM-DEV/PCMFunctions)
+  [Azure DevOps](https://pcmapps.ddns.net:2443/PCM-DEV/PCM/PCMFunctions)
   [GitHub](https://github.com/JtheK1984/PCMFunctions))
 
 # Abhängigkeiten zu folgenden DLL's:
   - 32-Bit 
     - libmysql.dll (DLL für Verbindung zur MySQL-Datenbank)
+    - libeay32.dll (DLL für SSL-Verbindungen)
+    - ssleay32.dll (DLL für SSL-Verbindungen)
+    - WebView2Loader.dll (DLL für Edgebrowser)
   - 64-Bit 
     - libmysql.dll (DLL für Verbindung zur MySQL-Datenbank)
+    - libeay32.dll (DLL für SSL-Verbindungen)
+    - ssleay32.dll (DLL für SSL-Verbindungen)
+    - WebView2Loader.dll (DLL für Edgebrowser)
 	
 # Erforderliche Komponenten (DELPHI-IDE):
   - Devexpress
@@ -31,4 +36,4 @@
   - PrepareCopy.cmd (erzeugte Versionen werden in das Inno-Setupverzeichnis abgelgt)
 
 # Stand:
-  08.08.2024
+  31.01.2025
