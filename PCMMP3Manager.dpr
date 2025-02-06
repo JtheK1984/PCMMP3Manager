@@ -8,6 +8,7 @@ uses
   Vcl.Themes,
   Vcl.Styles,
   uwvLoader,
+  PCM.Helper,
   Windows,
   PCM.Main in 'PCM.Main.pas' {frm_PCM_Main},
   PCM.Data in 'PCM.Data.pas' {dm_PCM: TDataModule},
@@ -24,9 +25,16 @@ uses
   ID3v1Library in 'Helper\ID3v1Library.pas',
   FlacTagLibrary in 'Helper\FlacTagLibrary.pas',
   APEv2Library in 'Helper\APEv2Library.pas',
-  ReadMemoryStream in 'Helper\ReadMemoryStream.pas';
+  ReadMemoryStream in 'Helper\ReadMemoryStream.pas',
+  PCM.splash in 'PCM.splash.pas' {SplashScreen};
 
 {$R *.res}
+
+{$IFDEF WIN64}
+  {$R 'Versioninfo64.res'}
+{$else}
+  {$R 'Versioninfo32.res'}
+{$ENDIF}
 
 {$SetPEOptFlags IMAGE_DLLCHARACTERISTICS_TERMINAL_SERVER_AWARE}
 {$SetPEFlags IMAGE_FILE_REMOVABLE_RUN_FROM_SWAP or IMAGE_FILE_NET_RUN_FROM_SWAP or IMAGE_FILE_LARGE_ADDRESS_AWARE}
@@ -37,6 +45,7 @@ var
   slocale: String;
 
 begin
+  Checkinis;
   ifini:=TIniFile.create(GetEnvironmentVariable('LOCALAPPDATA') + '\PCM\PCM.ini');
   sStyle:=ifini.ReadString('PCMMP3Manager','Style','Windows');
   slocale:=ifini.ReadString('PCMBackup','Language','de');

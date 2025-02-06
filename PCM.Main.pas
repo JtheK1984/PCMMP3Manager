@@ -4,6 +4,13 @@ interface
 
 uses
   {$Region Uses}
+  {$IFDEF WIN64}
+    {$I Skins.inc}
+    dxSkinsForm, dxSkinsdxBarPainter, dxSkinscxPCPainter,
+  {$ELSE}
+    {$I Skins.inc}
+    dxSkinsForm, dxSkinsdxBarPainter, dxSkinscxPCPainter,
+  {$ENDIF}
   SYSTEM.uitypes, Winapi.Windows, Winapi.Messages, System.SysUtils,
   System.Variants, System.Classes, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
   Vcl.ImgList, Vcl.Menus, NTTranslator, Strutils, DateUtils,shellapi, Vcl.Themes,
@@ -16,27 +23,11 @@ uses
   dxChartXYSeriesAreaView, dxChartMarkers, dxChartXYSeriesBarView,
   dxChartDBData, dxCoreClasses, dxChartControl, VCLTee.TeeDBCrossTab,
   cxGridChartView, cxPivotGridChartConnection, cxCustomPivotGrid, cxDBPivotGrid,
-  dxSkinWXI, dxBarExtItems, cxBarEditItem,
+  dxBarExtItems, cxBarEditItem,
   cxSplitter, cxGraphics, cxControls, cxLookAndFeels, cxLookAndFeelPainters,
   cxEdit, cxClasses, System.ImageList, cxContainer, dxBarBuiltInMenu,
-  Vcl.ExtCtrls, cxPC, dxNavBarCollns, dxNavBarBase, dxNavBar, dxSkinsCore,
-  dxSkinBasic, dxSkinBlack, dxSkinBlue, dxSkinBlueprint, dxSkinCaramel,
-  dxSkinCoffee, dxSkinDarkroom, dxSkinDarkSide, dxSkinDevExpressDarkStyle,
-  dxSkinDevExpressStyle, dxSkinFoggy, dxSkinGlassOceans, dxSkinHighContrast,
-  dxSkiniMaginary, dxSkinLilian, dxSkinLiquidSky, dxSkinLondonLiquidSky,
-  dxSkinMcSkin, dxSkinMetropolis, dxSkinMetropolisDark, dxSkinMoneyTwins,
-  dxSkinOffice2007Black, dxSkinOffice2007Blue, dxSkinOffice2007Green,
-  dxSkinOffice2007Pink, dxSkinOffice2007Silver, dxSkinOffice2010Black,
-  dxSkinOffice2010Blue, dxSkinOffice2010Silver, dxSkinOffice2013DarkGray,
-  dxSkinOffice2013LightGray, dxSkinOffice2013White, dxSkinOffice2016Colorful,
-  dxSkinOffice2016Dark, dxSkinOffice2019Black, dxSkinOffice2019Colorful,
-  dxSkinOffice2019DarkGray, dxSkinOffice2019White, dxSkinPumpkin, dxSkinSeven,
-  dxSkinSevenClassic, dxSkinSharp, dxSkinSharpPlus, dxSkinSilver,
-  dxSkinSpringtime, dxSkinStardust, dxSkinSummer2008, dxSkinTheAsphaltWorld,
-  dxSkinTheBezier, dxSkinsDefaultPainters, dxSkinValentine,
-  dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark,
-  dxSkinVisualStudio2013Light, dxSkinVS2010, dxSkinWhiteprint,
-  dxSkinXmas2008Blue, dxBar, cxLocalization, cxLabel, cxGroupBox, dxNavBarStyles,inifiles;
+  Vcl.ExtCtrls, cxPC, dxNavBarCollns, dxNavBarBase, dxNavBar,
+  dxBar, cxLocalization, cxLabel, cxGroupBox, dxNavBarStyles,inifiles;
   {$EndRegion Uses}
 type
   {$Region Type}
@@ -137,15 +128,17 @@ type
     procedure ppmbtn_SysteminfoClick(Sender: TObject);
   private
     { Private-Deklarationen }
+
+  public
+    { Public-Deklarationen }
+    bStyle: boolean;
+    bAbmelden: Boolean;
     Modules: TCollection;
     function CurrentModule: TForm;
     procedure Abmelden;
     procedure CloseModules;
     procedure LoadData;
-  public
-    { Public-Deklarationen }
-    bStyle: boolean;
-    bAbmelden: Boolean;
+    procedure RegisterNavBarItems;
   end;
   {$EndRegion Type}
 var
@@ -169,7 +162,7 @@ uses  PCM.Benutzerverwaltung,
       PCM.Helper,
       PCM.Modul.C_Mp3,
       PCM.SQL,
-			PCM.Strings;
+			PCM.Strings, PCM.splash;
 
 ////////////////////////////////////////////////////////////////////////////////
 // Hilfsfunktionen                                                            //
@@ -227,6 +220,49 @@ begin
   dm_PCM.qry_Work.Open;
   brstc_User.Caption:= dm_PCM.qry_Work.FieldByName('Benutzer').AsString;
   dm_PCM.qry_Work.Close;
+end;
+procedure Tfrm_PCM_Main.RegisterNavBarItems;
+  procedure RegisterForm(SideBarItemName: string; FormClass: TFormClass; Instance: Pointer; Right: Integer);
+  var
+    NewModule: TModule;
+    Item: TdxNavBarItem;
+  begin
+    Item := navbr_main.Items.Items[navbr_main.Items.ItemByName(SideBarItemName).index];
+    if Assigned(Item) then
+    begin
+      NewModule := TModule(Modules.Add);
+      Item.Tag := NewModule.ID;
+      NewModule.FormClass := FormClass;
+      NewModule.Instance := Instance;
+      NewModule.Right := Right;
+      NewModule.ModuleName := SideBarItemName;
+      NewModule.ImageIndex := Item.SmallImageIndex;
+    end;
+  end;
+  procedure RegisterEvent(SideBarItemName: string; Event: TMethod);
+  var
+    NewModule: TModule;
+    Item: TdxNavBarItem;
+  begin
+    Item := navbr_main.Items.Items[navbr_main.Items.ItemByName(SideBarItemName).index];
+    if Assigned(Item) then
+    begin
+      NewModule := TModule(Modules.Add);
+      Item.Tag := NewModule.ID;
+      NewModule.Event := Event;
+      NewModule.ModuleName := SideBarItemName;
+    end
+  end;
+begin
+  Modules.Clear;
+  RegisterForm('iBenutzerverwaltung', Tfrm_User, @frm_User, 1);
+  RegisterForm('iDesign', Tfrm_Design, @frm_Design, 1);
+  RegisterForm('iAudioplayer', Tfrm_mp3, @frm_mp3,1);
+  RegisterForm('iSysteminfo',Tfrm_PCM_System, @frm_PCM_System, 1);
+  RegisterForm('iInfo',Tfrm_PCM_InfoApp, @frm_PCM_InfoApp, 1);
+  RegisterForm('iHandbuch',Tfrm_Handbuch,@frm_Handbuch, 1);
+  RegisterEvent('iAbmelden', Abmelden);
+  RegisterEvent('iBeenden', Close);
 end;
 {$EndRegion Helperfunctions}
 ////////////////////////////////////////////////////////////////////////////////
@@ -544,132 +580,6 @@ begin
   BarResize;
 end;
 procedure Tfrm_PCM_Main.FormShow(Sender: TObject);
-  procedure RegisterForm(SideBarItemName: string; FormClass: TFormClass; Instance: Pointer; Right: Integer);
-  var
-    NewModule: TModule;
-    Item: TdxNavBarItem;
-  begin
-    Item := navbr_main.Items.Items[navbr_main.Items.ItemByName(SideBarItemName).index];
-    if Assigned(Item) then
-    begin
-      NewModule := TModule(Modules.Add);
-      Item.Tag := NewModule.ID;
-      NewModule.FormClass := FormClass;
-      NewModule.Instance := Instance;
-      NewModule.Right := Right;
-      NewModule.ModuleName := SideBarItemName;
-      NewModule.ImageIndex := Item.SmallImageIndex;
-    end;
-  end;
-  procedure RegisterEvent(SideBarItemName: string; Event: TMethod);
-  var
-    NewModule: TModule;
-    Item: TdxNavBarItem;
-  begin
-    Item := navbr_main.Items.Items[navbr_main.Items.ItemByName(SideBarItemName).index];
-    if Assigned(Item) then
-    begin
-      NewModule := TModule(Modules.Add);
-      Item.Tag := NewModule.ID;
-      NewModule.Event := Event;
-      NewModule.ModuleName := SideBarItemName;
-    end
-  end;
-  procedure RegisterNavBarItems;
-  begin
-    Modules.Clear;
-    RegisterForm('iBenutzerverwaltung', Tfrm_User, @frm_User, 1);
-    RegisterForm('iDesign', Tfrm_Design, @frm_Design, 1);
-    RegisterForm('iAudioplayer', Tfrm_mp3, @frm_mp3,1);
-    RegisterForm('iSysteminfo',Tfrm_PCM_System, @frm_PCM_System, 1);
-    RegisterForm('iInfo',Tfrm_PCM_InfoApp, @frm_PCM_InfoApp, 1);
-    RegisterForm('iHandbuch',Tfrm_Handbuch,@frm_Handbuch, 1);
-    RegisterEvent('iAbmelden', Abmelden);
-    RegisterEvent('iBeenden', Close);
-  end;
-  procedure InitializeRights;
-  begin
-    dm_PCM.qry_Work.SQL.Text:= ASSQL_GetAllRights[dm_PCM.iDBType];
-    dm_PCM.qry_Work.ParamByName('ID').AsInteger := dm_PCM.iIDBenutzerPCM;
-    dm_PCM.qry_Work.Open;
-    dm_PCM.iBenutzer:= dm_PCM.qry_Work.FieldByName('Benutzer').asInteger;
-    dm_PCM.iDesign:= dm_PCM.qry_Work.FieldByName('Design').asInteger;
-    dm_PCM.imp3:= dm_PCM.qry_Work.FieldByName('MP3').asInteger;
-    dm_PCM.qry_Work.Close;
-
-    // Benutzerverwaltung / Kein Recht
-    if (dm_PCM.iBenutzer = 0)  and (dm_PCM.iDesign = 0) then
-    begin
-      navbrgrp_Optionen.Visible:= false;
-      iBenutzerverwaltung.Visible:= false;
-    end;
-
-    // Benutzerverwaltung / Lesen / Ändern / Vollzugriff
-    case dm_PCM.iBenutzer of
-    0: iBenutzerverwaltung.Visible:= false;
-    1,2,3:
-      begin
-        navbrgrp_Optionen.Visible:= true;
-        iBenutzerverwaltung.Visible:= true;
-      end;
-    end;
-
-    // Audioplayer / Lesen / Ändern / Vollzugriff
-    case dm_PCM.iMp3 of
-    0: nb_Medien.Visible:= false;
-    1,2,3:
-      begin
-        nb_Medien.Visible:= true;
-        iAudioplayer.Visible:= true;
-      end;
-    end;
-  end;
-  procedure LoadLanguageIni;
-  begin
-    try
-      loc_lang.LoadFromFile(GetEnvironmentVariable('LOCALAPPDATA') + '\PCM\cxLocalLang.ini');
-      loc_lang.LanguageIndex := 1;
-    except
-      on e:Exception do
-      begin
-        MessageDlg(rs_PCM_Sprachdatei, mtWarning, [mbOk], 0);
-      end
-    end;
-  end;
-  procedure CheckClientLicence;
-  begin
-    dm_PCM.bNewLiceneCheck:= false;
-    CheckLizenzNew;
-    if dm_PCm.bNewLiceneCheck = false then
-    begin
-      CheckLizenzNew;
-      if dm_PCm.bNewLiceneCheck = false then
-        Application.Terminate;
-    end;
-  end;
-  procedure CheckLogin;
-  begin
-    if not bAbmelden then
-      dm_PCM.bLogin := Autologin
-    else
-      dm_PCM.bLogin := false;
-    if not dm_PCM.bLogin then
-    begin
-      Application.CreateForm(Tfrm_PCM_Login, frm_PCM_Login);
-      dm_PCM.bLogin := frm_pcm_login.Login_User;
-      frm_PCM_Login.Free;
-    end;
-    if not dm_PCM.bLogin then
-      Application.Terminate;
-    bAbmelden:= False;
-  end;
-  procedure SetTrayMenu;
-  begin
-    Caption:= PCM_Programmname;
-    trayIC_Main.PopupMenu:= ppm_main;
-    if dm_PCM.bDemo then
-      Caption:=PCM_Programmname + rs_PCM_Demolizenz + DateTostr(dm_PCM.dtGueltig);
-  end;
 begin
   {$ifdef WIn32}
   iSprache.Visible:= true;
@@ -684,19 +594,15 @@ begin
   end
   else begin
   	lafCtrl_Main.SkinName:= dm_PCM.sDesign;
-    LoadLanguageIni;
+    SplashScreen := TSplashScreen.Create(nil);
+    SplashScreen.Update;
+    SplashScreen.Execute(dm_PCM.bStyle);
     if dm_PCM.bStyle then
     begin
       NavBarClick(iDesign);
     end
     else begin
-      CheckClientLicence;
-      CheckLogin;
-      InitializeRights;
-      LoadData;
       WriteLog(PCM_Logname,rs_PCM_Start,0);
-      SetTrayMenu;
-      RegisterNavBarItems;
     end;
   end;
 end;
