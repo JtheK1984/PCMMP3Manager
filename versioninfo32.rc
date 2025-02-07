@@ -1,6 +1,6 @@
 #define VERSION_MAJOR 1
 #define VERSION_MINOR 6
-#define VERSION_BUILD 2
+#define VERSION_BUILD 0
 #define VERSION_REVISION 0
 
 #define STRINGIFY(x) #x
@@ -23,12 +23,12 @@ BEGIN
     BEGIN
       VALUE "FileDescription", "Verwaltung von MP3\0"
       VALUE "FileVersion", VERSION_STRING_FULL "\0"
-      VALUE "InternalName", "PCMMP3Manager.exe\0"
+      VALUE "InternalName", "PCMDEVManager.exe\0"
       VALUE "LegalCopyright", "PCM (Jens Henske)\0"
-      VALUE "ProductName", "PCMMP3Manager 32-Bit\0"
+      VALUE "ProductName", "PCMDEVManager 32-Bit\0"
       VALUE "ProductVersion",VERSION_STRING_SMALL "\0"
       VALUE "CompanyName", "PCM\0"
-      VALUE "OriginalFilename", "PCMMP3Manager.exe (32-Bit)\0"
+      VALUE "OriginalFilename", "PCMDEVManager.exe (32-Bit)\0"
       VALUE "Comments", "\0"
     END
   END
