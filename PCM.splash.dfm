@@ -15,20 +15,26 @@ object SplashScreen: TSplashScreen
   RoundedCorners = rcOn
   OnClose = FormClose
   TextHeight = 15
-  object grpbx_Design: TcxGroupBox
+  object Panel1: TPanel
     Left = 0
     Top = 0
-    Align = alClient
-    PanelStyle.Active = True
-    Style.BorderStyle = ebsNone
-    TabOrder = 0
-    Height = 488
     Width = 1000
+    Height = 488
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'Panel1'
+    Color = 9798503
+    ParentBackground = False
+    TabOrder = 0
+    ExplicitLeft = 408
+    ExplicitTop = 224
+    ExplicitWidth = 185
+    ExplicitHeight = 41
     object img_Splash: TImage
-      Left = 3
-      Top = 3
-      Width = 994
-      Height = 461
+      Left = 0
+      Top = 41
+      Width = 1000
+      Height = 424
       Align = alClient
       Picture.Data = {
         0D546478536D617274496D61676589504E470D0A1A0A0000000D494844520000
@@ -2311,7 +2317,46 @@ object SplashScreen: TSplashScreen
         70381C0E87C3E1703C0238E1EE70381C0E87C3E1703C0238E1EE70381C0E87C3
         E1703C0238E1EE70381C0E87C3E1703C0238E1EE70381C0E87C3E1703C02FCEF
         12C994D5D0AFFDAD0000000049454E44AE426082}
+      Stretch = True
+      ExplicitLeft = 3
       ExplicitTop = -3
+      ExplicitWidth = 994
+      ExplicitHeight = 461
+    end
+    object ActivityIndicator: TdxActivityIndicator
+      Left = 334
+      Top = 273
+      Width = 338
+      Height = 30
+      ParentCustomHint = False
+      LookAndFeel.NativeStyle = True
+      LookAndFeel.SkinName = ''
+      PropertiesClassName = 'TdxActivityIndicatorHorizontalDotsProperties'
+      Properties.AnimationTime = 3000
+      Properties.AnimationRestartDelay = 500
+      Properties.DotColor = -9993323
+      Properties.DotSize = 10
+      Active = True
+      Transparent = True
+    end
+    object lbl_Progname: TcxLabel
+      Left = 0
+      Top = 0
+      Align = alTop
+      BiDiMode = bdLeftToRight
+      Caption = '32-Bit'
+      ParentBiDiMode = False
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -27
+      Style.Font.Name = 'Segoe UI'
+      Style.Font.Style = [fsBold]
+      Style.IsFontAssigned = True
+      Properties.Alignment.Horz = taCenter
+      TabOrder = 1
+      Transparent = True
+      AnchorX = 500
     end
     object lbl_ProgVersion: TcxLabel
       Left = 464
@@ -2326,11 +2371,12 @@ object SplashScreen: TSplashScreen
       Style.Font.Name = 'Segoe UI'
       Style.Font.Style = [fsBold]
       Style.IsFontAssigned = True
+      TabOrder = 2
       Transparent = True
     end
     object prgbr_Splash: TcxProgressBar
-      Left = 3
-      Top = 464
+      Left = 0
+      Top = 465
       Align = alBottom
       ParentFont = False
       Position = 1.000000000000000000
@@ -2356,40 +2402,10 @@ object SplashScreen: TSplashScreen
       StyleFocused.LookAndFeel.NativeStyle = False
       StyleHot.LookAndFeel.Kind = lfStandard
       StyleHot.LookAndFeel.NativeStyle = False
-      TabOrder = 1
+      TabOrder = 3
       Transparent = True
-      Width = 994
-    end
-    object ActivityIndicator: TdxActivityIndicator
-      Left = 334
-      Top = 273
-      Width = 338
-      Height = 30
-      ParentCustomHint = False
-      LookAndFeel.NativeStyle = True
-      LookAndFeel.SkinName = ''
-      PropertiesClassName = 'TdxActivityIndicatorHorizontalDotsProperties'
-      Properties.AnimationTime = 3000
-      Properties.AnimationRestartDelay = 500
-      Properties.DotColor = -9993323
-      Properties.DotSize = 10
-      Active = True
-      Transparent = True
-    end
-    object lbl_Progname: TcxLabel
-      Left = 462
-      Top = 10
-      BiDiMode = bdLeftToRight
-      Caption = '32-Bit'
-      ParentBiDiMode = False
-      ParentFont = False
-      Style.Font.Charset = DEFAULT_CHARSET
-      Style.Font.Color = clWindowText
-      Style.Font.Height = -27
-      Style.Font.Name = 'Segoe UI'
-      Style.Font.Style = [fsBold]
-      Style.IsFontAssigned = True
-      Transparent = True
+      ExplicitTop = 467
+      Width = 1000
     end
   end
   object Timer1: TTimer
