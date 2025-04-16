@@ -25,7 +25,8 @@ uses
   cxMemo, cxProgressBar, cxDBEdit, FireDAC.Stan.Intf, FireDAC.Stan.Option,
   FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
   FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet,
-  FireDAC.Comp.Client,Vcl.FileCtrl,TagsLibrary;
+  FireDAC.Comp.Client,Vcl.FileCtrl,TagsLibrary, dxUIAClasses, dxLayoutContainer,
+  dxLayoutcxEditAdapters, dxLayoutControlAdapters, dxLayoutControl;
   {$EndRegion Uses}
 type
   {$Region Type}
@@ -43,14 +44,27 @@ type
     chkbx_Title: TcxDBCheckBox;
     chkbx_Year: TcxDBCheckBox;
     ds_MP3: TDataSource;
-    grpbx_Mp3: TcxGroupBox;
-    grpbx_Mp3Status: TcxGroupBox;
-    grpbx_right: TcxGroupBox;
     mem_mp3: TcxMemo;
-    pc_main: TcxPageControl;
     qry_mp3: TFDQuery;
     tb_Main: TdxBar;
-    ts_mp3: TcxTabSheet;
+    dxLayoutControl1Group_Root: TdxLayoutGroup;
+    dxLayoutControl1: TdxLayoutControl;
+    dxLayoutGroup3: TdxLayoutGroup;
+    dxLayoutItem1: TdxLayoutItem;
+    dxLayoutGroup4: TdxLayoutGroup;
+    dxLayoutItem2: TdxLayoutItem;
+    dxLayoutItem3: TdxLayoutItem;
+    dxLayoutItem4: TdxLayoutItem;
+    dxLayoutItem5: TdxLayoutItem;
+    dxLayoutItem6: TdxLayoutItem;
+    dxLayoutItem7: TdxLayoutItem;
+    dxLayoutItem8: TdxLayoutItem;
+    dxLayoutGroup9: TdxLayoutGroup;
+    dxLayoutItem9: TdxLayoutItem;
+    dxLayoutItem10: TdxLayoutItem;
+    dxLayoutGroup1: TdxLayoutGroup;
+    dxLayoutGroup2: TdxLayoutGroup;
+    dxLayoutGroup11: TdxLayoutGroup;
     procedure btn_CancelClick(Sender: TObject);
     procedure btn_ConvertClick(Sender: TObject);
     procedure btn_SaveClick(Sender: TObject);

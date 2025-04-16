@@ -10,4 +10,4 @@ copy /y /v "PCMMp3Manager.pdf" "e:\Inno\Setupfiles\Programme\PCMMp3Manager"
 copy /y /v "PCMMp3Manager.htm" "e:\Inno\Setupfiles\Programme\PCMMp3Manager"
 
 echo "Demolizenz erstellen"
-call "E:\Inno\Setupfiles\Programme\PCMLizenzgenerator\PCMLizenzgenerator.exe" /PCM-Mp3Manager /1.6 /E:\Inno\Setupfiles\Programme\PCMMp3Manager
+call "E:\Inno\Setupfiles\Programme\PCMLizenzgenerator\PCMLizenzgenerator.exe" /PCM-Mp3Manager /1.0 /E:\Inno\Setupfiles\Programme\PCMMp3Manager

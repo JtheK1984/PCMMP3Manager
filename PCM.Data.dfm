@@ -1,7 +1,8 @@
 object dm_PCM: Tdm_PCM
   OnCreate = DataModuleCreate
-  Height = 480
-  Width = 640
+  Height = 720
+  Width = 960
+  PixelsPerInch = 144
   object con_PCM: TFDConnection
     Params.Strings = (
       'Database=pcm'
@@ -12,15 +13,15 @@ object dm_PCM: Tdm_PCM
       'DriverID=MySQL')
     LoginPrompt = False
     BeforeConnect = con_PCMBeforeConnect
-    Left = 408
-    Top = 40
+    Left = 612
+    Top = 60
   end
   object imglst_24x24: TcxImageList
     SourceDPI = 96
     Height = 24
     Width = 24
     FormatVersion = 1
-    DesignInfo = 11534695
+    DesignInfo = 17302043
     ImageInfo = <
       item
         ImageClass = 'TBitmap'
@@ -1120,7 +1121,7 @@ object dm_PCM: Tdm_PCM
     Height = 32
     Width = 32
     FormatVersion = 1
-    DesignInfo = 15204711
+    DesignInfo = 22807067
     ImageInfo = <
       item
         ImageClass = 'TBitmap'
@@ -18487,13 +18488,13 @@ object dm_PCM: Tdm_PCM
   end
   object qry_Work: TFDQuery
     Connection = con_PCM
-    Left = 304
-    Top = 224
+    Left = 456
+    Top = 336
   end
   object imglst_16x16: TcxImageList
     SourceDPI = 96
     FormatVersion = 1
-    DesignInfo = 20447587
+    DesignInfo = 30671381
     ImageInfo = <
       item
         ImageClass = 'TBitmap'
@@ -21844,5 +21845,24 @@ object dm_PCM: Tdm_PCM
           E82B36FBCB5442C2D796F0701E1543F72C1AED274FDD773C8D7DEDDF00000000
           49454E44AE426082}
       end>
+  end
+  object dxLayoutLookAndFeelList1: TdxLayoutLookAndFeelList
+    object dxLayoutSkinLookAndFeel1: TdxLayoutSkinLookAndFeel
+      Offsets.ControlOffsetHorz = 5
+      Offsets.ControlOffsetVert = 5
+      Offsets.ItemOffset = 6
+      Offsets.RootItemsAreaOffsetHorz = 11
+      Offsets.RootItemsAreaOffsetVert = 11
+      LookAndFeel.NativeStyle = False
+      PixelsPerInch = 144
+    end
+    object dxLayoutSkinLookAndFeel2: TdxLayoutSkinLookAndFeel
+      Offsets.ControlOffsetHorz = 5
+      Offsets.ControlOffsetVert = 5
+      Offsets.ItemOffset = 6
+      Offsets.RootItemsAreaOffsetHorz = 11
+      Offsets.RootItemsAreaOffsetVert = 11
+      PixelsPerInch = 144
+    end
   end
 end

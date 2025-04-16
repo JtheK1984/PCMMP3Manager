@@ -14,175 +14,344 @@ object frm_MP3: Tfrm_MP3
   OnActivate = FormActivate
   OnShow = FormShow
   TextHeight = 13
-  object grpbx_right: TcxGroupBox
+  object dxLayoutControl1: TdxLayoutControl
     Left = 0
     Top = 0
-    Align = alClient
-    PanelStyle.Active = True
-    Style.BorderStyle = ebsNone
-    TabOrder = 0
-    Height = 922
     Width = 1195
-    object pc_main: TcxPageControl
-      Left = 3
-      Top = 3
-      Width = 1189
-      Height = 916
-      Align = alClient
-      TabOrder = 0
-      Properties.ActivePage = ts_mp3
-      Properties.CustomButtons.Buttons = <>
-      Properties.Images = dm_PCM.imglst_16x16
-      Properties.TabSlants.Kind = skCutCorner
-      Properties.TabWidth = 150
-      ClientRectBottom = 910
-      ClientRectLeft = 2
-      ClientRectRight = 1183
-      ClientRectTop = 28
-      object ts_mp3: TcxTabSheet
-        Caption = 'automatische MP3-Tags'
-        ImageIndex = 89
-        object grpbx_Mp3: TcxGroupBox
-          Left = 0
-          Top = 63
-          Align = alTop
-          Caption = 'Einstellungen'
-          Style.BorderStyle = ebsFlat
-          TabOrder = 0
-          Height = 82
-          Width = 1181
-          object chkbx_Album: TcxDBCheckBox
-            Left = 615
-            Top = 22
-            Caption = 'Album nicht '#252'berschreiben'
-            DataBinding.DataField = 'Album'
-            DataBinding.DataSource = ds_MP3
-            ParentBackground = False
-            ParentColor = False
-            Properties.OnChange = btn_SaveClick
-            Style.Color = clWindowFrame
-            Style.TransparentBorder = False
-            TabOrder = 3
-            Transparent = True
-          end
-          object chkbx_Albumartist: TcxDBCheckBox
-            Left = 215
-            Top = 22
-            Caption = 'Albuminterpret nicht '#252'berschreiben'
-            DataBinding.DataField = 'Albuminterpret'
-            DataBinding.DataSource = ds_MP3
-            ParentBackground = False
-            ParentColor = False
-            Style.Color = clWindowFrame
-            Style.TransparentBorder = False
-            TabOrder = 1
-            Transparent = True
-          end
-          object chkbx_Artist: TcxDBCheckBox
-            Left = 8
-            Top = 22
-            Caption = 'Interpret nicht '#252'berschreiben'
-            DataBinding.DataField = 'Interpret'
-            DataBinding.DataSource = ds_MP3
-            ParentBackground = False
-            ParentColor = False
-            Style.Color = clWindowFrame
-            Style.TransparentBorder = False
-            TabOrder = 0
-            Transparent = True
-          end
-          object chkbx_Composer: TcxDBCheckBox
-            Left = 215
-            Top = 47
-            Caption = 'Komponist nicht '#252'berschreiben'
-            DataBinding.DataField = 'Komponist'
-            DataBinding.DataSource = ds_MP3
-            ParentBackground = False
-            ParentColor = False
-            Style.Color = clWindowFrame
-            Style.TransparentBorder = False
-            TabOrder = 6
-            Transparent = True
-          end
-          object chkbx_Genre: TcxDBCheckBox
-            Left = 792
-            Top = 22
-            Caption = 'Genre nicht '#252'berschreiben'
-            DataBinding.DataField = 'Genre'
-            DataBinding.DataSource = ds_MP3
-            ParentBackground = False
-            ParentColor = False
-            Style.Color = clWindowFrame
-            Style.TransparentBorder = False
-            TabOrder = 4
-            Transparent = True
-          end
-          object chkbx_Title: TcxDBCheckBox
-            Left = 8
-            Top = 47
-            Caption = 'Titel nicht '#252'berschreiben'
-            DataBinding.DataField = 'Titel'
-            DataBinding.DataSource = ds_MP3
-            ParentBackground = False
-            ParentColor = False
-            Style.Color = clWindowFrame
-            Style.TransparentBorder = False
-            TabOrder = 5
-            Transparent = True
-          end
-          object chkbx_Year: TcxDBCheckBox
-            Left = 448
-            Top = 22
-            Caption = 'Jahr nicht '#252'berschreiben'
-            DataBinding.DataField = 'Jahr'
-            DataBinding.DataSource = ds_MP3
-            ParentBackground = False
-            ParentColor = False
-            Style.Color = clWindowFrame
-            Style.TransparentBorder = False
-            TabOrder = 2
-            Transparent = True
-          end
-        end
-        object grpbx_Mp3Status: TcxGroupBox
-          Left = 0
-          Top = 145
-          Align = alClient
-          Caption = 'Status'
-          Style.BorderStyle = ebsFlat
-          TabOrder = 1
-          Height = 737
-          Width = 1181
-          object btn_Convert: TcxButton
-            Left = 3
-            Top = 15
-            Width = 1175
-            Height = 25
-            Align = alTop
-            Caption = 'MP3 Verzeichnis w'#228'hlen'
-            TabOrder = 0
-            OnClick = btn_ConvertClick
-          end
-          object mem_mp3: TcxMemo
-            Left = 3
-            Top = 40
-            Align = alClient
-            Lines.Strings = (
-              'Bitte Verzeichnis w'#228'hlen...')
-            TabOrder = 1
-            Height = 688
-            Width = 1175
-          end
-        end
-        object brdckCtrl_mp3: TdxBarDockControl
-          Left = 0
-          Top = 0
-          Width = 1181
-          Height = 63
-          Align = dalTop
-          BarManager = brmgr_main
-        end
-      end
+    Height = 922
+    Align = alClient
+    TabOrder = 0
+    AutoSize = True
+    LayoutLookAndFeel = dm_PCM.dxLayoutSkinLookAndFeel1
+    ExplicitLeft = 448
+    ExplicitTop = 336
+    ExplicitWidth = 300
+    ExplicitHeight = 250
+    object chkbx_Album: TcxDBCheckBox
+      Left = 526
+      Top = 104
+      AutoSize = False
+      Caption = 'Album nicht '#252'berschreiben'
+      DataBinding.DataField = 'Album'
+      DataBinding.DataSource = ds_MP3
+      ParentBackground = False
+      ParentColor = False
+      Properties.OnChange = btn_SaveClick
+      Style.Color = clWindowFrame
+      Style.HotTrack = False
+      Style.TransparentBorder = False
+      TabOrder = 4
+      Transparent = True
+      Height = 17
+      Width = 146
+    end
+    object chkbx_Albumartist: TcxDBCheckBox
+      Left = 194
+      Top = 104
+      AutoSize = False
+      Caption = 'Albuminterpret nicht '#252'berschreiben'
+      DataBinding.DataField = 'Albuminterpret'
+      DataBinding.DataSource = ds_MP3
+      ParentBackground = False
+      ParentColor = False
+      Style.Color = clWindowFrame
+      Style.HotTrack = False
+      Style.TransparentBorder = False
+      TabOrder = 2
+      Transparent = True
+      Height = 17
+      Width = 160
+    end
+    object chkbx_Artist: TcxDBCheckBox
+      Left = 28
+      Top = 104
+      AutoSize = False
+      Caption = 'Interpret nicht '#252'berschreiben'
+      DataBinding.DataField = 'Interpret'
+      DataBinding.DataSource = ds_MP3
+      ParentBackground = False
+      ParentColor = False
+      Style.Color = clWindowFrame
+      Style.HotTrack = False
+      Style.TransparentBorder = False
+      TabOrder = 1
+      Transparent = True
+      Height = 17
+      Width = 160
+    end
+    object chkbx_Composer: TcxDBCheckBox
+      Left = 194
+      Top = 127
+      AutoSize = False
+      Caption = 'Komponist nicht '#252'berschreiben'
+      DataBinding.DataField = 'Komponist'
+      DataBinding.DataSource = ds_MP3
+      ParentBackground = False
+      ParentColor = False
+      Style.Color = clWindowFrame
+      Style.HotTrack = False
+      Style.TransparentBorder = False
+      TabOrder = 7
+      Transparent = True
+      Height = 17
+      Width = 160
+    end
+    object chkbx_Genre: TcxDBCheckBox
+      Left = 678
+      Top = 104
+      AutoSize = False
+      Caption = 'Genre nicht '#252'berschreiben'
+      DataBinding.DataField = 'Genre'
+      DataBinding.DataSource = ds_MP3
+      ParentBackground = False
+      ParentColor = False
+      Style.Color = clWindowFrame
+      Style.HotTrack = False
+      Style.TransparentBorder = False
+      TabOrder = 5
+      Transparent = True
+      Height = 17
+      Width = 160
+    end
+    object chkbx_Title: TcxDBCheckBox
+      Left = 28
+      Top = 127
+      AutoSize = False
+      Caption = 'Titel nicht '#252'berschreiben'
+      DataBinding.DataField = 'Titel'
+      DataBinding.DataSource = ds_MP3
+      ParentBackground = False
+      ParentColor = False
+      Style.Color = clWindowFrame
+      Style.HotTrack = False
+      Style.TransparentBorder = False
+      TabOrder = 6
+      Transparent = True
+      Height = 17
+      Width = 160
+    end
+    object chkbx_Year: TcxDBCheckBox
+      Left = 360
+      Top = 104
+      AutoSize = False
+      Caption = 'Jahr nicht '#252'berschreiben'
+      DataBinding.DataField = 'Jahr'
+      DataBinding.DataSource = ds_MP3
+      ParentBackground = False
+      ParentColor = False
+      Style.Color = clWindowFrame
+      Style.HotTrack = False
+      Style.TransparentBorder = False
+      TabOrder = 3
+      Transparent = True
+      Height = 17
+      Width = 160
+    end
+    object btn_Convert: TcxButton
+      Left = 28
+      Top = 174
+      Width = 1139
+      Height = 25
+      Caption = 'MP3 Verzeichnis w'#228'hlen'
+      TabOrder = 8
+      OnClick = btn_ConvertClick
+    end
+    object mem_mp3: TcxMemo
+      Left = 28
+      Top = 205
+      Lines.Strings = (
+        'Bitte Verzeichnis w'#228'hlen...')
+      Style.HotTrack = False
+      Style.TransparentBorder = False
+      TabOrder = 9
+      Height = 689
+      Width = 1139
+    end
+    object brdckCtrl_mp3: TdxBarDockControl
+      Left = 19
+      Top = 25
+      Width = 1157
+      Height = 58
+      Align = dalNone
+      BarManager = brmgr_main
+    end
+    object dxLayoutControl1Group_Root: TdxLayoutGroup
+      AlignHorz = ahClient
+      AlignVert = avClient
+      Hidden = True
+      LayoutDirection = ldHorizontal
+      ShowBorder = False
+      Index = -1
+    end
+    object dxLayoutGroup3: TdxLayoutGroup
+      Parent = dxLayoutControl1Group_Root
+      AlignHorz = ahClient
+      AlignVert = avClient
+      CaptionOptions.Text = 'automatische MP3-Tags'
+      ItemIndex = 2
+      Index = 0
+    end
+    object dxLayoutItem1: TdxLayoutItem
+      Parent = dxLayoutGroup3
+      AlignHorz = ahClient
+      AlignVert = avTop
+      CaptionOptions.Text = 'brdckCtrl_mp3'
+      CaptionOptions.Visible = False
+      Control = brdckCtrl_mp3
+      ControlOptions.AutoColor = True
+      ControlOptions.OriginalHeight = 58
+      ControlOptions.OriginalWidth = 1191
+      ControlOptions.ShowBorder = False
+      Index = 0
+    end
+    object dxLayoutGroup4: TdxLayoutGroup
+      Parent = dxLayoutGroup3
+      AlignHorz = ahClient
+      AlignVert = avTop
+      CaptionOptions.Text = 'Einstellungen'
+      LayoutDirection = ldHorizontal
+      Index = 1
+    end
+    object dxLayoutItem2: TdxLayoutItem
+      Parent = dxLayoutGroup2
+      AlignHorz = ahLeft
+      AlignVert = avClient
+      CaptionOptions.Text = 'chkbx_Artist'
+      CaptionOptions.Visible = False
+      Control = chkbx_Artist
+      ControlOptions.OriginalHeight = 17
+      ControlOptions.OriginalWidth = 160
+      ControlOptions.ShowBorder = False
+      Index = 0
+    end
+    object dxLayoutItem3: TdxLayoutItem
+      Parent = dxLayoutGroup2
+      AlignHorz = ahLeft
+      AlignVert = avClient
+      CaptionOptions.Text = 'chkbx_Albumartist'
+      CaptionOptions.Visible = False
+      Control = chkbx_Albumartist
+      ControlOptions.OriginalHeight = 17
+      ControlOptions.OriginalWidth = 160
+      ControlOptions.ShowBorder = False
+      Index = 1
+    end
+    object dxLayoutItem4: TdxLayoutItem
+      Parent = dxLayoutGroup2
+      AlignHorz = ahLeft
+      AlignVert = avClient
+      CaptionOptions.Text = 'chkbx_Year'
+      CaptionOptions.Visible = False
+      Control = chkbx_Year
+      ControlOptions.OriginalHeight = 17
+      ControlOptions.OriginalWidth = 160
+      ControlOptions.ShowBorder = False
+      Index = 2
+    end
+    object dxLayoutItem5: TdxLayoutItem
+      Parent = dxLayoutGroup2
+      CaptionOptions.Text = 'chkbx_Album'
+      CaptionOptions.Visible = False
+      Control = chkbx_Album
+      ControlOptions.OriginalHeight = 17
+      ControlOptions.OriginalWidth = 146
+      ControlOptions.ShowBorder = False
+      Index = 3
+    end
+    object dxLayoutItem6: TdxLayoutItem
+      Parent = dxLayoutGroup2
+      AlignHorz = ahLeft
+      AlignVert = avClient
+      CaptionOptions.Text = 'chkbx_Genre'
+      CaptionOptions.Visible = False
+      Control = chkbx_Genre
+      ControlOptions.OriginalHeight = 17
+      ControlOptions.OriginalWidth = 160
+      ControlOptions.ShowBorder = False
+      Index = 4
+    end
+    object dxLayoutItem7: TdxLayoutItem
+      Parent = dxLayoutGroup11
+      AlignHorz = ahLeft
+      AlignVert = avClient
+      CaptionOptions.Text = 'chkbx_Title'
+      CaptionOptions.Visible = False
+      Control = chkbx_Title
+      ControlOptions.OriginalHeight = 17
+      ControlOptions.OriginalWidth = 160
+      ControlOptions.ShowBorder = False
+      Index = 0
+    end
+    object dxLayoutItem8: TdxLayoutItem
+      Parent = dxLayoutGroup11
+      AlignHorz = ahLeft
+      AlignVert = avClient
+      CaptionOptions.Text = 'chkbx_Composer'
+      CaptionOptions.Visible = False
+      Control = chkbx_Composer
+      ControlOptions.OriginalHeight = 17
+      ControlOptions.OriginalWidth = 160
+      ControlOptions.ShowBorder = False
+      Index = 1
+    end
+    object dxLayoutGroup9: TdxLayoutGroup
+      Parent = dxLayoutGroup3
+      AlignHorz = ahClient
+      AlignVert = avClient
+      CaptionOptions.Text = 'Status'
+      Index = 2
+    end
+    object dxLayoutItem9: TdxLayoutItem
+      Parent = dxLayoutGroup9
+      AlignHorz = ahClient
+      AlignVert = avTop
+      CaptionOptions.Text = 'btn_Convert'
+      CaptionOptions.Visible = False
+      Control = btn_Convert
+      ControlOptions.OriginalHeight = 25
+      ControlOptions.OriginalWidth = 1187
+      ControlOptions.ShowBorder = False
+      Index = 0
+    end
+    object dxLayoutItem10: TdxLayoutItem
+      Parent = dxLayoutGroup9
+      AlignHorz = ahClient
+      AlignVert = avClient
+      CaptionOptions.Text = 'mem_mp3'
+      CaptionOptions.Visible = False
+      Control = mem_mp3
+      ControlOptions.OriginalHeight = 708
+      ControlOptions.OriginalWidth = 1187
+      ControlOptions.ShowBorder = False
+      Index = 1
+    end
+    object dxLayoutGroup1: TdxLayoutGroup
+      Parent = dxLayoutGroup4
+      AlignHorz = ahClient
+      AlignVert = avTop
+      CaptionOptions.Text = 'New Group'
+      ItemIndex = 1
+      ShowBorder = False
+      Index = 0
+    end
+    object dxLayoutGroup2: TdxLayoutGroup
+      Parent = dxLayoutGroup1
+      AlignHorz = ahClient
+      AlignVert = avTop
+      CaptionOptions.Text = 'New Group'
+      ItemIndex = 3
+      LayoutDirection = ldHorizontal
+      ShowBorder = False
+      Index = 0
+    end
+    object dxLayoutGroup11: TdxLayoutGroup
+      Parent = dxLayoutGroup1
+      AlignHorz = ahClient
+      AlignVert = avTop
+      CaptionOptions.Text = 'New Group'
+      LayoutDirection = ldHorizontal
+      ShowBorder = False
+      Index = 1
     end
   end
   object qry_mp3: TFDQuery

@@ -26,7 +26,8 @@ uses
   FlacTagLibrary in 'Helper\FlacTagLibrary.pas',
   APEv2Library in 'Helper\APEv2Library.pas',
   ReadMemoryStream in 'Helper\ReadMemoryStream.pas',
-  PCM.splash in 'PCM.splash.pas' {SplashScreen};
+  PCM.splash in 'PCM.splash.pas' {SplashScreen},
+  PCMMP3Manager.dxSettings in 'PCMMP3Manager.dxSettings.pas';
 
 {$R *.res}
 

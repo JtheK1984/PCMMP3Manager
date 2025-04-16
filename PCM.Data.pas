@@ -12,7 +12,8 @@ uses
   FireDAC.DApt, FireDAC.Phys.ADSDef, FireDAC.Phys.MSSQLDef,
   FireDAC.Phys.ODBCBase, FireDAC.Phys.MSSQL, FireDAC.Phys.ADS,
   FireDAC.Comp.DataSet,Vcl.Dialogs, System.ImageList, Vcl.ImgList, Vcl.Controls,
-  cxImageList, cxGraphics, winapi.Windows,vcl.forms, System.UITypes;
+  cxImageList, cxGraphics, winapi.Windows,vcl.forms, System.UITypes, cxClasses,
+  dxLayoutLookAndFeels;
   {$EndRegion Uses}
 type
   Tdm_PCM = class(TDataModule)
@@ -21,6 +22,9 @@ type
     imglst_32x32: TcxImageList;
     qry_Work: TFDQuery;
     imglst_16x16: TcxImageList;
+    dxLayoutLookAndFeelList1: TdxLayoutLookAndFeelList;
+    dxLayoutSkinLookAndFeel1: TdxLayoutSkinLookAndFeel;
+    dxLayoutSkinLookAndFeel2: TdxLayoutSkinLookAndFeel;
     procedure con_PCMBeforeConnect(Sender: TObject);
     procedure DataModuleCreate(Sender: TObject);
   private
