@@ -104,7 +104,6 @@ type
     ppmbtn_Trenn6: TMenuItem;
     tb_Main: TdxBar;
     trayic_Main: TTrayIcon;
-    ts_Dashboard: TcxTabSheet;
     procedure btn_CloseModulClick(Sender: TObject);
     procedure btn_ModulleisteClick(Sender: TObject);
     procedure btn_RefreshRightsClick(Sender: TObject);
@@ -204,7 +203,7 @@ procedure Tfrm_PCM_Main.CloseModules;
 var
   iPage: Integer;
 begin
-  for iPage := pc_Main.PageCount - 1 downto 1 do
+  for iPage := pc_Main.PageCount - 1 downto 0 do
   begin
     try
       TForm(pc_Main.Pages[iPage].Controls[0]).Close;
@@ -272,16 +271,13 @@ end;
 {$Region Toolbar}
 procedure Tfrm_PCM_Main.btn_CloseModulClick(Sender: TObject);
 begin
-  if pc_Main.PageCount > 1 then
+  if pc_Main.PageCount > 0 then
   begin
-    if pc_Main.PageCount = 2 then
-      brstc_OpenModule.Caption := 'Dashboard';
-    if pc_Main.ActivePage <> ts_Dashboard  then
-    begin
-      TForm(pc_Main.ActivePage.Controls[0]).Close;
-      TForm(pc_Main.ActivePage.Controls[0]).Free;
-      pc_Main.ActivePage.Free;
-    end;
+    if pc_Main.PageCount = 1 then
+    brstc_OpenModule.Caption := 'Bitte Modul wählen';
+    TForm(pc_Main.ActivePage.Controls[0]).Close;
+    TForm(pc_Main.ActivePage.Controls[0]).Free;
+    pc_Main.ActivePage.Free;
   end;
 end;
 procedure Tfrm_PCM_Main.btn_ModulleisteClick(Sender: TObject);
@@ -299,7 +295,7 @@ var
 begin
   btn_RefreshRights.Enabled := False;
   try
-    if pc_Main.PageCount > 1 then
+    if pc_Main.PageCount > 0 then
     begin
       Module := TModule(Modules.FindItemID(pc_Main.ActivePage.Tag));
       if Module.Typ = mtForm then

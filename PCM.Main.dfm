@@ -179,7 +179,6 @@ object frm_PCM_Main: Tfrm_PCM_Main
       ParentBackground = False
       ParentColor = False
       TabOrder = 0
-      Properties.ActivePage = ts_Dashboard
       Properties.CustomButtons.Buttons = <>
       Properties.Images = dm_PCM.imglst_16x16
       Properties.Options = [pcoAlwaysShowGoDialogButton, pcoGradient, pcoGradientClientArea, pcoRedrawOnResize, pcoSort]
@@ -189,13 +188,7 @@ object frm_PCM_Main: Tfrm_PCM_Main
       ClientRectBottom = 723
       ClientRectLeft = 4
       ClientRectRight = 1056
-      ClientRectTop = 25
-      object ts_Dashboard: TcxTabSheet
-        Caption = 'Dashboard'
-        ImageIndex = 79
-        ExplicitWidth = 1046
-        ExplicitHeight = 681
-      end
+      ClientRectTop = 4
     end
   end
   object img_Icons: TImageList

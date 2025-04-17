@@ -2,12 +2,12 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>1899.12.30 00:00:00.000.531,E:\Projekte\Windows\PCMMP3Manager\Module\PCMMP3Manager.Modul.B_Optionen.pas=</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.794,E:\Projekte\Windows\PCMMP3Manager\Module\PCMMP3Manager.Modul.C_MP3.pas=E:\Projekte\Windows\PCMMP3Manager\Module\PCM.Modul.C_MP3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.794,E:\Projekte\Windows\PCMMP3Manager\Module\PCM.Modul.C_MP3.dfm=E:\Projekte\Windows\PCMMP3Manager\Module\PCMMP3Manager.Modul.C_MP3.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.700,=E:\Projekte\Windows\PCMMP3Manager\PCMMP3Manager.dxSettings.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.321,E:\Projekte\Windows\PCMMP3Manager\Module\PCMMP3Manager.Modul.A_Benutzerverwaltung.pas=</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.794,E:\Projekte\Windows\PCMMP3Manager\Module\PCMMP3Manager.Modul.C_MP3.dfm=E:\Projekte\Windows\PCMMP3Manager\Module\PCM.Modul.C_MP3.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.794,E:\Projekte\Windows\PCMMP3Manager\Module\PCM.Modul.C_MP3.pas=E:\Projekte\Windows\PCMMP3Manager\Module\PCMMP3Manager.Modul.C_MP3.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.697,E:\Projekte\Windows\PCMMP3Manager\PCM.splash.pas=</Transaction>
     <Transaction>1899.12.30 00:00:00.000.384,=E:\Projekte\Windows\PCMMP3Manager\PCM.splash.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.041,=E:\Projekte\Windows\PCMMP3Manager\PCM.splash.pas</Transaction>
-    <Transaction>2025.04.16 10:08:27.700,=E:\Projekte\Windows\PCMMP3Manager\PCMMP3Manager.dxSettings.pas</Transaction>
   </Transactions>
 </BorlandProject>
