@@ -24,9 +24,9 @@ object frm_PCM_Main: Tfrm_PCM_Main
   TextHeight = 13
   object navbr_main: TdxNavBar
     Left = 0
-    Top = 35
+    Top = 30
     Width = 200
-    Height = 726
+    Height = 731
     Align = alLeft
     ActiveGroupIndex = 0
     TabOrder = 0
@@ -34,6 +34,7 @@ object frm_PCM_Main: Tfrm_PCM_Main
     View = 14
     OptionsImage.SmallImages = dm_PCM.imglst_16x16
     OptionsStyle.CustomStyles.Background = navbrStyleIt_main
+    ExplicitHeight = 714
     object navbrgrp_Optionen: TdxNavBarGroup
       Caption = 'Optionen'
       SelectedLinkIndex = -1
@@ -155,18 +156,20 @@ object frm_PCM_Main: Tfrm_PCM_Main
   end
   object grpbx_Design: TcxGroupBox
     Left = 200
-    Top = 35
+    Top = 30
     Align = alClient
     PanelStyle.Active = True
     Style.BorderStyle = ebsNone
     TabOrder = 1
-    Height = 726
+    ExplicitWidth = 1058
+    ExplicitHeight = 714
+    Height = 731
     Width = 1064
     object pc_main: TcxPageControl
-      Left = 3
-      Top = 3
-      Width = 1058
-      Height = 720
+      Left = 2
+      Top = 2
+      Width = 1060
+      Height = 727
       Margins.Left = 0
       Margins.Top = 0
       Margins.Right = 0
@@ -181,13 +184,17 @@ object frm_PCM_Main: Tfrm_PCM_Main
       Properties.Images = dm_PCM.imglst_16x16
       Properties.Options = [pcoAlwaysShowGoDialogButton, pcoGradient, pcoGradientClientArea, pcoRedrawOnResize, pcoSort]
       OnPageChanging = pc_mainPageChanging
-      ClientRectBottom = 714
-      ClientRectLeft = 2
-      ClientRectRight = 1052
-      ClientRectTop = 28
+      ExplicitWidth = 1054
+      ExplicitHeight = 710
+      ClientRectBottom = 723
+      ClientRectLeft = 4
+      ClientRectRight = 1056
+      ClientRectTop = 25
       object ts_Dashboard: TcxTabSheet
         Caption = 'Dashboard'
         ImageIndex = 79
+        ExplicitWidth = 1046
+        ExplicitHeight = 681
       end
     end
   end
@@ -472,11 +479,7 @@ object frm_PCM_Main: Tfrm_PCM_Main
     Top = 232
   end
   object lafCtrl_Main: TcxLookAndFeelController
-    Kind = lfFlat
-    ScrollbarMode = sbmClassic
-    ScrollMode = scmClassic
-    SkinName = 'DevExpressDarkStyle'
-    RenderMode = rmGDIPlus
+    NativeStyle = True
     Left = 88
     Top = 104
   end
@@ -4260,7 +4263,7 @@ object frm_PCM_Main: Tfrm_PCM_Main
     DockControlHeights = (
       0
       0
-      35
+      30
       0)
     object tb_Main: TdxBar
       AllowClose = False

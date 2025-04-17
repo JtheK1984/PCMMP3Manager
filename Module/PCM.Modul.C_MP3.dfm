@@ -3,8 +3,8 @@ object frm_MP3: Tfrm_MP3
   Top = 0
   BorderStyle = bsNone
   Caption = 'frm_MP3'
-  ClientHeight = 922
-  ClientWidth = 1195
+  ClientHeight = 600
+  ClientWidth = 1000
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,16 +17,14 @@ object frm_MP3: Tfrm_MP3
   object dxLayoutControl1: TdxLayoutControl
     Left = 0
     Top = 0
-    Width = 1195
-    Height = 922
+    Width = 1000
+    Height = 600
     Align = alClient
     TabOrder = 0
     AutoSize = True
     LayoutLookAndFeel = dm_PCM.dxLayoutSkinLookAndFeel1
-    ExplicitLeft = 448
-    ExplicitTop = 336
-    ExplicitWidth = 300
-    ExplicitHeight = 250
+    ExplicitWidth = 1195
+    ExplicitHeight = 922
     object chkbx_Album: TcxDBCheckBox
       Left = 526
       Top = 104
@@ -150,7 +148,7 @@ object frm_MP3: Tfrm_MP3
     object btn_Convert: TcxButton
       Left = 28
       Top = 174
-      Width = 1139
+      Width = 944
       Height = 25
       Caption = 'MP3 Verzeichnis w'#228'hlen'
       TabOrder = 8
@@ -164,13 +162,13 @@ object frm_MP3: Tfrm_MP3
       Style.HotTrack = False
       Style.TransparentBorder = False
       TabOrder = 9
-      Height = 689
-      Width = 1139
+      Height = 367
+      Width = 944
     end
     object brdckCtrl_mp3: TdxBarDockControl
       Left = 19
       Top = 25
-      Width = 1157
+      Width = 962
       Height = 58
       Align = dalNone
       BarManager = brmgr_main
