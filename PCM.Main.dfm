@@ -161,8 +161,6 @@ object frm_PCM_Main: Tfrm_PCM_Main
     PanelStyle.Active = True
     Style.BorderStyle = ebsNone
     TabOrder = 1
-    ExplicitWidth = 1058
-    ExplicitHeight = 714
     Height = 731
     Width = 1064
     object pc_main: TcxPageControl

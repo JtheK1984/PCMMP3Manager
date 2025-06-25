@@ -230,8 +230,6 @@ $(PreBuildEvent)]]></PreBuildEvent>
             </Delphi.Personality>
             <Deployment Version="5">
                 <DeployFile LocalName="E:\Inno\Setupfiles\Programme\PCMMP3Manager\PCMMP3Manager.exe" Configuration="Debug" Class="ProjectOutput"/>
-                <DeployFile LocalName="E:\Inno\Setupfiles\Programme\PCMMP3Manager\PCMMP3Manager.exe" Configuration="Debug" Class="ProjectOutput"/>
-                <DeployFile LocalName="Win32\Release\PCMMP3Manager.exe" Configuration="Release" Class="ProjectOutput"/>
                 <DeployFile LocalName="Win32\Release\PCMMP3Manager.exe" Configuration="Release" Class="ProjectOutput"/>
                 <DeployFile LocalName="Win64\Debug\PCMMP3Manager.exe" Configuration="Debug" Class="ProjectOutput"/>
                 <DeployFile LocalName="Win64\Release\PCMMP3Manager.exe" Configuration="Release" Class="ProjectOutput">
