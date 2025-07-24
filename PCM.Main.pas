@@ -119,6 +119,7 @@ type
     procedure ppmbtn_MusicClick(Sender: TObject);
     procedure ppmbtn_SpracheClick(Sender: TObject);
     procedure ppmbtn_SysteminfoClick(Sender: TObject);
+    procedure ppmbtn_KonfigurationClick(Sender: TObject);
   private
     { Private-Deklarationen }
 
@@ -614,6 +615,13 @@ begin
   WindowState:= TWindowState.wsMaximized;
   SetForegroundWindow(frm_PCM_main.Handle);
 end;
+procedure Tfrm_PCM_Main.ppmbtn_KonfigurationClick(Sender: TObject);
+begin
+  navbarclick(iDesign);
+  WindowState:= TWindowState.wsMaximized;
+  SetForegroundWindow(frm_PCM_main.Handle);
+end;
+
 procedure Tfrm_PCM_Main.ppmbtn_HandbuchClick(Sender: TObject);
 begin
   navbarclick(iHandbuch);
@@ -622,7 +630,7 @@ begin
 end;
 procedure Tfrm_PCM_Main.ppmbtn_SpracheClick(Sender: TObject);
 begin
-  navbarclick(iSprache);
+  iSpracheClick(Sender);
   WindowState:= TWindowState.wsMaximized;
   SetForegroundWindow(frm_PCM_main.Handle);
 end;

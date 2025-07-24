@@ -4169,8 +4169,9 @@ object frm_PCM_Main: Tfrm_PCM_Main
       OnClick = ppmbtn_BenutzerClick
     end
     object ppmbtn_Konfiguration: TMenuItem
-      Caption = 'Konfiguration'
-      ImageIndex = 2
+      Caption = 'Design'
+      ImageIndex = 82
+      OnClick = ppmbtn_KonfigurationClick
     end
     object ppmbtn_Trenn1: TMenuItem
       Caption = '-'
