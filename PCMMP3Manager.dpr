@@ -41,29 +41,30 @@ uses
 {$SetPEFlags IMAGE_FILE_REMOVABLE_RUN_FROM_SWAP or IMAGE_FILE_NET_RUN_FROM_SWAP or IMAGE_FILE_LARGE_ADDRESS_AWARE}
 
 var
+  {$Region var}
   ifini: TIniFile;
-  sStyle: String;
+  
   slocale: String;
-
+  {$EndRegion var}
 begin
+  {$Region Begin}
   Checkinis;
   ifini:=TIniFile.create(GetEnvironmentVariable('LOCALAPPDATA') + '\PCM\PCM.ini');
-  sStyle:=ifini.ReadString('PCMMP3Manager','Style','Windows');
-  slocale:=ifini.ReadString('PCMBackup','Language','de');
+  slocale:=ifini.ReadString('PCMMP3Manager','Language','de');
   ifini.Free;
   GlobalWebView2Loader                := TWVLoader.Create(nil);
   GlobalWebView2Loader.UserDataFolder := GetEnvironmentVariable('LOCALAPPDATA') + '\PCM\CustomCache';
   GlobalWebView2Loader.StartWebView2;
   Application.Initialize;
-  TStyleManager.TrySetStyle(sStyle);
   {$IFDEF WIN64}
   Application.Title:= 'PCM - MP3Manager 64-Bit';
-  TNtTranslator.SetNew(slocale,[],'de');
   {$else}
   Application.Title:= 'PCM - MP3Manager 32-Bit';
   {$ENDIF}
+  TNtTranslator.SetNew(slocale,[],'de');
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(Tdm_PCM,dm_PCM);
   Application.CreateForm(Tfrm_PCM_Main,frm_PCM_Main);
   Application.Run;
+  {$EndRegion Begin}
 end.

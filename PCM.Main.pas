@@ -267,7 +267,7 @@ begin
   if pc_Main.PageCount > 0 then
   begin
     if pc_Main.PageCount = 1 then
-    brstc_OpenModule.Caption := 'Bitte Modul wählen';
+    brstc_OpenModule.Caption := rs_PCM_ChooseModul;
     TForm(pc_Main.ActivePage.Controls[0]).Close;
     TForm(pc_Main.ActivePage.Controls[0]).Free;
     pc_Main.ActivePage.Free;
@@ -315,24 +315,17 @@ end;
 {$Region Navbar}
 procedure Tfrm_PCM_Main.iSpracheClick(Sender: TObject);
 var
-  iniFile: TIniFile;
+  ifINI: TIniFile;
 begin
   Application.CreateForm(Tfrm_PCM_Language,frm_PCM_Language);
   frm_PCM_Language.Position:= poScreenCenter;
-  frm_PCM_Language.ClientHeight:= 214;
   frm_PCM_Language.ShowModal;
-  TNtTranslator.SetNew(dm_PCM.slocale,[],'de');
-  TNtTranslator.TranslateForms;
-  iniFile := TIniFile.Create(GetEnvironmentVariable('LOCALAPPDATA') + '\PCM\PCM.ini');
+  ifINI := TIniFile.Create(GetEnvironmentVariable('LOCALAPPDATA') + '\PCM\PCM.ini');
   try
-    iniFile.WriteString(PCM_Logname, 'Language', dm_PCm.sLocale);
+    ifINI.WriteString(PCM_Logname, 'Language', dm_PCm.sLocale);
   finally
-    iniFile.Free;
+    ifINI.Free;
   end;
-  Caption:= PCM_Programmname;
-  trayic_Main.popupmenu:= ppm_Main;
-  LoadData;
-  btn_RefreshRightsClick(Self);
 end;
 procedure Tfrm_PCM_Main.NavBarClick(Sender: TObject);
 var
@@ -392,7 +385,7 @@ begin
         2:
           begin
             sModul:= 'Mediacenter';
-            sModulCaption := 'i'  + rs_PCMMediacenter_Musikplayer;
+            sModulCaption := 'i'  + 'MP3-Tags';
             dm_PCM.iModulTab:= 1;
           end;
 
@@ -448,7 +441,7 @@ begin
         begin
           Screen.Cursor := crHourglass;
           try
-            ShowWaitForm(TForm(Self), PWideChar('Formular wird geladen'), 1,417, 65);
+            ShowWaitForm(TForm(Self), PWideChar(rs_General_Formload), 1,417, 65);
             Application.ProcessMessages;
             WaitFormStep;
             TForm(Module.Instance^) := Module.FormClass.Create(Nil);
@@ -571,10 +564,6 @@ begin
 end;
 procedure Tfrm_PCM_Main.FormShow(Sender: TObject);
 begin
-  {$ifdef WIn32}
-  iSprache.Visible:= true;
-  ppmbtn_Sprache.Visible:= true;
-  {$endif}
   lafCtrl_Main.NativeStyle:= false;
   trayIC_Main.Hint:= PCM_Programmname;
   dm_PCM.iDBType:= 0;

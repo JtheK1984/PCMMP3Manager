@@ -3,8 +3,8 @@ object frm_PCM_Main: Tfrm_PCM_Main
   Top = 0
   AlphaBlend = True
   Caption = 'PCM - Manager'
-  ClientHeight = 761
-  ClientWidth = 1264
+  ClientHeight = 744
+  ClientWidth = 1258
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -26,7 +26,7 @@ object frm_PCM_Main: Tfrm_PCM_Main
     Left = 0
     Top = 30
     Width = 200
-    Height = 731
+    Height = 714
     Align = alLeft
     ActiveGroupIndex = 0
     TabOrder = 0
@@ -34,7 +34,7 @@ object frm_PCM_Main: Tfrm_PCM_Main
     View = 14
     OptionsImage.SmallImages = dm_PCM.imglst_16x16
     OptionsStyle.CustomStyles.Background = navbrStyleIt_main
-    ExplicitHeight = 714
+    ExplicitLeft = -1
     object navbrgrp_Optionen: TdxNavBarGroup
       Caption = 'Optionen'
       SelectedLinkIndex = -1
@@ -161,13 +161,13 @@ object frm_PCM_Main: Tfrm_PCM_Main
     PanelStyle.Active = True
     Style.BorderStyle = ebsNone
     TabOrder = 1
-    Height = 731
-    Width = 1064
+    Height = 714
+    Width = 1058
     object pc_main: TcxPageControl
       Left = 2
       Top = 2
-      Width = 1060
-      Height = 727
+      Width = 1054
+      Height = 710
       Margins.Left = 0
       Margins.Top = 0
       Margins.Right = 0
@@ -181,11 +181,9 @@ object frm_PCM_Main: Tfrm_PCM_Main
       Properties.Images = dm_PCM.imglst_16x16
       Properties.Options = [pcoAlwaysShowGoDialogButton, pcoGradient, pcoGradientClientArea, pcoRedrawOnResize, pcoSort]
       OnPageChanging = pc_mainPageChanging
-      ExplicitWidth = 1054
-      ExplicitHeight = 710
-      ClientRectBottom = 723
+      ClientRectBottom = 706
       ClientRectLeft = 4
-      ClientRectRight = 1056
+      ClientRectRight = 1050
       ClientRectTop = 4
     end
   end
