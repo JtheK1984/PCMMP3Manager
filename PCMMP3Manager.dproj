@@ -177,6 +177,7 @@ $(PreBuildEvent)]]></PreBuildEvent>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="PCMMP3Manager.dxSettings.pas"/>
+        <DCCReference Include="Module\PCM.Mp3Manager.Strings.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

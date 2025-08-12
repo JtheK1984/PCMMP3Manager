@@ -2400,6 +2400,7 @@ object SplashScreen: TSplashScreen
       StyleHot.LookAndFeel.NativeStyle = False
       TabOrder = 3
       Transparent = True
+      ExplicitTop = 465
       Width = 1000
     end
   end

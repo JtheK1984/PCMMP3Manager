@@ -23,8 +23,6 @@ object frm_MP3: Tfrm_MP3
     TabOrder = 0
     AutoSize = True
     LayoutLookAndFeel = dm_PCM.dxLayoutSkinLookAndFeel1
-    ExplicitWidth = 1195
-    ExplicitHeight = 922
     object chkbx_Album: TcxDBCheckBox
       Left = 526
       Top = 104

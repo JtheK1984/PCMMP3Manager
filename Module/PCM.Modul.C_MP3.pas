@@ -81,8 +81,9 @@ implementation
 
 uses  PCM.Main,
       PCM.Data,
+      PCM.Helper,
       PCM.Functions.Synch.Wait,
-      PCM.Strings;
+      PCM.Mp3Manager.Strings;
 
 ////////////////////////////////////////////////////////////////////////////////
 // Hilfsfunktionen                                                            //
@@ -214,7 +215,7 @@ begin
     end;
     CloseWaitForm;
     FindClose(datei);
-    MessageDlg(rs_PCMMP3Manger_MP3DateiEdit1 + inttostr(iFileCount) + rs_PCMMP3Manger_MP3DateiEdit2,mtInformation,[mbok],0);
+    SetMessageDialog(1,rs_PCMMP3Manger_MP3DateiEdit1 + inttostr(iFileCount) + rs_PCMMP3Manger_MP3DateiEdit2,[rs_general_BTN_Ok,'',''],[mrOk,mrNone,mrNone]);
   end;
 end;
 procedure Tfrm_MP3.btn_SaveClick(Sender: TObject);

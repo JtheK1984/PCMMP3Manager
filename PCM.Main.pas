@@ -156,7 +156,7 @@ uses  PCM.Benutzerverwaltung,
       PCM.Helper,
       PCM.Modul.C_Mp3,
       PCM.SQL,
-			PCM.Strings, PCM.splash;
+			PCM.MP3Manager.Strings, PCM.splash;
 
 ////////////////////////////////////////////////////////////////////////////////
 // Hilfsfunktionen                                                            //

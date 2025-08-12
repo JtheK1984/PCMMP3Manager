@@ -27,7 +27,8 @@ uses
   APEv2Library in 'Helper\APEv2Library.pas',
   ReadMemoryStream in 'Helper\ReadMemoryStream.pas',
   PCM.splash in 'PCM.splash.pas' {SplashScreen},
-  PCMMP3Manager.dxSettings in 'PCMMP3Manager.dxSettings.pas';
+  PCMMP3Manager.dxSettings in 'PCMMP3Manager.dxSettings.pas',
+  PCM.Mp3Manager.Strings in 'Module\PCM.Mp3Manager.Strings.pas';
 
 {$R *.res}
 
@@ -63,8 +64,8 @@ begin
   {$ENDIF}
   TNtTranslator.SetNew(slocale,[],'de');
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(Tdm_PCM,dm_PCM);
-  Application.CreateForm(Tfrm_PCM_Main,frm_PCM_Main);
+  Application.CreateForm(Tdm_PCM, dm_PCM);
+  Application.CreateForm(Tfrm_PCM_Main, frm_PCM_Main);
   Application.Run;
   {$EndRegion Begin}
 end.

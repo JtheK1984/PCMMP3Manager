@@ -64,6 +64,7 @@ const
   PCM_Logname =  'PCMMP3Manager';
   PCM_Connectionname =  'MP3';
   PCM_Programmnummer =  5;
+  PCM_Lizenz = true;
 
 resourcestring
   {$IFDEF WIN64}
