@@ -472,7 +472,6 @@ object frm_PCM_Main: Tfrm_PCM_Main
     Top = 232
   end
   object lafCtrl_Main: TcxLookAndFeelController
-    NativeStyle = True
     Left = 88
     Top = 104
   end
@@ -4249,7 +4248,6 @@ object frm_PCM_Main: Tfrm_PCM_Main
     MenusShowRecentItemsFirst = False
     NotDocking = [dsNone, dsLeft, dsTop, dsRight, dsBottom]
     PopupMenuLinks = <>
-    Style = bmsUseLookAndFeel
     UseSystemFont = True
     Left = 472
     Top = 192

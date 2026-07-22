@@ -1,4 +1,4 @@
-call "C:\Program Files (x86)\Embarcadero\Studio\23.0\bin\rsvars.bat"
+call "C:\Program Files (x86)\Embarcadero\Studio\37.0\bin\rsvars.bat"
 echo "Build erstellen"
 msbuild E:/Projekte/Windows/PCMMP3Manager/PCMMP3Manager.dproj /t:Clean;Build;Localize;CompressWin32 /p:config=Release /p:platform=Win32
 msbuild E:/Projekte/Windows/PCMMP3Manager/PCMMP3Manager.dproj /t:Clean;Build;Localize;CompressWin64 /p:config=Release /p:platform=Win64
