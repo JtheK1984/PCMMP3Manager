@@ -4,6 +4,9 @@
 # Kurzbeschreibung:
   PCM - MP3Manager
 
+# Beschreibung 
+  Tool zum Verwalten der MP3-Tags
+  
 # Entwicklungsumgebung:
   DELPHI 12.3 Athens
 
